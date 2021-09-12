@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul  6 22:20:54 2021
+# Process ID: 15252
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/CPUC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13508 C:\Users\liang\Desktop\OrgLab\lab4\CPUC\CPUC.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/CPUC/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/CPUC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab4/CPUC/CPUC.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,582 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 04:10:49 2021
+# Process ID: 8860
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12596 C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/piCPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1106.418 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/D_mem.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/simPipeCPU_dist_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/h.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_dist_mem_gen_0_0/sim/simPipeCPU_dist_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_dist_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_xlslice_0_0/sim/simPipeCPU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_xlslice_0_1/sim/simPipeCPU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_RAM_B_0_0/RAM_B.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_RAM_B_0_0/sim/simPipeCPU_RAM_B_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_RAM_B_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/pCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_pCPU_0_0/sim/simPipeCPU_pCPU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_pCPU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/sim/simPipeCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hdl/simPipeCPU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+"xelab -wto aaf6cd9771ca44469d1285da1830f348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto aaf6cd9771ca44469d1285da1830f348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.simPipeCPU_RAM_B_0_0
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.simPipeCPU_dist_mem_gen_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.simPipeCPU_xlslice_0_1
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.pCPU
+Compiling module xil_defaultlib.simPipeCPU_pCPU_0_0
+Compiling module xil_defaultlib.simPipeCPU_xlslice_0_0
+Compiling module xil_defaultlib.simPipeCPU
+Compiling module xil_defaultlib.simPipeCPU_wrapper
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1106.418 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -protoinst "protoinst_files/simPipeCPU.protoinst" -view {C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/simPipeCPU.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+WARNING: Simulation object /tb/u/simPipeCPU_i/pCPU_0/inst/datapath/pc_change was not found in the design.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.u.simPipeCPU_i.RAM_B_0.inst.RAM_B.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1106.418 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1106.418 ; gain = 0.000
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd}
+Reading block design file <C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd>...
+Adding component instance block -- xilinx.com:ip:dist_mem_gen:8.0 - ROM
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - pc11_2
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - addr11_2
+Adding component instance block -- xilinx.com:user:RAM_B:1.0 - RAM_B_0
+Adding component instance block -- xilinx.com:user:pCPU:1.0 - pCPU_0
+Successfully read diagram <simPipeCPU> from block design file <C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd>
+delete_bd_objs [get_bd_nets clk_0_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property location {1 -48 -30} [get_bd_cells util_vector_logic_0]
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins RAM_B_0/clka]
+connect_bd_net [get_bd_ports clk] [get_bd_pins pCPU_0/clk]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+save_bd_design
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.srcs\sources_1\bd\simPipeCPU\simPipeCPU.bd> 
+Wrote  : <C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/ui/bd_41a03303.ui> 
+generate_target Simulation [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd]
+WARNING: [BD 41-1284] Cannot set parameter CLOCK_DOMAIN on port /clk
+WARNING: [BD 41-1284] Cannot set parameter CLOCK_DOMAIN on port /clk
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.srcs\sources_1\bd\simPipeCPU\simPipeCPU.bd> 
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/synth/simPipeCPU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/sim/simPipeCPU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hdl/simPipeCPU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+Exporting to file c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hw_handoff/simPipeCPU.hwh
+Generated Block Design Tcl file c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hw_handoff/simPipeCPU_bd.tcl
+Generated Hardware Definition File c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/synth/simPipeCPU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/D_mem.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/simPipeCPU_dist_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/h.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_dist_mem_gen_0_0/sim/simPipeCPU_dist_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_dist_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_xlslice_0_0/sim/simPipeCPU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_xlslice_0_1/sim/simPipeCPU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_RAM_B_0_0/RAM_B.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_RAM_B_0_0/sim/simPipeCPU_RAM_B_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_RAM_B_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/2346/pCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_pCPU_0_0/sim/simPipeCPU_pCPU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_pCPU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/sim/simPipeCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_util_vector_logic_0_0/sim/simPipeCPU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hdl/simPipeCPU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+"xelab -wto aaf6cd9771ca44469d1285da1830f348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto aaf6cd9771ca44469d1285da1830f348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.simPipeCPU_RAM_B_0_0
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.simPipeCPU_dist_mem_gen_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.simPipeCPU_xlslice_0_1
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.pCPU
+Compiling module xil_defaultlib.simPipeCPU_pCPU_0_0
+Compiling module xil_defaultlib.simPipeCPU_xlslice_0_0
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.simPipeCPU_util_vector_logic_0_0
+Compiling module xil_defaultlib.simPipeCPU
+Compiling module xil_defaultlib.simPipeCPU_wrapper
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1294.312 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -protoinst "protoinst_files/simPipeCPU.protoinst" -view {C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/simPipeCPU.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+WARNING: Simulation object /tb/u/simPipeCPU_i/pCPU_0/inst/datapath/pc_change was not found in the design.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.u.simPipeCPU_i.RAM_B_0.inst.RAM_B.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1331.469 ; gain = 37.156
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1331.469 ; gain = 37.156
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd}
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/piCPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:pCPU:1.0 [get_ips  simPipeCPU_pCPU_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd'
+INFO: [IP_Flow 19-1972] Upgraded simPipeCPU_pCPU_0_0 from pCPU_v1_0 1.0 to pCPU_v1_0 1.0
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.srcs\sources_1\bd\simPipeCPU\simPipeCPU.bd> 
+Wrote  : <C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/ui/bd_41a03303.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips simPipeCPU_pCPU_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd]
+WARNING: [BD 41-1284] Cannot set parameter CLOCK_DOMAIN on port /clk
+WARNING: [BD 41-1284] Cannot set parameter CLOCK_DOMAIN on port /clk
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.srcs\sources_1\bd\simPipeCPU\simPipeCPU.bd> 
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/synth/simPipeCPU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/sim/simPipeCPU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hdl/simPipeCPU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pCPU_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+Exporting to file c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hw_handoff/simPipeCPU.hwh
+Generated Block Design Tcl file c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hw_handoff/simPipeCPU_bd.tcl
+Generated Hardware Definition File c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/synth/simPipeCPU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/RAM.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/D_mem.coe'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/simPipeCPU_dist_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/h.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_dist_mem_gen_0_0/sim/simPipeCPU_dist_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_dist_mem_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_xlslice_0_0/sim/simPipeCPU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_xlslice_0_1/sim/simPipeCPU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_RAM_B_0_0/RAM_B.srcs/sources_1/ip/RAM/sim/RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_RAM_B_0_0/sim/simPipeCPU_RAM_B_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_RAM_B_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/8fd8/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/8fd8/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/8fd8/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/8fd8/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/8fd8/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ipshared/8fd8/pCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_pCPU_0_0/sim/simPipeCPU_pCPU_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_pCPU_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/ip/simPipeCPU_util_vector_logic_0_0/sim/simPipeCPU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/sim/simPipeCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.gen/sources_1/bd/simPipeCPU/hdl/simPipeCPU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simPipeCPU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+"xelab -wto aaf6cd9771ca44469d1285da1830f348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto aaf6cd9771ca44469d1285da1830f348 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xlslice_v1_0_2 -L blk_mem_gen_v8_4_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="kin...
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.RAM_B
+Compiling module xil_defaultlib.simPipeCPU_RAM_B_0_0
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.simPipeCPU_dist_mem_gen_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
+Compiling module xil_defaultlib.simPipeCPU_xlslice_0_1
+Compiling module xil_defaultlib.ImmGen
+Compiling module xil_defaultlib.Regs
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.pCPU
+Compiling module xil_defaultlib.simPipeCPU_pCPU_0_0
+Compiling module xil_defaultlib.simPipeCPU_xlslice_0_0
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.simPipeCPU_util_vector_logic_0_0
+Compiling module xil_defaultlib.simPipeCPU
+Compiling module xil_defaultlib.simPipeCPU_wrapper
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1358.211 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -protoinst "protoinst_files/simPipeCPU.protoinst" -view {C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/simPipeCPU.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+WARNING: Simulation object /tb/u/simPipeCPU_i/pCPU_0/inst/datapath/pc_change was not found in the design.
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module tb.u.simPipeCPU_i.RAM_B_0.inst.RAM_B.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1358.211 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1358.211 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 27 04:43:10 2021...

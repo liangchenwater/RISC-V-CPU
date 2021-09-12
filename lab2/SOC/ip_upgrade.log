@@ -1,0 +1,37 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jun 27 14:46:03 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_pCPU_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CSSTE_pCPU_0_0 (xilinx.com:user:pCPU:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jun 27 04:47:10 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_pCPU_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_pCPU_0_0 (xilinx.com:user:pCPU:1.0 (Rev. 2)) to Vivado generation flows.
+

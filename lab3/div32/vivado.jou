@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 30 20:24:08 2021
+# Process ID: 3664
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab3/div32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11408 C:\Users\liang\Desktop\OrgLab\lab3\div32\div32.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab3/div32/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab3/div32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source div32_tb.tcl
+run 1000 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+run 50 ns
+close_sim

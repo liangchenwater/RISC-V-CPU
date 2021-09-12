@@ -1,0 +1,1380 @@
+
+*** Running vivado
+    with args -log mips_top.vds -m64 -mode batch -messageDb vivado.pb -source mips_top.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source mips_top.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7k325tffg676-2
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/archlabs/lab06/lab06.cache/wt [current_project]
+# set_property parent.project_path C:/archlabs/lab06/lab06.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog {
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/define.vh
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_define.vh
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/function.vh
+# }
+# read_verilog -library xil_defaultlib {
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/alu.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/regfile.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/datapath.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/controller.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/cp0.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_core.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/data_ram.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/inst_rom.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_8x16.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/display.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/my_clk_gen.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_debug.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/clk_diff.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/btn_scan.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips.v
+#   C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_top.v
+# }
+# read_xdc C:/archlabs/lab06/lab06.srcs/constrs_1/imports/constrs/sword4.xdc
+# set_property used_in_implementation false [get_files C:/archlabs/lab06/lab06.srcs/constrs_1/imports/constrs/sword4.xdc]
+# catch { write_hwdef -file mips_top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top mips_top -part xc7k325tffg676-2
+Command: synth_design -top mips_top -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+WARNING: [Synth 8-2611] redeclaration of ansi port h_count is not allowed [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga.v:11]
+WARNING: [Synth 8-2611] redeclaration of ansi port v_count is not allowed [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga.v:22]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_debug.v:59]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 261.383 ; gain = 46.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_top.v:8]
+INFO: [Synth 8-638] synthesizing module 'clk_diff' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/clk_diff.v:5]
+INFO: [Synth 8-638] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10647]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:10647]
+INFO: [Synth 8-256] done synthesizing module 'clk_diff' (2#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/clk_diff.v:5]
+INFO: [Synth 8-638] synthesizing module 'my_clk_gen' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/my_clk_gen.v:71]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 5.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 5.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:15990]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'my_clk_gen' (5#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/my_clk_gen.v:71]
+INFO: [Synth 8-638] synthesizing module 'btn_scan' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/btn_scan.v:9]
+	Parameter CLK_FREQ bound to: 25 - type: integer 
+	Parameter SCAN_INTERVAL bound to: 10 - type: integer 
+	Parameter COUNT_SCAN bound to: 250001 - type: integer 
+	Parameter COUNT_BITS bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'btn_scan' (6#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/btn_scan.v:9]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/display.v:8]
+	Parameter CLK_FREQ bound to: 25 - type: integer 
+	Parameter SEG_PULSE bound to: 1'b0 
+	Parameter REFRESH_INTERVAL bound to: 100 - type: integer 
+	Parameter COUNT_REFRESH bound to: 2500001 - type: integer 
+	Parameter COUNT_BITS bound to: 22 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'parallel2serial' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:8]
+	Parameter P_CLK_FREQ bound to: 25 - type: integer 
+	Parameter S_CLK_FREQ bound to: 20 - type: integer 
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter CODE_ENDIAN bound to: 1 - type: integer 
+	Parameter COUNT_HALFCYCLE bound to: 1 - type: integer 
+	Parameter CYCLE_COUNT_BITS bound to: 1 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 4 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_CLEAR bound to: 1 - type: integer 
+	Parameter S_WORK bound to: 2 - type: integer 
+	Parameter S_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:100]
+INFO: [Synth 8-256] done synthesizing module 'parallel2serial' (7#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:8]
+INFO: [Synth 8-638] synthesizing module 'parallel2serial__parameterized0' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:8]
+	Parameter P_CLK_FREQ bound to: 25 - type: integer 
+	Parameter S_CLK_FREQ bound to: 20 - type: integer 
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter CODE_ENDIAN bound to: 1 - type: integer 
+	Parameter COUNT_HALFCYCLE bound to: 1 - type: integer 
+	Parameter CYCLE_COUNT_BITS bound to: 1 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_CLEAR bound to: 1 - type: integer 
+	Parameter S_WORK bound to: 2 - type: integer 
+	Parameter S_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:100]
+INFO: [Synth 8-256] done synthesizing module 'parallel2serial__parameterized0' (7#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/parallel2serial.v:8]
+INFO: [Synth 8-256] done synthesizing module 'display' (8#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/display.v:8]
+WARNING: [Synth 8-350] instance 'DISPLAY' of module 'display' requires 14 connections, but only 12 given [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_top.v:80]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips.v:8]
+INFO: [Synth 8-638] synthesizing module 'mips_core' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_core.v:8]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/controller.v:8]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BRANCH bound to: 3 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_CP0 bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_ZERO bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SR bound to: 9 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter PC_EHBR bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'controller' (9#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/controller.v:8]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/datapath.v:8]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BRANCH bound to: 3 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_CP0 bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_ZERO bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SR bound to: 9 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter PC_EHBR bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'regfile' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/regfile.v:8]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (10#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/regfile.v:8]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/alu.v:8]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BRANCH bound to: 3 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_CP0 bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_ZERO bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SR bound to: 9 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter PC_EHBR bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/alu.v:19]
+INFO: [Synth 8-256] done synthesizing module 'alu' (11#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/alu.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/datapath.v:209]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (12#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/datapath.v:8]
+INFO: [Synth 8-638] synthesizing module 'cp0' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/cp0.v:8]
+	Parameter PC_NEXT bound to: 0 - type: integer 
+	Parameter PC_JUMP bound to: 1 - type: integer 
+	Parameter PC_JR bound to: 2 - type: integer 
+	Parameter PC_BRANCH bound to: 3 - type: integer 
+	Parameter EXE_A_RS bound to: 0 - type: integer 
+	Parameter EXE_A_SA bound to: 1 - type: integer 
+	Parameter EXE_A_LINK bound to: 2 - type: integer 
+	Parameter EXE_A_CP0 bound to: 3 - type: integer 
+	Parameter EXE_B_RT bound to: 0 - type: integer 
+	Parameter EXE_B_IMM bound to: 1 - type: integer 
+	Parameter EXE_B_LINK bound to: 2 - type: integer 
+	Parameter EXE_B_ZERO bound to: 3 - type: integer 
+	Parameter EXE_ALU_ADD bound to: 0 - type: integer 
+	Parameter EXE_ALU_SUB bound to: 1 - type: integer 
+	Parameter EXE_ALU_SLT bound to: 2 - type: integer 
+	Parameter EXE_ALU_LUI bound to: 3 - type: integer 
+	Parameter EXE_ALU_AND bound to: 4 - type: integer 
+	Parameter EXE_ALU_OR bound to: 5 - type: integer 
+	Parameter EXE_ALU_XOR bound to: 6 - type: integer 
+	Parameter EXE_ALU_NOR bound to: 7 - type: integer 
+	Parameter EXE_ALU_SL bound to: 8 - type: integer 
+	Parameter EXE_ALU_SR bound to: 9 - type: integer 
+	Parameter EXE_CP_NONE bound to: 0 - type: integer 
+	Parameter EXE_CP_STORE bound to: 1 - type: integer 
+	Parameter EXE_CP0_ERET bound to: 2 - type: integer 
+	Parameter WB_ADDR_RD bound to: 0 - type: integer 
+	Parameter WB_ADDR_RT bound to: 1 - type: integer 
+	Parameter WB_ADDR_LINK bound to: 2 - type: integer 
+	Parameter WB_DATA_ALU bound to: 0 - type: integer 
+	Parameter WB_DATA_MEM bound to: 1 - type: integer 
+	Parameter PC_RESET bound to: 0 - type: integer 
+	Parameter PC_EHBR bound to: 0 - type: integer 
+	Parameter INST_R bound to: 6'b000000 
+	Parameter R_FUNC_SLL bound to: 6'b000000 
+	Parameter R_FUNC_SRL bound to: 6'b000010 
+	Parameter R_FUNC_SRA bound to: 6'b000011 
+	Parameter R_FUNC_SLLV bound to: 6'b000100 
+	Parameter R_FUNC_SRLV bound to: 6'b000110 
+	Parameter R_FUNC_SRAV bound to: 6'b000111 
+	Parameter R_FUNC_JR bound to: 6'b001000 
+	Parameter R_FUNC_ADD bound to: 6'b100000 
+	Parameter R_FUNC_ADDU bound to: 6'b100001 
+	Parameter R_FUNC_SUB bound to: 6'b100010 
+	Parameter R_FUNC_SUBU bound to: 6'b100011 
+	Parameter R_FUNC_AND bound to: 6'b100100 
+	Parameter R_FUNC_OR bound to: 6'b100101 
+	Parameter R_FUNC_XOR bound to: 6'b100110 
+	Parameter R_FUNC_NOR bound to: 6'b100111 
+	Parameter R_FUNC_SLT bound to: 6'b101010 
+	Parameter R_FUNC_SLTU bound to: 6'b101011 
+	Parameter INST_J bound to: 6'b000010 
+	Parameter INST_JAL bound to: 6'b000011 
+	Parameter INST_BEQ bound to: 6'b000100 
+	Parameter INST_BNE bound to: 6'b000101 
+	Parameter INST_ADDI bound to: 6'b001000 
+	Parameter INST_ADDIU bound to: 6'b001001 
+	Parameter INST_SLTI bound to: 6'b001010 
+	Parameter INST_SLTIU bound to: 6'b001011 
+	Parameter INST_ANDI bound to: 6'b001100 
+	Parameter INST_ORI bound to: 6'b001101 
+	Parameter INST_XORI bound to: 6'b001110 
+	Parameter INST_LUI bound to: 6'b001111 
+	Parameter INST_CP0 bound to: 6'b010000 
+	Parameter CP_FUNC_MF bound to: 4'b0000 
+	Parameter CP_FUNC_MT bound to: 4'b0100 
+	Parameter CP0_CO_ERET bound to: 6'b011000 
+	Parameter INST_LW bound to: 6'b100011 
+	Parameter INST_SW bound to: 6'b101011 
+	Parameter GPR_ZERO bound to: 0 - type: integer 
+	Parameter GPR_AT bound to: 1 - type: integer 
+	Parameter GPR_V0 bound to: 2 - type: integer 
+	Parameter GPR_V1 bound to: 3 - type: integer 
+	Parameter GPR_A0 bound to: 4 - type: integer 
+	Parameter GPR_A1 bound to: 5 - type: integer 
+	Parameter GPR_A2 bound to: 6 - type: integer 
+	Parameter GPR_A3 bound to: 7 - type: integer 
+	Parameter GPR_T0 bound to: 8 - type: integer 
+	Parameter GPR_T1 bound to: 9 - type: integer 
+	Parameter GPR_T2 bound to: 10 - type: integer 
+	Parameter GPR_T3 bound to: 11 - type: integer 
+	Parameter GPR_T4 bound to: 12 - type: integer 
+	Parameter GPR_T5 bound to: 13 - type: integer 
+	Parameter GPR_T6 bound to: 14 - type: integer 
+	Parameter GPR_T7 bound to: 15 - type: integer 
+	Parameter GPR_S0 bound to: 16 - type: integer 
+	Parameter GPR_S1 bound to: 17 - type: integer 
+	Parameter GPR_S2 bound to: 18 - type: integer 
+	Parameter GPR_S3 bound to: 19 - type: integer 
+	Parameter GPR_S4 bound to: 20 - type: integer 
+	Parameter GPR_S5 bound to: 21 - type: integer 
+	Parameter GPR_S6 bound to: 22 - type: integer 
+	Parameter GPR_S7 bound to: 23 - type: integer 
+	Parameter GPR_T8 bound to: 24 - type: integer 
+	Parameter GPR_T9 bound to: 25 - type: integer 
+	Parameter GPR_K0 bound to: 26 - type: integer 
+	Parameter GPR_K1 bound to: 27 - type: integer 
+	Parameter GPR_GP bound to: 28 - type: integer 
+	Parameter GPR_SP bound to: 29 - type: integer 
+	Parameter GPR_FP bound to: 30 - type: integer 
+	Parameter GPR_RA bound to: 31 - type: integer 
+	Parameter CP0_EPCR bound to: 2 - type: integer 
+	Parameter CP0_EHBR bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cp0' (13#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/cp0.v:8]
+INFO: [Synth 8-256] done synthesizing module 'mips_core' (14#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_core.v:8]
+INFO: [Synth 8-638] synthesizing module 'inst_rom' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/inst_rom.v:1]
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'inst_mem.hex' is read successfully [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/inst_rom.v:13]
+INFO: [Synth 8-256] done synthesizing module 'inst_rom' (15#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/inst_rom.v:1]
+INFO: [Synth 8-638] synthesizing module 'data_ram' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/data_ram.v:1]
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'data_mem.hex' is read successfully [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/data_ram.v:15]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (16#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/data_ram.v:1]
+INFO: [Synth 8-256] done synthesizing module 'mips' (17#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips.v:8]
+INFO: [Synth 8-638] synthesizing module 'vga' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga.v:1]
+INFO: [Synth 8-256] done synthesizing module 'vga' (18#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_debug' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_debug.v:21]
+INFO: [Synth 8-638] synthesizing module 'pc_vga_8x16_00_7F' [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_8x16.v:2]
+INFO: [Synth 8-638] synthesizing module 'RAMB16_S1' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:29734]
+	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111101000000110000001100110011011110110000001100000011010010110000001011111100000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000001111110111111111111111111100111110000111111111111111111110110111111111101111110000000000000000000000000000000000000000000000000000100000011100001111100111111101111111011111110111111100110110000000000000000000000000000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000100000011100001111100111111100111110000111000000100000000000000000000000000000000000000000000000000000000000000000000001111000001100000011000111001111110011111100111001111000011110000011000000000000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000111100000110000001100001111110111111111111111101111110001111000001100000000000000000000000000000000000000000000000000000000000000000000000000000011000001111000011110000011000000000000000000000000000000000000000000000000000 
+	Parameter INIT_04 bound to: 256'b1111111111111111111111111111111111111111111111111110011111000011110000111110011111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000011110001100110010000100100001001100110001111000000000000000000000000000000000000000000 
+	Parameter INIT_05 bound to: 256'b1111111111111111111111111111111111111111110000111001100110111101101111011001100111000011111111111111111111111111111111111111111100000000000000000000000000000000011110001100110011001100110011001100110001111000001100100001101000001110000111100000000000000000 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000011000000110000111111000011000001111000110011001100110011001100110011000111100000000000000000000000000000000000000000000000000111000001111000001110000001100000011000000110000001100000011111100110011001111110000000000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000001100000011100110111001110110011101100011011000110110001101100011011111110110001101111111000000000000000000000000000000000000000000000000000110000001100011011011001111001110011100111100110110110001100000011000000000000000000000000000 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000010000000110000001110000011110000111110001111111011111000111100001110000011000000100000000000000000000000000000000000000000000000000000100000011000001110000111100011111011111110001111100001111000001110000001100000001000000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000110000011110001111110000110000001100000011000011111100011110000011000000000000000000000000000000000000000000000000000011001100110011000000000011001100110011001100110011001100110011001100110011001100000000000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000011011000110110001101100011011000110110111101111011011110110111101101101111111000000000000000000000000000000000000000001111100110001100000110000111000011011001100011011000110011011000011100001100000110001100111110000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000011111110111111101111111011111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100001100000111100011111100001100000011000000110000111111000111100000110000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001100000011000011111100011110000011000000000000000000000000000000000000000000000000000000110000011110001111110000110000001100000011000000110000001100000011000000110000000000000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000001100000001100111111100000110000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000011000001111111001100000001100000000000000000000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000001111111011000000110000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100100011001101111111101100110001001000000000000000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000111111101111111001111100011111000011100000111000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000111000001110000111110001111100111111101111111000000000000000000000000000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001100000000000000110000001100000011000001111000011110000111100000110000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001001000110011001100110011001100000000000000000000000000000000000000000011011000110110011111110011011000110110001101100111111100110110001101100000000000000000000000000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000110000001100001111100110001101000011000000110000001100111110011000000110000101100011001111100000110000001100000000000000000000000000000000000100001101100011001100000001100000001100000001100110001101100001000000000000000000000000000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000001110110110011001100110011001100110111000111011000111000011011000110110000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000110000001100000011000000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000001100000110000011000000110000001100000011000000110000001100000001100000001100000000000000000000000000000000000000000000000000001100000001100000001100000011000000110000001100000011000000110000011000001100000000000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000110011000111100111111110011110001100110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000110000111111000011000000110000000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000011000000011000000110000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000011000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000001100000001100000001100000001100000001100000001100000001000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000001111100110001101100011011100110111101101101111011001110110001101100011001111100000000000000000000000000000000000000000000000000011111100001100000011000000110000001100000011000000110000111100000111000000110000000000000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000011111110110001101100000001100000001100000001100000001100000001101100011001111100000000000000000000000000000000000000000000000000011111001100011000000110000001100000011000111100000001100000011011000110011111000000000000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000011110000011000000110000001100111111101100110001101100001111000001110000001100000000000000000000000000000000000000000000000000011111001100011000000110000001100000011011111100110000001100000011000000111111100000000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000001111100110001101100011011000110110001101111110011000000110000000110000000111000000000000000000000000000000000000000000000000000001100000011000000110000001100000001100000001100000001100000011011000110111111100000000000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000001111100110001101100011011000110110001100111110011000110110001101100011001111100000000000000000000000000000000000000000000000000011110000000110000000110000001100000011001111110110001101100011011000110011111000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000110000001100000000000000000000000000000011000000110000000000000000000000000000000000000000000000000000000000000000000001100000001100000011000000000000000000000000000000110000001100000000000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000110000011000001100000110000011000000011000000011000000011000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100000000000000000011111100000000000000000000000000000000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000001100000001100000001100000001100000001100000110000011000001100000110000000000000000000000000000000000000000000000000000000000000000110000001100000000000000110000001100000011000000011001100011011000110011111000000000000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000001111100110000001101110011011110110111101101111011000110110001101100011001111100000000000000000000000000000000000000000000000000110001101100011011000110110001101111111011000110110001100110110000111000000100000000000000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000011111100011001100110011001100110011001100111110001100110011001100110011011111100000000000000000000000000000000000000000000000000001111000110011011000010110000001100000011000000110000001100001001100110001111000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000011111000011011000110011001100110011001100110011001100110011001100110110011111000000000000000000000000000000000000000000000000000111111100110011001100010011000000110100001111000011010000110001001100110111111100000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000011110000011000000110000001100000011010000111100001101000011000100110011011111110000000000000000000000000000000000000000000000000001110100110011011000110110001101101111011000000110000001100001001100110001111000000000000000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000011000110110001101100011011000110110001101111111011000110110001101100011011000110000000000000000000000000000000000000000000000000001111000001100000011000000110000001100000011000000110000001100000011000001111000000000000000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000001111000110011001100110011001100000011000000110000001100000011000000110000011110000000000000000000000000000000000000000000000000111001100110011001100110011011000111100001111000011011000110011001100110111001100000000000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000011111110011001100110001001100000011000000110000001100000011000000110000011110000000000000000000000000000000000000000000000000000110000111100001111000011110000111100001111011011111111111111111111100111110000110000000000000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000011000110110001101100011011000110110011101101111011111110111101101110011011000110000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110110001101100011011000110011111000000000000000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000011110000011000000110000001100000011000000111110001100110011001100110011011111100000000000000000000000000000000000000111000001100011111001101111011010110110001101100011011000110110001101100011011000110011111000000000000000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000011100110011001100110011001100110011011000111110001100110011001100110011011111100000000000000000000000000000000000000000000000000011111001100011011000110000001100000110000111000011000001100011011000110011111000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000111100000110000001100000011000000110000001100000011000100110011101101111111111000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110110001101100011011000110110001100000000000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000011000001111000110011011000011110000111100001111000011110000111100001111000011000000000000000000000000000000000000000000000000011001100110011011111111110110111101101111000011110000111100001111000011110000110000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000011000011110000110110011000111100000110000001100000111100011001101100001111000011000000000000000000000000000000000000000000000000001111000001100000011000000110000001100000111100011001101100001111000011110000110000000000000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000011111111110000111100000101100000001100000001100000001100100001101100001111111111000000000000000000000000000000000000000000000000001111000011000000110000001100000011000000110000001100000011000000110000001111000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000010000001100000111000011100001110000111000011100000110000001000000000000000000000000000000000000000000000000000000000000000001111000000110000001100000011000000110000001100000011000000110000001100001111000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100011001101100001110000001000000000000000000001111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000001100000011000000000000000000000000000000000000011101101100110011001100110011000111110000001100011110000000000000000000000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000001111100011001100110011001100110011001100110110001111000011000000110000011100000000000000000000000000000000000000000000000000000011111001100011011000000110000001100000011000110011111000000000000000000000000000000000000000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000001110110110011001100110011001100110011000110110000111100000011000000110000011100000000000000000000000000000000000000000000000000011111001100011011000000110000001111111011000110011111000000000000000000000000000000000000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000011110000011000000110000001100000011000001111000001100000011001000110110000111000000000000000000000000000011110001100110000001100011111001100110011001100110011001100110011001100011101100000000000000000000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000011100110011001100110011001100110011001100111011001101100011000000110000011100000000000000000000000000000000000000000000000000000001111000001100000011000000110000001100000011000001110000000000000011000000110000000000000000000 
+	Parameter INIT_35 bound to: 256'b0000000000111100011001100110011000000110000001100000011000000110000001100000011000001110000000000000011000000110000000000000000000000000000000000000000000000000111001100110011001101100011110000111100001101100011001100110000001100000111000000000000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000111100000110000001100000011000000110000001100000011000000110000001100000111000000000000000000000000000000000000000000000000000110110111101101111011011110110111101101111111111111001100000000000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000001100110011001100110011001100110011001100110011011011100000000000000000000000000000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110011111000000000000000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000011110000011000000110000001111100011001100110011001100110011001100110011011011100000000000000000000000000000000000000000000000000000111100000110000001100011111001100110011001100110011001100110011001100011101100000000000000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000011110000011000000110000001100000011001100111011011011100000000000000000000000000000000000000000000000000000000000000000000000000011111001100011000001100001110000110000011000110011111000000000000000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000011100001101100011000000110000001100000011000011111100001100000011000000010000000000000000000000000000000000000000000000000000011101101100110011001100110011001100110011001100110011000000000000000000000000000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000011000001111000110011011000011110000111100001111000011000000000000000000000000000000000000000000000000000000000000000000000000011001101111111111011011110110111100001111000011110000110000000000000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000011000011011001100011110000011000001111000110011011000011000000000000000000000000000000000000000000000000111110000000110000000110011111101100011011000110110001101100011011000110110001100000000000000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000011111110110001100110000000110000000110001100110011111110000000000000000000000000000000000000000000000000000000000000000000000000000011100001100000011000000110000001100001110000000110000001100000011000000011100000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000000000000011000000110000001100000011000000000000000000000000000000000000000000000000000011100000001100000011000000110000001100000001110000110000001100000011000011100000000000000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001101110001110110000000000000000000000000000000000000000000000000000000001111111011000110110001101100011001101100001110000001000000000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'RAMB16_S1' (19#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:29734]
+INFO: [Synth 8-256] done synthesizing module 'pc_vga_8x16_00_7F' (20#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_8x16.v:2]
+INFO: [Synth 8-256] done synthesizing module 'vga_debug' (21#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/vga_debug.v:21]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (22#1) [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/mips_top.v:8]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 281.293 ; gain = 66.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 281.293 ; gain = 66.734
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'VGA_DEBUG/FONT_8X16/BRAM_PC_VGA_0' of type 'RAMB18E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/kintex7/kintex7/xc7k325t/ffg676/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/kintex7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/archlabs/lab06/lab06.srcs/constrs_1/imports/constrs/sword4.xdc]
+Finished Parsing XDC File [C:/archlabs/lab06/lab06.srcs/constrs_1/imports/constrs/sword4.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+  RAMB16_S1 => RAMB18E1: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 652.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'btn_x_reg' in module 'btn_scan'
+ROM "result" won't be mapped to RAM because it is too sparse.
+ROM "btn_x" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'parallel2serial'
+ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'parallel2serial__parameterized0'
+ROM "next_state" won't be mapped to RAM because it is too sparse.
+ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5) 
+ROM "next_state" won't be mapped to RAM because it is too sparse.
+ROM "pc_src" won't be mapped to RAM because it is too sparse.
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM "exe_a_src" won't be mapped to RAM because it is too sparse.
+ROM "exe_a_src" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM "exe_cp_oper" won't be mapped to RAM because it is too sparse.
+ROM "exe_cp_oper" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+ROM "wb_data_src" won't be mapped to RAM because it is too sparse.
+ROM "mem_wen" won't be mapped to RAM because it is too sparse.
+ROM "wb_addr_src" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "wb_wen" won't be mapped to RAM because it is too sparse.
+ROM "rs_used" won't be mapped to RAM because it is too sparse.
+ROM "unrecognized" won't be mapped to RAM because it is too sparse.
+ROM "unrecognized" won't be mapped to Block RAM because address size (4) smaller than threshold (5) 
+ROM "unrecognized" won't be mapped to RAM because it is too sparse.
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/archlabs/lab06/lab06.srcs/sources_1/imports/sources/alu.v:19]
+ROM "epcr" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "data" won't be mapped to RAM because it is too sparse.
+ROM "v_count" won't be mapped to RAM because it is too sparse.
+ROM "ascii_code" won't be mapped to Block RAM because address size (3) smaller than threshold (5) 
+INFO: [Synth 8-3354] encoded FSM with state register 'btn_x_reg' using encoding 'one-hot' in module 'btn_scan'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'parallel2serial'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'parallel2serial__parameterized0'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	               57 Bit    Registers := 1     
+	               32 Bit    Registers := 21    
+	               20 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 37    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+	              992 Bit         RAMs := 1     
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   4 Input     65 Bit        Muxes := 1     
+	   4 Input     56 Bit        Muxes := 1     
+	  25 Input     55 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 23    
+	  11 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 5     
+	  65 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 11    
+	  16 Input      7 Bit        Muxes := 8     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 17    
+	   4 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   4 Input      1 Bit        Muxes := 10    
+	  17 Input      1 Bit        Muxes := 8     
+	  18 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mips_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module clk_diff 
+Detailed RTL Component Info : 
+Module my_clk_gen 
+Detailed RTL Component Info : 
+Module btn_scan 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+Module parallel2serial 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   4 Input     17 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 5     
+Module parallel2serial__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               65 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   4 Input     65 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 5     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 8     
+	  16 Input      7 Bit        Muxes := 8     
+Module controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  18 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	  17 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 8     
+	  18 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 3     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	              992 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  11 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 18    
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   4 Input     32 Bit        Muxes := 5     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cp0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module mips_core 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module inst_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  65 Input     32 Bit        Muxes := 1     
+Module data_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mips 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module pc_vga_8x16_00_7F 
+Detailed RTL Component Info : 
+Module vga_debug 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               57 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              128 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     56 Bit        Muxes := 1     
+	  25 Input     55 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "v_count" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 652.172 ; gain = 437.613
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3969] The signal DATA_RAM/data_reg was recognized as a RAM template for dedicated block RAM(s) but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (5 address bits)* is shallow.
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++------------+-------------------+------------------------+---+---+------------------------+---+---+---------+--------+--------+-------------------------+
+|Module Name | RTL Object        | PORT A (depth X width) | W | R | PORT B (depth X width) | W | R | OUT_REG | RAMB18 | RAMB36 | Hierarchical Name       | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+---------+--------+--------+-------------------------+
+|mips        | DATA_RAM/data_reg | 32 X 32(READ_FIRST)    | W | R |                        |   |   | Port A  | 1      | 0      | mips_top/mips/extram__5 | 
++------------+-------------------+------------------------+---+---+------------------------+---+---+---------+--------+--------+-------------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+Distributed RAM: 
++------------+------------------------+--------------------+----------------------+---------------+-------------------------------+
+|Module Name | RTL Object             | Inference Criteria | Size (depth X width) | Primitives    | Hierarchical Name             | 
++------------+------------------------+--------------------+----------------------+---------------+-------------------------------+
+|datapath    | REGFILE/regfile_reg    | Implied            | 32 X 32              | RAM32M x 18   | mips_top/mips/datapath/ram__3 | 
+|mips_top    | VGA_DEBUG/data_buf_reg | Implied            | 4 X 32               | RAM32M x 6    | mips_top/ram__4               | 
++------------+------------------------+--------------------+----------------------+---------------+-------------------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPS/\INST_ROM/out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_LED/cycle_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/cycle_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (MIPS/\MIPS_CORE/DATAPATH /\inst_data_exe_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\DISPLAY/P2S_SEG/buff_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[18] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[17] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[15] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[14] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[13] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[12] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[11] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[10] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[9] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[8] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[7] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[6] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[5] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[4] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[3] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[2] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[1] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\BTN_SCAN/result_reg[0] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_LED/cycle_count_reg[0] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/cycle_count_reg[0] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/buff_reg[5] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/buff_reg[4] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/buff_reg[3] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/buff_reg[2] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/buff_reg[1] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/buff_reg[0] ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_LED/s_clr_reg ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\DISPLAY/P2S_SEG/s_clr_reg ) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[17] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[15] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[14] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[13] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[10] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[9] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[8] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[7] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[6] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[4] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[3] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\inst_data_id_reg[1] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[30] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[29] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[28] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[27] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[26] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[25] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[23] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[22] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[21] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[18] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\data_imm_exe_reg[16] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_wen_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_wen_mem_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_ren_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (mem_ren_mem_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (wb_data_src_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (wb_data_src_mem_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (wb_data_src_wb_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[31] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[30] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[29] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[28] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[27] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[26] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[25] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[24] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[23] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[22] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[21] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[20] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[19] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[18] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[17] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[16] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[15] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[14] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[13] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[12] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[11] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[10] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[9] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[8] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[7] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[6] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[5] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[4] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[3] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[2] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[1] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (\mem_din_wb_reg[0] ) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (fwd_m_exe_reg) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (fwd_m_mem_reg) is unused and will be removed from module datapath.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 652.172 ; gain = 437.613
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 652.172 ; gain = 437.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \MIPS/DATA_RAM/data_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \MIPS/DATA_RAM/data_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 678.563 ; gain = 464.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop VGA_DEBUG/ascii_code_reg[0] is being inverted and renamed to VGA_DEBUG/ascii_code_reg[0]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 678.563 ; gain = 464.004
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 678.563 ; gain = 464.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 678.563 ; gain = 464.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                     | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mips_top    | DISPLAY/P2S_LED/buff_reg[13] | 6      | 1     | YES          | NO                 | NO                | 1      | 0       | 
+|mips_top    | DISPLAY/P2S_SEG/buff_reg[61] | 6      | 7     | YES          | NO                 | NO                | 7      | 0       | 
++------------+------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     5|
+|2     |CARRY4     |    54|
+|3     |INV        |     2|
+|4     |LUT1       |    60|
+|5     |LUT2       |   114|
+|6     |LUT3       |    85|
+|7     |LUT4       |   241|
+|8     |LUT5       |   402|
+|9     |LUT6       |   824|
+|10    |MMCME2_ADV |     1|
+|11    |MUXF7      |    64|
+|12    |MUXF8      |     1|
+|13    |RAM32M     |    24|
+|14    |RAMB16_S1  |     1|
+|15    |RAMB18E1   |     1|
+|16    |SRL16E     |     8|
+|17    |FDRE       |   761|
+|18    |FDSE       |    26|
+|19    |IBUF       |    11|
+|20    |IBUFGDS    |     1|
+|21    |OBUF       |    25|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------+--------------------------------+------+
+|      |Instance         |Module                          |Cells |
++------+-----------------+--------------------------------+------+
+|1     |top              |                                |  2711|
+|2     |  BTN_SCAN       |btn_scan                        |    58|
+|3     |  CLK_DIFF       |clk_diff                        |     1|
+|4     |  CLK_GEN        |my_clk_gen                      |     6|
+|5     |  DISPLAY        |display                         |   200|
+|6     |    P2S_LED      |parallel2serial                 |    52|
+|7     |    P2S_SEG      |parallel2serial__parameterized0 |    98|
+|8     |  MIPS           |mips                            |  1949|
+|9     |    DATA_RAM     |data_ram                        |     1|
+|10    |    INST_ROM     |inst_rom                        |    17|
+|11    |    MIPS_CORE    |mips_core                       |  1930|
+|12    |      CONTROLLER |controller                      |     1|
+|13    |      CP0        |cp0                             |   134|
+|14    |      DATAPATH   |datapath                        |  1795|
+|15    |        ALU      |alu                             |    70|
+|16    |        REGFILE  |regfile                         |   367|
+|17    |  VGA            |vga                             |   334|
+|18    |  VGA_DEBUG      |vga_debug                       |   105|
+|19    |    FONT_8X16    |pc_vga_8x16_00_7F               |     2|
++------+-----------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 678.563 ; gain = 464.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 198 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:54 . Memory (MB): peak = 678.563 ; gain = 93.125
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 678.563 ; gain = 464.004
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'MIPS/DATA_RAM/data_reg' of type 'RAMB18E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+INFO: [Netlist 29-17] Analyzing 93 Unisim elements for replacement
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'VGA_DEBUG/FONT_8X16/BRAM_PC_VGA_0' of type 'RAMB18E1' is 'VIRTEX6'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist or constraint file.
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 36 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 26 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 18 instances
+  RAMB16_S1 => RAMB18E1: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 678.563 ; gain = 464.004
+# write_checkpoint -noxdef mips_top.dcp
+# catch { report_utilization -file mips_top_utilization_synth.rpt -pb mips_top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 678.563 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 22 22:11:38 2019...

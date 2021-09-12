@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 17:04:14 2021
+# Process ID: 15136
+# Current directory: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10492 C:\Users\liang\Desktop\OrgLab\reference\Lab05流水线\Lab05-1 流水线处理器集成  (学生版）\OExp05-Pipeline_CPU\VGA\VGA.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/VGA.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

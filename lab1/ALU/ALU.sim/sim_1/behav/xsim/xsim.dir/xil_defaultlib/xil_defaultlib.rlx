@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+,,,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v,,ALU_wrapper,,,,,,,,
+,,,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v,,ALU_util_vector_logic_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v,1621334187,verilog,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v,,ALU_xlconcat_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v,1621334187,verilog,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v,,ALU_xlconstant_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v,1621339573,verilog,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v,,ALU_xlslice_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v,1621338966,verilog,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v,,ALU_xlslice_0_1,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v,1621338966,verilog,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v,,ALU_xlslice_2_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v,1621338965,verilog,,C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v,,ALU,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+,,,,,,ALU_tb,,,,,,,,

@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 02:14:57 2021
+# Process ID: 10088
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7068 C:\Users\liang\Desktop\OrgLab\lab4\SOC\SOC.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/SOC/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.xpr
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:VGA_orig:1.0 VGA_orig_0
+endgroup
+set_property location {12 4478 372} [get_bd_cells VGA_orig_0]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  CSSTE_VGA_orig_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips CSSTE_VGA_orig_0_0] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins VGA_orig_0/clk_25m] [get_bd_pins div1/Dout]
+connect_bd_net [get_bd_ports clk_100mhz] [get_bd_pins VGA_orig_0/clk_100m]
+connect_bd_net [get_bd_pins VGA_orig_0/rst] [get_bd_pins U9/rst]
+delete_bd_objs [get_bd_nets pCPU_0_PC_id] [get_bd_nets pCPU_0_MemRW] [get_bd_nets pCPU_0_PC_ex] [get_bd_nets VGA_0_hs] [get_bd_nets VGA_0_vs] [get_bd_nets VGA_0_vga_b] [get_bd_nets pCPU_0_inst_id] [get_bd_nets pCPU_0_Wt_data] [get_bd_nets VGA_0_vga_g] [get_bd_nets pCPU_0_PC_if] [get_bd_nets pCPU_0_inst_if] [get_bd_nets VGA_0_vga_r] [get_bd_cells VGA_0]
+set_property location {11.5 4257 670} [get_bd_cells VGA_orig_0]
+connect_bd_net [get_bd_pins VGA_orig_0/hs] [get_bd_pins VGA_orig_0/pc]
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:SCPUC:1.0 SCPUC_0
+endgroup
+set_property location {11 4074 688} [get_bd_cells SCPUC_0]
+connect_bd_net [get_bd_pins SCPUC_0/CPU_MIO] [get_bd_pins VGA_orig_0/mem_wen]
+undo
+connect_bd_net [get_bd_pins SCPUC_0/Addr_out] [get_bd_pins VGA_orig_0/alu_res]
+connect_bd_net [get_bd_pins SCPUC_0/PC_out] [get_bd_pins VGA_orig_0/pc]
+connect_bd_net [get_bd_pins SCPUC_0/Inst_in] [get_bd_pins VGA_orig_0/inst]
+connect_bd_net [get_bd_pins SCPUC_0/Data_out] [get_bd_pins VGA_orig_0/dmem_o_data]
+connect_bd_net [get_bd_pins SCPUC_0/clk] [get_bd_pins U8/Clk_CPU]
+connect_bd_net [get_bd_pins SCPUC_0/rst] [get_bd_pins U9/rst]
+connect_bd_net [get_bd_pins SCPUC_0/Data_in] [get_bd_pins RAM_B_0/douta]
+connect_bd_net [get_bd_pins SCPUC_0/Inst_in] [get_bd_pins U2/spo]
+delete_bd_objs [get_bd_cells pCPU_0]
+set_property location {10 3533 693} [get_bd_cells SCPUC_0]
+set_property location {9.5 3438 668} [get_bd_cells SCPUC_0]
+set_property location {7.5 2566 512} [get_bd_cells SCPUC_0]
+connect_bd_net [get_bd_pins SCPUC_0/MemRW] [get_bd_pins RAM_B_0/wea]
+connect_bd_net [get_bd_pins SCPUC_0/Addr_out] [get_bd_pins U4/addr_bus]
+connect_bd_net [get_bd_pins SCPUC_0/Data_out] [get_bd_pins U4/Cpu_data2bus]
+connect_bd_net [get_bd_pins SCPUC_0/PC_out] [get_bd_pins U5/data7]
+connect_bd_net [get_bd_ports HSYNC] [get_bd_pins VGA_orig_0/hs]
+connect_bd_net [get_bd_ports VSYNC] [get_bd_pins VGA_orig_0/vs]
+connect_bd_net [get_bd_ports Red] [get_bd_pins VGA_orig_0/vga_r]
+connect_bd_net [get_bd_ports Green] [get_bd_pins VGA_orig_0/vga_g]
+connect_bd_net [get_bd_ports Blue] [get_bd_pins VGA_orig_0/vga_b]
+connect_bd_net [get_bd_pins SCPUC_0/MemRW] [get_bd_pins VGA_orig_0/mem_wen]
+connect_bd_net [get_bd_pins VGA_orig_0/dmem_addr] [get_bd_pins SCPUC_0/Addr_out]
+delete_bd_objs [get_bd_nets SCPUC_0_Addr_out]
+startgroup
+connect_bd_net [get_bd_pins SCPUC_0/MIO_ready] [get_bd_pins SCPUC_0/INT0]
+endgroup
+undo
+delete_bd_objs [get_bd_nets SCPUC_0_Data_out]
+connect_bd_net [get_bd_pins SCPUC_0/CPU_MIO] [get_bd_pins SCPUC_0/INT0]
+undo
+connect_bd_net [get_bd_pins SCPUC_0/Data_out] [get_bd_pins VGA_orig_0/dmem_i_data]
+connect_bd_net [get_bd_pins SCPUC_0/Addr_out] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins RAM_B_0/dina] [get_bd_pins SCPUC_0/Data_out]
+connect_bd_net [get_bd_pins VGA_orig_0/dmem_o_data] [get_bd_pins RAM_B_0/douta]
+connect_bd_net [get_bd_pins VGA_orig_0/alu_res] [get_bd_pins SCPUC_0/Addr_out]
+connect_bd_net [get_bd_pins VGA_orig_0/dmem_addr] [get_bd_pins SCPUC_0/Addr_out]
+connect_bd_net [get_bd_pins U5/data4] [get_bd_pins SCPUC_0/Addr_out]
+connect_bd_net [get_bd_pins U4/addr_bus] [get_bd_pins SCPUC_0/Addr_out]
+connect_bd_net [get_bd_pins U5/data5] [get_bd_pins SCPUC_0/Data_out]
+connect_bd_net [get_bd_pins U4/Cpu_data2bus] [get_bd_pins SCPUC_0/Data_out]
+connect_bd_net [get_bd_pins U5/data6] [get_bd_pins RAM_B_0/douta]
+connect_bd_net [get_bd_pins U4/Cpu_data4bus] [get_bd_pins SCPUC_0/INT0]
+undo
+connect_bd_net [get_bd_pins U4/data_ram_we] [get_bd_pins SCPUC_0/INT0]
+undo
+connect_bd_net [get_bd_pins U4/Cpu_data4bus] [get_bd_pins SCPUC_0/INT0]
+undo
+set_property location {3 985 537} [get_bd_cells SCPUC_0]
+set_property location {3 833 384} [get_bd_cells SCPUC_0]
+set_property location {3 922 256} [get_bd_cells SCPUC_0]
+connect_bd_net [get_bd_pins BTN_OK0/Dout] [get_bd_pins SCPUC_0/INT0]
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1
+endgroup
+set_property location {3 498 222} [get_bd_cells xlslice_1]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins xlslice_1/Din]
+undo
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins SCPUC_0/INT0]
+startgroup
+set_property -dict [list CONFIG.DIN_TO {1} CONFIG.DIN_FROM {1} CONFIG.DIN_WIDTH {4} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_1]
+endgroup
+connect_bd_net [get_bd_pins xlslice_1/Din] [get_bd_pins U9/BTN_OK]
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+startgroup
+set_property -dict [list CONFIG.coefficient_file {C:/Users/liang/Desktop/OrgLab/lab4/inter_mem.coe}] [get_bd_cells U2]
+endgroup
+save_bd_design
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

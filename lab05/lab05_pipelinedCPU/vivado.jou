@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 16:52:50 2021
+# Process ID: 18212
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11620 C:\Users\liang\Desktop\OrgLab\lab05\lab05_pipelinedCPU\lab05_pipelinedCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP C:/Users/liang/Desktop/OrgLab/lab05
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP C:/Users/liang/Desktop/OrgLab/lab05
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP C:/Users/liang/Desktop/OrgLab/lab05
+ipx::edit_ip_in_project -upgrade true -name edit_ip_project -directory C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.tmp c:/Users/liang/Desktop/OrgLab/lab05/component.xml
+ipx::current_core c:/Users/liang/Desktop/OrgLab/lab05/component.xml
+update_compile_order -fileset sources_1
+close_project

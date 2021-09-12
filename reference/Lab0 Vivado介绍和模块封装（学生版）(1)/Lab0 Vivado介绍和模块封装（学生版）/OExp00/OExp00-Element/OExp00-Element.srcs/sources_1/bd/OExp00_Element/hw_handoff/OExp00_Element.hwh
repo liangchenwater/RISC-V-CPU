@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Feb 26 20:13:35 2021" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="kintex7" DEVICE="7k160t" NAME="OExp00_Element" PACKAGE="ffg676" SPEEDGRADE="-2L"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/Ext_imm16_0" HWVERSION="1.0" INSTANCE="Ext_imm16_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Ext_imm16" VLNV="xilinx.com:user:Ext_imm16:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_Ext_imm16_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="31" NAME="Imm_32" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="imm_16" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX2T1_32_0" HWVERSION="1.0" INSTANCE="MUX2T1_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX2T1_32" VLNV="xilinx.com:user:MUX2T1_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX2T1_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="s" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="o" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX2T1_5_0" HWVERSION="1.0" INSTANCE="MUX2T1_5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX2T1_5" VLNV="xilinx.com:user:MUX2T1_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX2T1_5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="s" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="4" NAME="o" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX2T1_64_0" HWVERSION="1.0" INSTANCE="MUX2T1_64_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX2T1_64" VLNV="xilinx.com:user:MUX2T1_64:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX2T1_64_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="sel" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="63" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="63" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="63" NAME="o" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX2T1_8_0" HWVERSION="1.0" INSTANCE="MUX2T1_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX2T1_8" VLNV="xilinx.com:user:MUX2T1_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX2T1_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="s" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="o" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX4T1_32_0" HWVERSION="1.0" INSTANCE="MUX4T1_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX4T1_32" VLNV="xilinx.com:user:MUX4T1_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX4T1_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="s" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX4T1_5_0" HWVERSION="1.0" INSTANCE="MUX4T1_5_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX4T1_5" VLNV="xilinx.com:user:MUX4T1_5:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX4T1_5_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="I2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="4" NAME="I3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="4" NAME="o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="1" NAME="s" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX8T1_32_0" HWVERSION="1.0" INSTANCE="MUX8T1_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX8T1_32" VLNV="xilinx.com:user:MUX8T1_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX8T1_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I4" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I5" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I6" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="I7" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="s" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUX8T1_8_0" HWVERSION="1.0" INSTANCE="MUX8T1_8_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUX8T1_8" VLNV="xilinx.com:user:MUX8T1_8:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_MUX8T1_8_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="I0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I4" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I5" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I6" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="I7" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="o" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="s" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/SignalExt_32_0" HWVERSION="1.0" INSTANCE="SignalExt_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SignalExt_32" VLNV="xilinx.com:user:SignalExt_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_SignalExt_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="S" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="So" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/add_32_0" HWVERSION="1.0" INSTANCE="add_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="add_32" VLNV="xilinx.com:user:add_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_add_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="a" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="b" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="c" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/addc_32_0" HWVERSION="1.0" INSTANCE="addc_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="addc_32" VLNV="xilinx.com:user:addc_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_addc_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="C0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="32" NAME="S" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/and32_0" HWVERSION="1.0" INSTANCE="and32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="and32" VLNV="xilinx.com:user:and32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_and32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/nor32_0" HWVERSION="1.0" INSTANCE="nor32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="nor32" VLNV="xilinx.com:user:nor32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_nor32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/or32_0" HWVERSION="1.0" INSTANCE="or32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="or32" VLNV="xilinx.com:user:or32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_or32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/or_bit_32_0" HWVERSION="1.0" INSTANCE="or_bit_32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="or_bit_32" VLNV="xilinx.com:user:or_bit_32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_or_bit_32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="o" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/srl32_0" HWVERSION="1.0" INSTANCE="srl32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="srl32" VLNV="xilinx.com:user:srl32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_srl32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xor32_0" HWVERSION="1.0" INSTANCE="xor32_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xor32" VLNV="xilinx.com:user:xor32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="OExp00_Element_xor32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="A" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="B" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="res" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

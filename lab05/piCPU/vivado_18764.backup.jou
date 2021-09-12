@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 25 16:11:17 2021
+# Process ID: 18764
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/piCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20372 C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/piCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.xpr
+update_compile_order -fileset sources_1

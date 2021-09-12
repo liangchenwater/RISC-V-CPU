@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 15:18:27 2021
+# Process ID: 19240
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19144 C:\Users\liang\Desktop\OrgLab\lab05\lab05_pipelinedCPU\lab05_pipelinedCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

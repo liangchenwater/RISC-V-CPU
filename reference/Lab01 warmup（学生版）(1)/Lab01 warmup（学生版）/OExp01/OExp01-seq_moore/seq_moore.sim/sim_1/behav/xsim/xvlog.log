@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/OExp_RISCV/OExp01/OExp01-seq_moore/seq_moore.srcs/sources_1/imports/RTL/seq_moore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/OExp_RISCV/OExp01/OExp01-seq_moore/seq_moore.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_seq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/OExp_RISCV/OExp01/OExp01-seq_moore/seq_moore.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

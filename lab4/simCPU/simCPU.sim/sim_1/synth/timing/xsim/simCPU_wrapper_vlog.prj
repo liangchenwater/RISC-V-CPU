@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"simCPU_wrapper_time_synth.v" \
+
+# Do not sort compile order
+nosort

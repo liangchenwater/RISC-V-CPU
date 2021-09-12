@@ -1,0 +1,47 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port s1 -pg 1 -y 240 -defaultsOSRD
+preplace portBus I0 -pg 1 -y 200 -defaultsOSRD
+preplace portBus I1 -pg 1 -y 220 -defaultsOSRD
+preplace portBus o_0 -pg 1 -y 280 -defaultsOSRD
+preplace portBus s2 -pg 1 -y 20 -defaultsOSRD
+preplace portBus s -pg 1 -y 0 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 3 -y 90 -defaultsOSRD
+preplace inst MUX2T1_5_0 -pg 1 -lvl 2 -y 220 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -y 400 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst MUX2T1_5_1 -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 6 -y 210 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 6 -y 310 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 4 -y 290 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 6 -y 120 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 1 -y 110 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 190 -defaultsOSRD
+preplace inst MUX8T1_8_0 -pg 1 -lvl 5 -y 250 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 4 -y 80 -defaultsOSRD
+preplace inst MUX4T1_5_1 -pg 1 -lvl 7 -y 280 -defaultsOSRD
+preplace netloc MUX8T1_8_0_o 1 5 1 920
+preplace netloc xlconstant_1_dout 1 6 1 1130J
+preplace netloc xlconstant_2_dout 1 4 1 740
+preplace netloc xlslice_3_Dout 1 6 1 1130
+preplace netloc xlslice_1_Dout 1 3 1 550
+preplace netloc MUX2T1_5_1_o 1 2 1 NJ
+preplace netloc I1_0_1 1 0 2 NJ 220 140
+preplace netloc s_0_2 1 0 2 NJ 240 NJ
+preplace netloc s_0_3 1 0 7 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 NJ 0 1140J
+preplace netloc s_0_4 1 0 5 NJ 20 NJ 20 NJ 20 NJ 20 740J
+preplace netloc xlconcat_1_dout 1 4 2 730 120 NJ
+preplace netloc xlconcat_0_dout 1 4 1 N
+preplace netloc xlconstant_0_dout 1 6 1 1130J
+preplace netloc xlslice_2_Dout 1 6 1 1120J
+preplace netloc MUX4T1_5_1_o 1 7 1 N
+preplace netloc MUX2T1_5_0_o 1 2 1 340J
+preplace netloc xlconstant_3_dout 1 1 1 NJ
+preplace netloc xlslice_0_Dout 1 3 1 540
+preplace netloc I0_0_1 1 0 2 NJ 200 130
+levelinfo -pg 1 -50 60 250 440 640 830 1020 1230 1340 -top -20 -bot 660
+",
+}
+0

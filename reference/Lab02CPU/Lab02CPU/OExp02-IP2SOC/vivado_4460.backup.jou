@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 12 19:45:48 2021
+# Process ID: 4460
+# Current directory: F:/项目/6 CPU--2020/计算机组成与设计 软硬件接口 第5版/计组 ZJU--RISCV版本/实验/实验2021.02_V1/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7128 F:\项目\6 CPU--2020\计算机组成与设计 软硬件接口 第5版\计组 ZJU--RISCV版本\实验\实验2021.02_V1\Lab02 CPU实验环境搭建（学生版）\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: F:/项目/6 CPU--2020/计算机组成与设计 软硬件接口 第5版/计组 ZJU--RISCV版本/实验/实验2021.02_V1/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/vivado.log
+# Journal file: F:/项目/6 CPU--2020/计算机组成与设计 软硬件接口 第5版/计组 ZJU--RISCV版本/实验/实验2021.02_V1/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/项目/6 CPU--2020/计算机组成与设计 软硬件接口 第5版/计组 ZJU--RISCV版本/实验/实验2021.02_V1/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/OExp02-IP2SOC.xpr}
+update_compile_order -fileset sources_1
+close_project
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_project

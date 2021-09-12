@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sun Jan 13 12:03:24 2019
+# Process ID: 4528
+# Log file: C:/archlabs/lab06/lab06.runs/impl_1/mips_top.vdi
+# Journal file: C:/archlabs/lab06/lab06.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source mips_top.tcl -notrace

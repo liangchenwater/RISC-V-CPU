@@ -1,0 +1,219 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 10 06:40:40 2021
+# Process ID: 15492
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab3/div32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8428 C:\Users\liang\Desktop\OrgLab\lab3\div32\div32.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab3/div32/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab3/div32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 56
+close_sim
+launch_simulation
+source div32_tb.tcl
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 56
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 56
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 56
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 56
+run all
+run all
+run all
+run all
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 56
+run all
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 56
+close_sim
+launch_simulation
+source div32_tb.tcl
+run all
+run all
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 56
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 87
+run all
+run all
+run all
+run all
+run all
+run all
+close_sim
+launch_simulation
+source div32_tb.tcl
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 87
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 87
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 87
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 87
+run all
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 87
+run 5 ns
+run 5 ns
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 70
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+run 5 ns
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+run 5 ns
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 70
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run all
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 56
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 56
+run 5 ns
+run 5 ns
+run 5 ns
+run all
+add_bp {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} 70
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+remove_bps -file {C:/Users/liang/Desktop/OrgLab/lab3/div32/div32.srcs/sources_1/new/div32.v} -line 70
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 5 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+run 10 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source div32_tb.tcl
+close_sim
+launch_simulation
+source div32_tb.tcl
+run all
+close_sim

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 12 13:55:03 2021
+# Process ID: 12832
+# Current directory: C:/Users/liang/Desktop/OrgLab/资料/Lab02 CPU实验环境搭建（学生版）/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11556 C:\Users\liang\Desktop\OrgLab\资料\Lab02 CPU实验环境搭建（学生版）\Lab02 CPU实验环境搭建（学生版）\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/资料/Lab02 CPU实验环境搭建（学生版）/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/资料/Lab02 CPU实验环境搭建（学生版）/Lab02 CPU实验环境搭建（学生版）/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 12 13:55:39 2021...

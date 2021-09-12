@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 10:26:49 2021
+# Process ID: 3788
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16208 C:\Users\liang\Desktop\OrgLab\lab05\lab05_pipelinedCPU\lab05_pipelinedCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v] -no_script -reset -force -quiet
+remove_files  C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v
+add_files -norecurse C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v] -no_script -reset -force -quiet
+remove_files  C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v
+close [ open C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v w ]
+add_files C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/stall.v w ]
+add_files C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/stall.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation

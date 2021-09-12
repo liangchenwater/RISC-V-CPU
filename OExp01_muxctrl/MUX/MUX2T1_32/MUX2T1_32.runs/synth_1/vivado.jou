@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Nov  9 15:28:45 2020
+# Process ID: 4044
+# Current directory: C:/Users/ASUS/Desktop/MUX2T1_32/MUX2T1_32.runs/synth_1
+# Command line: vivado.exe -log MUX2T1_32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MUX2T1_32.tcl
+# Log file: C:/Users/ASUS/Desktop/MUX2T1_32/MUX2T1_32.runs/synth_1/MUX2T1_32.vds
+# Journal file: C:/Users/ASUS/Desktop/MUX2T1_32/MUX2T1_32.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MUX2T1_32.tcl -notrace

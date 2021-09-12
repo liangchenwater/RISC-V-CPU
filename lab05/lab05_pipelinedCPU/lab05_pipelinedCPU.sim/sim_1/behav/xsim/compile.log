@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ex_reg_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Ex
+INFO: [VRFC 10-2458] undeclared symbol ALU_control_in_EX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_ID
+INFO: [VRFC 10-2458] undeclared symbol Inst_14_12, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:59]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rd_addr_out_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:64]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs1_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:65]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs2_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:66]
+ERROR: [VRFC 10-2865] module 'Pipeline_ID' ignored due to previous errors [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:23]

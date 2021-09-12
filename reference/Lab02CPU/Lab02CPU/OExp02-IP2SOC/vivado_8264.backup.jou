@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar 10 13:29:16 2021
+# Process ID: 8264
+# Current directory: C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12536 C:\Users\ASUS\Desktop\OExp_RISCV_W\OExp02\OExp02-IP2SOC\OExp02-IP2SOC.xpr
+# Log file: C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  CSSTE_VGA_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips CSSTE_VGA_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd]
+export_ip_user_files -of_objects [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -directory C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+set_property CONFIG.C_MEMORY_INIT_FILE [get_files font_8x16.mem] [get_ips xpm_mem_gen_top_0]
+import_files -norecurse {C:/Users/ASUS/Desktop/font_8x16.mem C:/Users/ASUS/Desktop/vga_debugger.mem}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+set_property -dict [list CONFIG.C_MEMORY_INIT_FILE {font_8x16.mem}] [get_ips xpm_mem_gen_top_0]
+export_ip_user_files -of_objects  [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/hdl/CSSTE_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/hdl/CSSTE_wrapper.v
+reset_target all [get_files  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -sync -no_script -force -quiet
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+set_property IS_MANAGED 0 [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/ip/CSSTE_VGA_0_0/CSSTE_VGA_0_0.xci]
+set_property IS_MANAGED 0 [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/ip/CSSTE_VGA_0_0/CSSTE_VGA_0_0.xci]
+generate_target all [get_files  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd]
+export_ip_user_files -of_objects [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -directory C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -top
+add_files -norecurse C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/hdl/CSSTE_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+close_project
+open_project C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+update_ip_catalog -rebuild
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/IP [current_project]
+update_ip_catalog
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  CSSTE_VGA_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips CSSTE_VGA_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd]
+export_ip_user_files -of_objects [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd] -directory C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+set_property USER_COMMENTS.comment_0 {Enter Comments here}  [current_bd_design]
+set_property USER_COMMENTS.comment_0 {BTN_OK[0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_1 {BTN_OK[0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_1 {~clk_100mhz}  [current_bd_design]
+set_property USER_COMMENTS.comment_2 {~clk_100mhz}  [current_bd_design]
+save_bd_design
+set_property USER_COMMENTS.comment_2 {~clk_cpu}  [current_bd_design]
+set_property USER_COMMENTS.comment_3 {~clk_100mhz}  [current_bd_design]
+set_property USER_COMMENTS.comment_3 {PC[11:2]}  [current_bd_design]
+set_property USER_COMMENTS.comment_4 {~clk_100mhz}  [current_bd_design]
+set_property USER_COMMENTS.comment_4 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_5 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_5 {clk_div[9]}  [current_bd_design]
+set_property USER_COMMENTS.comment_6 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_6 {clk_div[11]}  [current_bd_design]
+set_property USER_COMMENTS.comment_7 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_8 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_8 {clk_div[20]}  [current_bd_design]
+set_property USER_COMMENTS.comment_7 {clk_div[1]}  [current_bd_design]
+set_property USER_COMMENTS.comment_9 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_9 {{clk_div[31:0]£¬clk_div[31:0]}}  [current_bd_design]
+save_bd_design
+set_property USER_COMMENTS.comment_10 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {clk_div[25]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {sw[7:5]]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {64'b0}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {2'b0}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {clk_div[6]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {PC[31:2]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {PC[31:2]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+save_bd_design
+set_property USER_COMMENTS.comment_10 {PC[31:2]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {64'b0}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {inst[31:0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {Counter-out[31:0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {Counter_out[31:0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {Addr_out[31:0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {Data_out[31:0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {Data_in[31:0]}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {{2'b0,PC[31:2]}}  [current_bd_design]
+set_property USER_COMMENTS.comment_10 {PC[31:0]}  [current_bd_design]
+save_bd_design
+write_bd_layout -format pdf -orientation portrait -force C:/Users/ASUS/Desktop/CSSTE.pdf
+set_property USER_COMMENTS.comment_9 {{clk_div[31:0],clk_div[31:0]}}  [current_bd_design]
+save_bd_design
+write_bd_layout -format pdf -orientation portrait -force C:/Users/ASUS/Desktop/CSSTE.pdf
+write_bd_layout -format pdf -orientation portrait -force C:/Users/ASUS/Desktop/CSSTE.pdf
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+open_bd_design {C:/Users/ASUS/Desktop/OExp_RISCV_W/OExp02/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+close_project

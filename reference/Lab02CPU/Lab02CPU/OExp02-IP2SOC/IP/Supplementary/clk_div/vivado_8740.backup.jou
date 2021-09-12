@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Dec 15 11:47:25 2020
+# Process ID: 8740
+# Current directory: C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8428 C:\Users\ASUS\Desktop\OExp01\IP_Include\Supplementary\clk_div\clk_div.v.xpr
+# Log file: C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new/clk_div_tb.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new/clk_div_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source clk_div_tb.tcl
+restart
+run all
+close_sim

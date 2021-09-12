@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Dec 15 11:47:25 2020
+# Process ID: 8740
+# Current directory: C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8428 C:\Users\ASUS\Desktop\OExp01\IP_Include\Supplementary\clk_div\clk_div.v.xpr
+# Log file: C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/clk_div.v' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 751.098 ; gain = 88.930
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new/clk_div_tb.v w ]
+add_files -fileset sim_1 C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new/clk_div_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'clk_div_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj clk_div_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sources_1/new/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.srcs/sim_1/new/clk_div_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/VIVADO/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 357d034eee7c4504969652396e1ff5d8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot clk_div_tb_behav xil_defaultlib.clk_div_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.clk_div_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot clk_div_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.sim/sim_1/behav/xsim/xsim.dir/clk_div_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 15 12:20:56 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 800.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ASUS/Desktop/OExp01/IP_Include/Supplementary/clk_div/clk_div.v.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "clk_div_tb_behav -key {Behavioral:sim_1:Functional:clk_div_tb} -tclbatch {clk_div_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source clk_div_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'clk_div_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 806.289 ; gain = 6.027
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 831.648 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 15 23:12:03 2020...

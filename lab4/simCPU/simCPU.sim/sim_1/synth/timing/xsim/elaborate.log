@@ -1,0 +1,92 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8dbedc62a1d94ee7a9986241ce6baad3 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot simCPU_wrapper_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.simCPU_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "simCPU_wrapper_time_synth.sdf", for root module "simCPU_wrapper".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "simCPU_wrapper_time_synth.sdf", for root module "simCPU_wrapper".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.GND
+Compiling module simprims_ver.latchsre_ldce
+Compiling module simprims_ver.LDCE
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.MUXF7
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_SCPU_ctrl
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU_SCPU_ctrl_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MUX8T1_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_MUX8T1_32_0_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_SignalExt_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_SignalExt_32...
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_addc_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_addc_32_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_nor32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_nor32_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_or32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_or32_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_or_bit_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_or_bit_32_0_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_srl32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_srl32_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_xlconcat_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_xlslice_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_xlslice_0_1
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_xlslice_2_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_xor32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_xor32_0_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_xor32_HD1
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_xor32_1_0
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ALU_wrapper
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_ALU_wra...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_ImmGen
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_ImmGen_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MUX2T1_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_MUX2T1_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MUX2T1_32_HD1
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_MUX2T1_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MUX2T1_32_HD2
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_MUX2T1_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MUX4T1_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_MUX4T1_...
+Compiling module simprims_ver.FDCE_default
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_REG32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_REG32_0...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_add_32
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_add_32_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_add_32_HD1
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_add_32_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_util_ve...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_datapath_wrapper
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU_datapath_0...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU_xlslice_0_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU_xlslice_1_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU_xlslice_2_...
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU
+Compiling module xil_defaultlib.simCPU_MCPU_0_0_MSCPU_wrapper
+Compiling module xil_defaultlib.simCPU_MCPU_0_0
+Compiling module simprims_ver.RB36_INTERNAL_VLOG(RDADDR_COLLIS...
+Compiling module simprims_ver.RAMB36E1(INIT_00=256'b1000000000...
+Compiling module xil_defaultlib.simCPU_RAM_B_0_0_RAM
+Compiling module xil_defaultlib.simCPU_RAM_B_0_0_RAM_B
+Compiling module xil_defaultlib.simCPU_RAM_B_0_0
+Compiling module xil_defaultlib.simCPU_dist_mem_gen_0_0
+Compiling module xil_defaultlib.simCPU_xlslice_0_0
+Compiling module xil_defaultlib.simCPU_xlslice_0_1
+Compiling module xil_defaultlib.simCPU_util_vector_logic_0_0
+Compiling module xil_defaultlib.simCPU
+Compiling module xil_defaultlib.simCPU_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot simCPU_wrapper_time_synth

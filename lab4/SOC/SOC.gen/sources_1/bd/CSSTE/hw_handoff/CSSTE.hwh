@@ -1,0 +1,1645 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jun 28 14:47:45 2021" VIVADOVERSION="2020.2">
+
+  <SYSTEMINFO ARCH="kintex7" DEVICE="7k160t" NAME="CSSTE" PACKAGE="ffg676" SPEEDGRADE="-2L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="3" NAME="BTN_y" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_BTN_y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U9" PORT="Key_y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="SW" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SW">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U9" PORT="SW"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="RSTN" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_RSTN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U9" PORT="RSTN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk_100mhz" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U9" PORT="clk"/>
+        <CONNECTION INSTANCE="U4" PORT="clk"/>
+        <CONNECTION INSTANCE="U6" PORT="clk"/>
+        <CONNECTION INSTANCE="U8" PORT="clk"/>
+        <CONNECTION INSTANCE="VGA_orig_0" PORT="clk_100m"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="seg_clk" SIGIS="clk" SIGNAME="U6_seg_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U6" PORT="seg_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="seg_clrn" SIGIS="undef" SIGNAME="U6_seg_clrn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U6" PORT="seg_clrn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="SEG_PEN" SIGIS="undef" SIGNAME="U6_SEG_PEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U6" PORT="SEG_PEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="seg_sout" SIGIS="undef" SIGNAME="U6_seg_sout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U6" PORT="seg_sout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="HSYNC" SIGIS="undef" SIGNAME="VGA_orig_0_hs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_orig_0" PORT="hs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="VSYNC" SIGIS="undef" SIGNAME="VGA_orig_0_vs">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_orig_0" PORT="vs"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Red" RIGHT="0" SIGIS="undef" SIGNAME="VGA_orig_0_vga_r">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_orig_0" PORT="vga_r"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Green" RIGHT="0" SIGIS="undef" SIGNAME="VGA_orig_0_vga_g">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_orig_0" PORT="vga_g"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="Blue" RIGHT="0" SIGIS="undef" SIGNAME="VGA_orig_0_vga_b">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VGA_orig_0" PORT="vga_b"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="LED_PEN" SIGIS="undef" SIGNAME="U7_LED_PEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U7" PORT="LED_PEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="led_clk" SIGIS="clk" SIGNAME="U7_led_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U7" PORT="led_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="led_clrn" SIGIS="undef" SIGNAME="U7_led_clrn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U7" PORT="led_clrn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="led_sout" SIGIS="undef" SIGNAME="U7_led_sout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="U7" PORT="led_sout"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/BTN_OK0" HWVERSION="1.0" INSTANCE="BTN_OK0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="0"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U9_BTN_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="BTN_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="BTN_OK0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="STEP"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/PC11_2" HWVERSION="1.0" INSTANCE="PC11_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_3"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_PC_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="PC_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="PC11_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U2" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/PC31_2" HWVERSION="1.0" INSTANCE="PC31_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="31"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_7"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="30"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_PC_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="PC_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="29" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="PC31_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/RAM_B_0" HWVERSION="1.0" INSTANCE="RAM_B_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RAM_B" VLNV="xilinx.com:user:RAM_B:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_RAM_B_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="util_vector_logic_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_1" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="wea" SIGIS="undef" SIGNAME="SCPUC_0_MemRW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="MemRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="RAM_B_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="dmem_o_data"/>
+            <CONNECTION INSTANCE="U5" PORT="data6"/>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Data_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/SCPUC_0" HWVERSION="1.0" INSTANCE="SCPUC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SCPUC" VLNV="xilinx.com:user:SCPUC:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_SCPUC_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="U8_Clk_CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="Clk_CPU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Inst_in" RIGHT="0" SIGIS="undef" SIGNAME="U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U2" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Data_in" RIGHT="0" SIGIS="undef" SIGNAME="RAM_B_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MIO_ready" SIGIS="undef"/>
+        <PORT DIR="O" NAME="MemRW" SIGIS="undef" SIGNAME="SCPUC_0_MemRW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="mem_w"/>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="wea"/>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="mem_wen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CPU_MIO" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="Addr_out" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="alu_res"/>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="dmem_addr"/>
+            <CONNECTION INSTANCE="U5" PORT="data4"/>
+            <CONNECTION INSTANCE="U4" PORT="addr_bus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Data_out" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="dmem_i_data"/>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="dina"/>
+            <CONNECTION INSTANCE="U5" PORT="data5"/>
+            <CONNECTION INSTANCE="U4" PORT="Cpu_data2bus"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="PC_out" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_PC_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="pc"/>
+            <CONNECTION INSTANCE="U5" PORT="data7"/>
+            <CONNECTION INSTANCE="PC11_2" PORT="Din"/>
+            <CONNECTION INSTANCE="PC31_2" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U10" HWVERSION="1.0" INSTANCE="U10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Counter_x" VLNV="xilinx.com:user:Counter_x:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Counter_x_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk0" SIGIS="undef" SIGNAME="div6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div6" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk1" SIGIS="undef" SIGNAME="div9_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div9" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk2" SIGIS="undef" SIGNAME="div11_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div11" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter0_OUT" SIGIS="undef" SIGNAME="U10_counter0_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="counter0_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter1_OUT" SIGIS="undef" SIGNAME="U10_counter1_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="counter1_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter2_OUT" SIGIS="undef" SIGNAME="U10_counter2_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="counter2_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="counter_we" SIGIS="undef" SIGNAME="U4_counter_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="counter_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="counter_ch" RIGHT="0" SIGIS="undef" SIGNAME="U7_counter_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U7" PORT="counter_set"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="counter_out" RIGHT="0" SIGIS="undef" SIGNAME="U10_counter_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="counter_out"/>
+            <CONNECTION INSTANCE="U5" PORT="data3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="counter_val" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="13" FULLNAME="/U2" HWVERSION="8.0" INSTANCE="U2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="dist_mem_gen" VLNV="xilinx.com:ip:dist_mem_gen:8.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=dist_mem_gen;v=v8_0;d=pg063-dist-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="kintex7"/>
+        <PARAMETER NAME="C_ADDR_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_HAS_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_D" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_DPRA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_I_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QDPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_CE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_RST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_QSPO_SRST" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SPO" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_WE" VALUE="0"/>
+        <PARAMETER NAME="C_MEM_INIT_FILE" VALUE="CSSTE_dist_mem_gen_0_0.mif"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_QCE_JOINED" VALUE="0"/>
+        <PARAMETER NAME="C_QUALIFY_WE" VALUE="0"/>
+        <PARAMETER NAME="C_READ_MIF" VALUE="1"/>
+        <PARAMETER NAME="C_REG_A_D_INPUTS" VALUE="0"/>
+        <PARAMETER NAME="C_REG_DPRA_INPUT" VALUE="0"/>
+        <PARAMETER NAME="C_SYNC_ENABLE" VALUE="1"/>
+        <PARAMETER NAME="C_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_PARSER_TYPE" VALUE="1"/>
+        <PARAMETER NAME="depth" VALUE="1024"/>
+        <PARAMETER NAME="data_width" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_dist_mem_gen_0_0"/>
+        <PARAMETER NAME="memory_type" VALUE="rom"/>
+        <PARAMETER NAME="input_options" VALUE="non_registered"/>
+        <PARAMETER NAME="input_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="qualify_we_with_i_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="simple_dual_port_address" VALUE="non_registered"/>
+        <PARAMETER NAME="output_options" VALUE="non_registered"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="common_output_clk" VALUE="false"/>
+        <PARAMETER NAME="single_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="common_output_ce" VALUE="false"/>
+        <PARAMETER NAME="dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="simple_dual_port_output_clock_enable" VALUE="false"/>
+        <PARAMETER NAME="coefficient_file" VALUE="../../../../../../../inter_mem.coe"/>
+        <PARAMETER NAME="default_data_radix" VALUE="16"/>
+        <PARAMETER NAME="default_data" VALUE="0"/>
+        <PARAMETER NAME="reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qspo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qdpo" VALUE="false"/>
+        <PARAMETER NAME="sync_reset_qsdpo" VALUE="false"/>
+        <PARAMETER NAME="ce_overrides" VALUE="ce_overrides_sync_controls"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="9" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="PC11_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC11_2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="spo" RIGHT="0" SIGIS="undef" SIGNAME="U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="data2"/>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="inst"/>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Inst_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U4" HWVERSION="1.0" INSTANCE="U4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MIO_BUS" VLNV="xilinx.com:user:MIO_BUS:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_MIO_BUS_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="GPIOe0000000_we" SIGIS="undef" SIGNAME="U4_GPIOe0000000_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="GPIOf0000000_we" SIGIS="undef" SIGNAME="U4_GPIOf0000000_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U7" PORT="EN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="counter0_out" SIGIS="undef" SIGNAME="U10_counter0_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter0_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="counter1_out" SIGIS="undef" SIGNAME="U10_counter1_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter1_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="counter2_out" SIGIS="undef" SIGNAME="U10_counter2_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter2_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="counter_we" SIGIS="undef" SIGNAME="U4_counter_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="data_ram_we" SIGIS="undef"/>
+        <PORT DIR="I" NAME="mem_w" SIGIS="undef" SIGNAME="SCPUC_0_MemRW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="MemRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="BTN" RIGHT="0" SIGIS="undef" SIGNAME="U9_BTN_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="BTN_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Cpu_data2bus" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Cpu_data4bus" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="Peripheral_in" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U7" PORT="P_Data"/>
+            <CONNECTION INSTANCE="U10" PORT="counter_val"/>
+            <CONNECTION INSTANCE="U5" PORT="Data0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="SW" RIGHT="0" SIGIS="undef" SIGNAME="U9_SW_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="SW_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="addr_bus" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Addr_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="counter_out" RIGHT="0" SIGIS="undef" SIGNAME="U10_counter_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="led_out" RIGHT="0" SIGIS="undef" SIGNAME="U7_LED_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U7" PORT="LED_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="ram_addr" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="ram_data_in" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="ram_data_out" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U5" HWVERSION="1.0" INSTANCE="U5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Multi_8CH32" VLNV="xilinx.com:user:Multi_8CH32:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_Multi_8CH32_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="U4_GPIOe0000000_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="GPIOe0000000_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Data0" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="Disp_num" RIGHT="0" SIGIS="undef" SIGNAME="U5_Disp_num">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U6" PORT="Hexs"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="LES" RIGHT="0" SIGIS="undef" SIGNAME="b64_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="b64_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="LE_out" RIGHT="0" SIGIS="undef" SIGNAME="U5_LE_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U6" PORT="LES"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="Test" RIGHT="0" SIGIS="undef" SIGNAME="sw7_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sw7_5" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data1" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data2" RIGHT="0" SIGIS="undef" SIGNAME="U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U2" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data3" RIGHT="0" SIGIS="undef" SIGNAME="U10_counter_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data4" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Addr_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data5" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data6" RIGHT="0" SIGIS="undef" SIGNAME="RAM_B_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="data7" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_PC_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="PC_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="point_in" RIGHT="0" SIGIS="undef" SIGNAME="div31_31_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div31_31" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="point_out" RIGHT="0" SIGIS="undef" SIGNAME="U5_point_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U6" PORT="point"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U6" HWVERSION="1.0" INSTANCE="U6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SSeg7_Dev" VLNV="xilinx.com:user:SSeg7_Dev:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_SSeg7_Dev_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="flash" SIGIS="undef" SIGNAME="div25_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div25" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="Hexs" RIGHT="0" SIGIS="undef" SIGNAME="U5_Disp_num">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="Disp_num"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="LES" RIGHT="0" SIGIS="undef" SIGNAME="U5_LE_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="LE_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="point" RIGHT="0" SIGIS="undef" SIGNAME="U5_point_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="point_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Start" SIGIS="undef" SIGNAME="div20_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div20" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SW0" SIGIS="undef" SIGNAME="sw0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sw0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="seg_clk" SIGIS="clk" SIGNAME="U6_seg_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seg_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="seg_clrn" SIGIS="undef" SIGNAME="U6_seg_clrn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seg_clrn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SEG_PEN" SIGIS="undef" SIGNAME="U6_SEG_PEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SEG_PEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="seg_sout" SIGIS="undef" SIGNAME="U6_seg_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seg_sout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U7" HWVERSION="1.0" INSTANCE="U7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SPIO" VLNV="xilinx.com:user:SPIO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_SPIO_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="EN" SIGIS="undef" SIGNAME="U4_GPIOf0000000_we">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="GPIOf0000000_we"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="LED_PEN" SIGIS="undef" SIGNAME="U7_LED_PEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LED_PEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Start" SIGIS="undef" SIGNAME="div20_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div20" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Res"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="led_clk" SIGIS="clk" SIGNAME="U7_led_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="led_clrn" SIGIS="undef" SIGNAME="U7_led_clrn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_clrn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="led_sout" SIGIS="undef" SIGNAME="U7_led_sout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led_sout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="13" NAME="GPIOf0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="LED_out" RIGHT="0" SIGIS="undef" SIGNAME="U7_LED_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="led_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="P_Data" RIGHT="0" SIGIS="undef" SIGNAME="U4_Peripheral_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="Peripheral_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="counter_set" RIGHT="0" SIGIS="undef" SIGNAME="U7_counter_set">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="counter_ch"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U8" HWVERSION="1.0" INSTANCE="U8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_div" VLNV="xilinx.com:user:clk_div:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_clk_div_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SW2" SIGIS="undef" SIGNAME="sw2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sw2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="SW8" SIGIS="undef" SIGNAME="sw8_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sw8" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="STEP" SIGIS="undef" SIGNAME="BTN_OK0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BTN_OK0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="clkdiv" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div20" PORT="Din"/>
+            <CONNECTION INSTANCE="div1" PORT="Din"/>
+            <CONNECTION INSTANCE="div25" PORT="Din"/>
+            <CONNECTION INSTANCE="div31_31" PORT="In0"/>
+            <CONNECTION INSTANCE="div31_31" PORT="In1"/>
+            <CONNECTION INSTANCE="div6" PORT="Din"/>
+            <CONNECTION INSTANCE="div9" PORT="Din"/>
+            <CONNECTION INSTANCE="div11" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Clk_CPU" SIGIS="undef" SIGNAME="U8_Clk_CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="util_vector_logic_1" PORT="Op1"/>
+            <CONNECTION INSTANCE="util_vector_logic_0" PORT="Op1"/>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/U9" HWVERSION="1.0" INSTANCE="U9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SAnti_jitter" VLNV="xilinx.com:user:SAnti_jitter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_SAnti_jitter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="CR" SIGIS="undef"/>
+        <PORT DIR="O" NAME="Key_ready" SIGIS="undef"/>
+        <PORT DIR="I" NAME="RSTN" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_RSTN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RSTN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="readn" SIGIS="undef"/>
+        <PORT DIR="O" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="rst"/>
+            <CONNECTION INSTANCE="U4" PORT="rst"/>
+            <CONNECTION INSTANCE="U5" PORT="rst"/>
+            <CONNECTION INSTANCE="U7" PORT="rst"/>
+            <CONNECTION INSTANCE="U6" PORT="rst"/>
+            <CONNECTION INSTANCE="U8" PORT="rst"/>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="rst"/>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="BTN_OK" RIGHT="0" SIGIS="undef" SIGNAME="U9_BTN_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="BTN"/>
+            <CONNECTION INSTANCE="BTN_OK0" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Key_out" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="4" NAME="Key_x" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="Key_y" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_BTN_y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="BTN_y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="SW" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_SW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="SW_OK" RIGHT="0" SIGIS="undef" SIGNAME="U9_SW_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U4" PORT="SW"/>
+            <CONNECTION INSTANCE="sw0" PORT="Din"/>
+            <CONNECTION INSTANCE="sw7_5" PORT="Din"/>
+            <CONNECTION INSTANCE="sw8" PORT="Din"/>
+            <CONNECTION INSTANCE="sw2" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="pulse_out" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/VGA_orig_0" HWVERSION="1.0" INSTANCE="VGA_orig_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="VGA_orig" VLNV="xilinx.com:user:VGA_orig:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_VGA_orig_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_25m" SIGIS="undef" SIGNAME="div1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="div1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_100m" SIGIS="undef" SIGNAME="External_Ports_clk_100mhz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_100mhz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="U9_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="pc" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_PC_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="PC_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="inst" RIGHT="0" SIGIS="undef" SIGNAME="U2_spo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U2" PORT="spo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="alu_res" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Addr_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="mem_wen" SIGIS="undef" SIGNAME="SCPUC_0_MemRW">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="MemRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dmem_o_data" RIGHT="0" SIGIS="undef" SIGNAME="RAM_B_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dmem_i_data" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="dmem_addr" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Addr_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="hs" SIGIS="undef" SIGNAME="VGA_orig_0_hs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="HSYNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="vs" SIGIS="undef" SIGNAME="VGA_orig_0_vs">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="VSYNC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="vga_r" RIGHT="0" SIGIS="undef" SIGNAME="VGA_orig_0_vga_r">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Red"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="vga_g" RIGHT="0" SIGIS="undef" SIGNAME="VGA_orig_0_vga_g">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Green"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="vga_b" RIGHT="0" SIGIS="undef" SIGNAME="VGA_orig_0_vga_b">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Blue"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/b2_0" HWVERSION="1.1" INSTANCE="b2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlconstant_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="b2_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/b64_0" HWVERSION="1.1" INSTANCE="b64_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0000000000000000"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="63" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="b64_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="LES"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div1" HWVERSION="1.0" INSTANCE="div1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="1"/>
+        <PARAMETER NAME="DIN_TO" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_div11_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="div1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="VGA_orig_0" PORT="clk_25m"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div11" HWVERSION="1.0" INSTANCE="div11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
+        <PARAMETER NAME="DIN_TO" VALUE="11"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_6"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="div11_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div20" HWVERSION="1.0" INSTANCE="div20" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="20"/>
+        <PARAMETER NAME="DIN_TO" VALUE="20"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_div11_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="div20_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U7" PORT="Start"/>
+            <CONNECTION INSTANCE="U6" PORT="Start"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div25" HWVERSION="1.0" INSTANCE="div25" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="25"/>
+        <PARAMETER NAME="DIN_TO" VALUE="25"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_div20_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="div25_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U6" PORT="flash"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/div31_31" HWVERSION="2.1" INSTANCE="div31_31" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN32_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN33_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN34_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN35_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN36_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN37_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN38_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN39_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN40_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN41_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN42_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN43_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN44_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN45_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN46_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN47_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN48_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN49_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN50_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN51_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN52_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN53_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN54_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN55_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN56_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN57_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN58_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN59_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN60_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN61_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN62_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN63_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN64_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN65_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN66_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN67_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN68_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN69_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN70_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN71_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN72_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN73_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN74_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN75_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN76_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN77_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN78_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN79_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN80_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN81_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN82_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN83_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN84_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN85_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN86_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN87_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN88_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN89_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN90_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN91_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN92_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN93_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN94_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN95_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN96_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN97_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN98_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN99_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN100_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN101_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN102_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN103_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN104_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN105_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN106_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN107_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN108_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN109_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN110_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN111_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN112_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN113_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN114_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN115_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN116_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN117_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN118_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN119_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN120_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN121_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN122_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN123_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN124_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN125_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="64"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="div31_31_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="point_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div6" HWVERSION="1.0" INSTANCE="div6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="6"/>
+        <PARAMETER NAME="DIN_TO" VALUE="6"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_4"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="div6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/div9" HWVERSION="1.0" INSTANCE="div9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="9"/>
+        <PARAMETER NAME="DIN_TO" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_5"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U8_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="div9_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sw0" HWVERSION="1.0" INSTANCE="sw0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="0"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_div20_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U9_SW_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="SW_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="sw0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U6" PORT="SW0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sw2" HWVERSION="1.0" INSTANCE="sw2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="2"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_2"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U9_SW_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="SW_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="sw2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="SW2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sw7_5" HWVERSION="1.0" INSTANCE="sw7_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="5"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_sw0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U9_SW_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="SW_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="sw7_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="Test"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sw8" HWVERSION="1.0" INSTANCE="sw8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="8"/>
+        <PARAMETER NAME="DIN_TO" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_sw2_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U9_SW_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="SW_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="sw8_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="SW8"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_0" HWVERSION="2.0" INSTANCE="util_vector_logic_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_util_vector_logic_0_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="U8_Clk_CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="Clk_CPU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_0_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U10" PORT="clk"/>
+            <CONNECTION INSTANCE="U5" PORT="clk"/>
+            <CONNECTION INSTANCE="U7" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/util_vector_logic_1" HWVERSION="2.0" INSTANCE="util_vector_logic_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="util_vector_logic" VLNV="xilinx.com:ip:util_vector_logic:2.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_OPERATION" VALUE="not"/>
+        <PARAMETER NAME="C_SIZE" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_util_vector_logic_1_0"/>
+        <PARAMETER NAME="LOGO_FILE" VALUE="data/sym_notgate.png"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="Op1" RIGHT="0" SIGIS="undef" SIGNAME="U8_Clk_CPU">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U8" PORT="Clk_CPU"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Res" RIGHT="0" SIGIS="undef" SIGNAME="util_vector_logic_1_Res">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="clka"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="30"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN32_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN33_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN34_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN35_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN36_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN37_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN38_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN39_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN40_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN41_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN42_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN43_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN44_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN45_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN46_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN47_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN48_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN49_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN50_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN51_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN52_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN53_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN54_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN55_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN56_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN57_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN58_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN59_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN60_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN61_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN62_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN63_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN64_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN65_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN66_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN67_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN68_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN69_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN70_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN71_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN72_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN73_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN74_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN75_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN76_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN77_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN78_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN79_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN80_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN81_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN82_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN83_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN84_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN85_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN86_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN87_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN88_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN89_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN90_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN91_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN92_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN93_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN94_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN95_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN96_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN97_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN98_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN99_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN100_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN101_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN102_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN103_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN104_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN105_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN106_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN107_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN108_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN109_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN110_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN111_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN112_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN113_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN114_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN115_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN116_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN117_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN118_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN119_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN120_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN121_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN122_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN123_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN124_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN125_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN126_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN127_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="32"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlconcat_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="29" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="PC31_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PC31_2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="b2_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="b2_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U5" PORT="data1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_0" HWVERSION="1.0" INSTANCE="xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
+        <PARAMETER NAME="DIN_TO" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_0_8"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="SCPUC_0_Addr_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="Addr_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RAM_B_0" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="1"/>
+        <PARAMETER NAME="DIN_TO" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="CSSTE_xlslice_1_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="U9_BTN_OK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="U9" PORT="BTN_OK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SCPUC_0" PORT="INT0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

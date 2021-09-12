@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_MCPU_0_0/simCPU_MCPU_0_0_sim_netlist.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_dist_mem_gen_0_0/sim/simCPU_dist_mem_gen_0_0.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_xlslice_0_0/sim/simCPU_xlslice_0_0.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_RAM_B_0_0/RAM_B.srcs/sources_1/ip/RAM/sim/RAM.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_RAM_B_0_0/sim/simCPU_RAM_B_0_0.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_xlslice_0_1/sim/simCPU_xlslice_0_1.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/ip/simCPU_util_vector_logic_0_0/sim/simCPU_util_vector_logic_0_0.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/sim/simCPU.v" \
+"../../../../simCPU.gen/sources_1/bd/simCPU/hdl/simCPU_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

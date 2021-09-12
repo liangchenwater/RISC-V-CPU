@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_mips_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_mips" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="34" />
+   <wvobject db_ref_id="1" fp_name="/sim_mips/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/if_rst" type="logic">
+      <obj_property name="ElementShortName">if_rst</obj_property>
+      <obj_property name="ObjectShortName">if_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/if_en" type="logic">
+      <obj_property name="ElementShortName">if_en</obj_property>
+      <obj_property name="ObjectShortName">if_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/if_valid" type="logic">
+      <obj_property name="ElementShortName">if_valid</obj_property>
+      <obj_property name="ObjectShortName">if_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/inst_ren" type="logic">
+      <obj_property name="ElementShortName">inst_ren</obj_property>
+      <obj_property name="ObjectShortName">inst_ren</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/inst_addr" type="array">
+      <obj_property name="ElementShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/inst_data" type="array">
+      <obj_property name="ElementShortName">inst_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/id_rst" type="logic">
+      <obj_property name="ElementShortName">id_rst</obj_property>
+      <obj_property name="ObjectShortName">id_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/id_en" type="logic">
+      <obj_property name="ElementShortName">id_en</obj_property>
+      <obj_property name="ObjectShortName">id_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/id_valid" type="logic">
+      <obj_property name="ElementShortName">id_valid</obj_property>
+      <obj_property name="ObjectShortName">id_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/exe_rst" type="logic">
+      <obj_property name="ElementShortName">exe_rst</obj_property>
+      <obj_property name="ObjectShortName">exe_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/exe_en" type="logic">
+      <obj_property name="ElementShortName">exe_en</obj_property>
+      <obj_property name="ObjectShortName">exe_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/exe_valid" type="logic">
+      <obj_property name="ElementShortName">exe_valid</obj_property>
+      <obj_property name="ObjectShortName">exe_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_rst" type="logic">
+      <obj_property name="ElementShortName">mem_rst</obj_property>
+      <obj_property name="ObjectShortName">mem_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_en" type="logic">
+      <obj_property name="ElementShortName">mem_en</obj_property>
+      <obj_property name="ObjectShortName">mem_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_valid" type="logic">
+      <obj_property name="ElementShortName">mem_valid</obj_property>
+      <obj_property name="ObjectShortName">mem_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_ren" type="logic">
+      <obj_property name="ElementShortName">mem_ren</obj_property>
+      <obj_property name="ObjectShortName">mem_ren</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_wen" type="logic">
+      <obj_property name="ElementShortName">mem_wen</obj_property>
+      <obj_property name="ObjectShortName">mem_wen</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_addr" type="array">
+      <obj_property name="ElementShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_dout" type="array">
+      <obj_property name="ElementShortName">mem_dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_dout[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_din" type="array">
+      <obj_property name="ElementShortName">mem_din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_din[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/wb_rst" type="logic">
+      <obj_property name="ElementShortName">wb_rst</obj_property>
+      <obj_property name="ObjectShortName">wb_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/wb_en" type="logic">
+      <obj_property name="ElementShortName">wb_en</obj_property>
+      <obj_property name="ObjectShortName">wb_en</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/wb_valid" type="logic">
+      <obj_property name="ElementShortName">wb_valid</obj_property>
+      <obj_property name="ObjectShortName">wb_valid</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/pc_src_exe" type="array">
+      <obj_property name="ElementShortName">pc_src_exe[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_src_exe[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/pc_src_mem" type="array">
+      <obj_property name="ElementShortName">pc_src_mem[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_src_mem[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/exe_a_src_exe" type="array">
+      <obj_property name="ElementShortName">exe_a_src_exe[1:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_a_src_exe[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/exe_b_src_exe" type="array">
+      <obj_property name="ElementShortName">exe_b_src_exe[1:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_b_src_exe[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/exe_alu_oper_exe" type="array">
+      <obj_property name="ElementShortName">exe_alu_oper_exe[3:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_alu_oper_exe[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_ren_exe" type="logic">
+      <obj_property name="ElementShortName">mem_ren_exe</obj_property>
+      <obj_property name="ObjectShortName">mem_ren_exe</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_ren_mem" type="logic">
+      <obj_property name="ElementShortName">mem_ren_mem</obj_property>
+      <obj_property name="ObjectShortName">mem_ren_mem</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_wen_exe" type="logic">
+      <obj_property name="ElementShortName">mem_wen_exe</obj_property>
+      <obj_property name="ObjectShortName">mem_wen_exe</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/mem_wen_mem" type="logic">
+      <obj_property name="ElementShortName">mem_wen_mem</obj_property>
+      <obj_property name="ObjectShortName">mem_wen_mem</obj_property>
+   </wvobject>
+</wave_config>

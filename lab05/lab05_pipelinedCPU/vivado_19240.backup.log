@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 15:18:27 2021
+# Process ID: 19240
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19144 C:\Users\liang\Desktop\OrgLab\lab05\lab05_pipelinedCPU\lab05_pipelinedCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipiline_IF.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.859 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipeline_CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipeline_CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ex_reg_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Ex
+INFO: [VRFC 10-2458] undeclared symbol ALU_control_in_EX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_ID
+INFO: [VRFC 10-2458] undeclared symbol Inst_14_12, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:59]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rd_addr_out_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:64]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs1_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:65]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs2_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:66]
+ERROR: [VRFC 10-2865] module 'Pipeline_ID' ignored due to previous errors [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 15:20:02 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 15:21:31 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 15:23:18 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 15:24:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 15:26:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 15:27:46 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 21 15:46:12 2021...

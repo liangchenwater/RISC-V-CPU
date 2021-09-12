@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 17 13:31:45 2021
+# Process ID: 19284
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15472 C:\Users\liang\Desktop\OrgLab\lab4\SCPU_ctrl\SCPU_ctrl.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1110.449 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon May 17 13:34:58 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.runs/synth_1/runme.log
+ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab4/scpu_ctrl/scpu_ctrl.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new'
+ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab4/scpu_ctrl/scpu_ctrl.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+file mkdir C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sim_1/new/tb_ctrl.v w ]
+add_files -fileset sim_1 C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sim_1/new/tb_ctrl.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SCPU_ctrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SCPU_ctrl_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new/SCPU_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_ctrl
+INFO: [VRFC 10-2458] undeclared symbol Fun, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new/SCPU_ctrl.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim'
+"xelab -wto eb01da77b27147069f3fadae31fe0b21 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SCPU_ctrl_behav xil_defaultlib.SCPU_ctrl xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto eb01da77b27147069f3fadae31fe0b21 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SCPU_ctrl_behav xil_defaultlib.SCPU_ctrl xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SCPU_ctrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SCPU_ctrl_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/xsim.dir/SCPU_ctrl_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/xsim.dir/SCPU_ctrl_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon May 17 20:05:19 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon May 17 20:05:19 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1110.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '15' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SCPU_ctrl_behav -key {Behavioral:sim_1:Functional:SCPU_ctrl} -tclbatch {SCPU_ctrl.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source SCPU_ctrl.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1110.449 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SCPU_ctrl_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:26 . Memory (MB): peak = 1110.449 ; gain = 0.000
+update_compile_order -fileset sim_1
+run all
+run all
+run all
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1448.797 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 17 20:11:49 2021...

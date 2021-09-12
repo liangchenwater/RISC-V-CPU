@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 18 00:16:48 2021
+# Process ID: 8860
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10920 C:\Users\liang\Desktop\OrgLab\lab4\SCPU_ctrl\SCPU_ctrl.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.801 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 18 00:17:34 2021...

@@ -1,0 +1,208 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 14:03:15 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jun 27 02:04:19 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0) from (Rev. 3) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jun 27 01:40:10 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jun 27 01:00:45 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 26 23:29:44 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 26 22:37:29 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'simCPU_SCPUC_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'INT'
+
+-Upgrade has added port 'INT0'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Jun 26 22:18:05 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'simCPU_SCPUC_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'INT'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed May 19 16:50:22 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed May 19 16:43:03 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'simCPU_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of simCPU_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+

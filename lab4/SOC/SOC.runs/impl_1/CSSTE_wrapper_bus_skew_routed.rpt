@@ -1,0 +1,15 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 14:52:51 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file CSSTE_wrapper_bus_skew_routed.rpt -pb CSSTE_wrapper_bus_skew_routed.pb -rpx CSSTE_wrapper_bus_skew_routed.rpx
+| Design       : CSSTE_wrapper
+| Device       : 7k160t-ffg676
+| Speed File   : -2L  PRODUCTION 1.12 2017-02-17
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

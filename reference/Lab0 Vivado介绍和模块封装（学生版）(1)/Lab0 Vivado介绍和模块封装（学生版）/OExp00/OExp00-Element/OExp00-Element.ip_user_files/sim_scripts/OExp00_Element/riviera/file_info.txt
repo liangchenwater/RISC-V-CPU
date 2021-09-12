@@ -1,0 +1,4 @@
+and_32.v,verilog,xil_defaultlib,../../../bd/OExp00_Element/ipshared/ce01/and_32.v,
+OExp00_Element_and32_0_0.v,verilog,xil_defaultlib,../../../bd/OExp00_Element/ip/OExp00_Element_and32_0_0/sim/OExp00_Element_and32_0_0.v,
+OExp00_Element.v,verilog,xil_defaultlib,../../../bd/OExp00_Element/sim/OExp00_Element.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

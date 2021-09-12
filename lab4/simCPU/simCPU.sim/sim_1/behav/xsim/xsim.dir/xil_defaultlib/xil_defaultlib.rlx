@@ -1,0 +1,22 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/hdl/simCPU_wrapper.v,1624730663,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.srcs/sim_1/new/tb.v,,simCPU_wrapper,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_RAM_B_0_0/RAM_B.srcs/sources_1/ip/RAM/sim/RAM.v,1621419274,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v,,RAM,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_RAM_B_0_0/sim/simCPU_RAM_B_0_0.v,1621419272,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_xlslice_0_1/sim/simCPU_xlslice_0_1.v,,simCPU_RAM_B_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_SCPUC_0_0/sim/simCPU_SCPUC_0_0.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/sim/simCPU.v,,simCPU_SCPUC_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_dist_mem_gen_0_0/sim/simCPU_dist_mem_gen_0_0.v,1624722147,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_xlslice_0_0/sim/simCPU_xlslice_0_0.v,,simCPU_dist_mem_gen_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_util_vector_logic_0_0/sim/simCPU_util_vector_logic_0_0.v,1621419274,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/ImmGen.v,,simCPU_util_vector_logic_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_xlslice_0_0/sim/simCPU_xlslice_0_0.v,1621419272,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_RAM_B_0_0/RAM_B.srcs/sources_1/ip/RAM/sim/RAM.v,,simCPU_xlslice_0_0,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_xlslice_0_1/sim/simCPU_xlslice_0_1.v,1621419274,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_util_vector_logic_0_0/sim/simCPU_util_vector_logic_0_0.v,,simCPU_xlslice_0_1,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/ImmGen.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/Regs.v,,ImmGen,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/Regs.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/alu.v,,Regs,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/SCPUC.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_SCPUC_0_0/sim/simCPU_SCPUC_0_0.v,,SCPUC,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/alu.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/controller.v,,alu,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/controller.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/datapath.v,,controller,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/datapath.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/9775/SCPUC.v,,datapath,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v,1621419272,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/ip/simCPU_RAM_B_0_0/sim/simCPU_RAM_B_0_0.v,,RAM_B,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/sim/simCPU.v,1624860200,verilog,,C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.gen/sources_1/bd/simCPU/hdl/simCPU_wrapper.v,,simCPU,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.srcs/sim_1/new/tb.v,1624720178,verilog,,,,tb,,,,,,,,

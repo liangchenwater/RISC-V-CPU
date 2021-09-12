@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 25 16:30:53 2021
+# Process ID: 23476
+# Current directory: C:/Users/liang/Desktop/OrgLab/reference/Lab05/Lab05_1/OExp05-Pipeline_CPU/VGA/VGA.runs/synth_1
+# Command line: vivado.exe -log VGA.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA.tcl
+# Log file: C:/Users/liang/Desktop/OrgLab/reference/Lab05/Lab05_1/OExp05-Pipeline_CPU/VGA/VGA.runs/synth_1/VGA.vds
+# Journal file: C:/Users/liang/Desktop/OrgLab/reference/Lab05/Lab05_1/OExp05-Pipeline_CPU/VGA/VGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source VGA.tcl -notrace

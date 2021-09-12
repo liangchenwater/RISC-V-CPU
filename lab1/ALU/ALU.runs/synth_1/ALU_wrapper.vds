@@ -1,0 +1,466 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 18 20:01:39 2021
+# Process ID: 24664
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1
+# Command line: vivado.exe -log ALU_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_wrapper.tcl
+# Log file: C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1/ALU_wrapper.vds
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'ALU.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+ALU_SignalExt_32_0_0
+ALU_xor32_0_0
+ALU_or32_0_0
+ALU_srl32_0_0
+ALU_addc_32_0_0
+ALU_xor32_1_0
+ALU_nor32_0_0
+ALU_MUX8T1_32_0_0
+ALU_or_bit_32_0_0
+
+Command: synth_design -top ALU_wrapper -part xc7k160tffg676-2L
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd
+
+WARNING: [Vivado_Tcl 4-393] The 'Implementation' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23064
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module xor32 [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_1_0/synth/ALU_xor32_1_0.v:55]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1140.320 ; gain = 32.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ALU_wrapper' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.v:13]
+INFO: [Synth 8-6157] synthesizing module 'ALU_MUX8T1_32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_MUX8T1_32_0_0/synth/ALU_MUX8T1_32_0_0.v:85]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_MUX8T1_32_0_0/synth/ALU_MUX8T1_32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_MUX8T1_32_0_0' (1#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_MUX8T1_32_0_0/synth/ALU_MUX8T1_32_0_0.v:85]
+INFO: [Synth 8-6157] synthesizing module 'ALU_SignalExt_32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_SignalExt_32_0_0/synth/ALU_SignalExt_32_0_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'SignalExt_32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_SignalExt_32_0_0/synth/ALU_SignalExt_32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_SignalExt_32_0_0' (2#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_SignalExt_32_0_0/synth/ALU_SignalExt_32_0_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'ALU_addc_32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_addc_32_0_0/synth/ALU_addc_32_0_0.v:73]
+INFO: [Synth 8-6157] synthesizing module 'addc_32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_addc_32_0_0/synth/ALU_addc_32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_addc_32_0_0' (3#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_addc_32_0_0/synth/ALU_addc_32_0_0.v:73]
+INFO: [Synth 8-6157] synthesizing module 'ALU_util_vector_logic_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/synth/ALU_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+	Parameter C_OPERATION bound to: and - type: string 
+	Parameter C_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (4#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_util_vector_logic_0_0' (5#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/synth/ALU_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ALU_nor32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_nor32_0_0/synth/ALU_nor32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'nor32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_nor32_0_0/synth/ALU_nor32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_nor32_0_0' (6#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_nor32_0_0/synth/ALU_nor32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ALU_or32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or32_0_0/synth/ALU_or32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'or32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or32_0_0/synth/ALU_or32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_or32_0_0' (7#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or32_0_0/synth/ALU_or32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ALU_or_bit_32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or_bit_32_0_0/synth/ALU_or_bit_32_0_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'or_bit_32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or_bit_32_0_0/synth/ALU_or_bit_32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_or_bit_32_0_0' (8#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or_bit_32_0_0/synth/ALU_or_bit_32_0_0.v:69]
+INFO: [Synth 8-6157] synthesizing module 'ALU_srl32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_srl32_0_0/synth/ALU_srl32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'srl32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_srl32_0_0/synth/ALU_srl32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_srl32_0_0' (9#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_srl32_0_0/synth/ALU_srl32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xlconcat_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/synth/ALU_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 31 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (10#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xlconcat_0_0' (11#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/synth/ALU_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xlconstant_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/synth/ALU_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 31'b0000000000000000000000000000000 
+	Parameter CONST_WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (12#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xlconstant_0_0' (13#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/synth/ALU_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xlslice_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/synth/ALU_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 33 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (14#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xlslice_0_0' (15#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/synth/ALU_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xlslice_0_1' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/synth/ALU_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 3 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (15#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xlslice_0_1' (16#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/synth/ALU_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xlslice_2_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/synth/ALU_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 33 - type: integer 
+	Parameter DIN_FROM bound to: 32 - type: integer 
+	Parameter DIN_TO bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (16#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xlslice_2_0' (17#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/synth/ALU_xlslice_2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xor32_0_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_0_0/synth/ALU_xor32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'xor32' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_1_0/synth/ALU_xor32_1_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xor32_0_0' (18#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_0_0/synth/ALU_xor32_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'ALU_xor32_1_0' [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_1_0/synth/ALU_xor32_1_0.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_xor32_1_0' (19#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_1_0/synth/ALU_xor32_1_0.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (20#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_wrapper' (21#1) [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1194.641 ; gain = 86.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.641 ; gain = 86.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1194.641 ; gain = 86.707
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1194.641 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1229.348 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1229.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1229.348 ; gain = 121.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1229.348 ; gain = 121.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/SignalExt_32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xor32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xlslice_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/addc_32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/or32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/xor32_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/nor32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/srl32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/MUX8T1_32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/or_bit_32_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ALU_i/and32. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1229.348 ; gain = 121.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1229.348 ; gain = 121.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1229.348 ; gain = 121.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1279.578 ; gain = 171.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1279.949 ; gain = 172.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1299.008 ; gain = 191.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |MUX8T1_32     |         1|
+|2     |SignalExt_32  |         1|
+|3     |addc_32       |         1|
+|4     |nor32         |         1|
+|5     |or32          |         1|
+|6     |or_bit_32     |         1|
+|7     |srl32         |         1|
+|8     |xor32         |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |MUX8T1_32_bbox    |     1|
+|2     |SignalExt_32_bbox |     1|
+|3     |addc_32_bbox      |     1|
+|4     |nor32_bbox        |     1|
+|5     |or32_bbox         |     1|
+|6     |or_bit_32_bbox    |     1|
+|7     |srl32_bbox        |     1|
+|8     |xor32_bbox        |     2|
+|10    |LUT2              |    32|
+|11    |IBUF              |    67|
+|12    |OBUF              |    33|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1305.770 ; gain = 163.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1305.770 ; gain = 197.836
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_MUX8T1_32_0_0/MUX8T1_32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_MUX8T1_32_0_0/MUX8T1_32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_SignalExt_32_0_0/SignalExt_32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_SignalExt_32_0_0/SignalExt_32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_addc_32_0_0/addc_32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_addc_32_0_0/addc_32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_nor32_0_0/nor32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_nor32_0_0/nor32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or32_0_0/or32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or32_0_0/or32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or_bit_32_0_0/or_bit_32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_or_bit_32_0_0/or_bit_32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_srl32_0_0/srl32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_srl32_0_0/srl32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_0_0/xor32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xor32_0_0/xor32.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1327.391 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1334.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1334.836 ; gain = 226.902
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1/ALU_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ALU_wrapper_utilization_synth.rpt -pb ALU_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 18 20:02:24 2021...

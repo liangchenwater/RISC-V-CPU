@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar  3 18:14:15 2021
+# Process ID: 7016
+# Current directory: C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div
+# Command line: wbtcv.exe -mode batch -source C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/.Xil/Vivado-4840-DESKTOP-BJQ6VJA/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/webtalk.log
+# Journal file: C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/.Xil/Vivado-4840-DESKTOP-BJQ6VJA/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  3 18:14:16 2021...

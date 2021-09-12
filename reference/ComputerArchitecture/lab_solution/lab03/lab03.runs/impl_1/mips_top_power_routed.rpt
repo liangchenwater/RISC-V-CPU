@@ -1,0 +1,187 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date             : Fri Jan 18 11:24:36 2019
+| Host             : Dell-PC running 64-bit Service Pack 1  (build 7601)
+| Command          : 
+| Design           : mips_top
+| Device           : xc7k325tffg676-2
+| Design State     : Routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------+
+| Total On-Chip Power (W)  | 14.455 |
+| Dynamic (W)              | 14.128 |
+| Device Static (W)        | 0.327  |
+| Effective TJA (C/W)      | 1.9    |
+| Max Ambient (C)          | 57.7   |
+| Junction Temperature (C) | 52.3   |
+| Confidence Level         | Low    |
+| Setting File             | ---    |
+| Simulation Activity File | ---    |
+| Design Nets Matched      | NA     |
++--------------------------+--------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |     0.632 |     2417 |       --- |             --- |
+|   LUT as Logic           |     0.417 |     1116 |    203800 |            0.54 |
+|   LUT as Distributed RAM |     0.100 |       96 |     64000 |            0.15 |
+|   Register               |     0.062 |      800 |    407600 |            0.19 |
+|   CARRY4                 |     0.036 |       50 |     50950 |            0.09 |
+|   BUFG                   |     0.017 |        3 |        32 |            9.37 |
+|   F7/F8 Muxes            |    <0.001 |       64 |    203800 |            0.03 |
+|   LUT as Shift Register  |    <0.001 |        8 |     64000 |            0.01 |
+|   Others                 |     0.000 |       30 |       --- |             --- |
+| Signals                  |     0.718 |     1789 |       --- |             --- |
+| Block RAM                |     0.115 |        1 |       445 |            0.22 |
+| MMCM                     |     1.805 |        1 |        10 |           10.00 |
+| I/O                      |    10.857 |       38 |       400 |            9.50 |
+| Static Power             |     0.327 |          |           |                 |
+| Total                    |    14.455 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     1.765 |       1.549 |      0.216 |
+| Vccaux    |       1.800 |     1.414 |       1.378 |      0.035 |
+| Vcco33    |       3.300 |     3.051 |       3.050 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.006 |       0.005 |      0.001 |
+| Vcco15    |       1.500 |     0.010 |       0.009 |      0.001 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.013 |       0.009 |      0.004 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------+-----------+
+| Name                                | Power (W) |
++-------------------------------------+-----------+
+| mips_top                            |    14.128 |
+|   BTN_SCAN                          |     0.078 |
+|   CLK_DIFF                          |     0.014 |
+|   CLK_GEN                           |     1.927 |
+|   DISPLAY                           |     0.048 |
+|     P2S_LED                         |     0.037 |
+|     P2S_SEG                         |    <0.001 |
+|   MIPS                              |     0.609 |
+|     DATA_RAM                        |     0.115 |
+|     INST_ROM                        |     0.036 |
+|     MIPS_CORE                       |     0.458 |
+|       CONTROLLER                    |     0.001 |
+|       DATAPATH                      |     0.457 |
+|         REGFILE                     |     0.159 |
+|           regfile_reg_r1_0_31_0_5   |    <0.001 |
+|           regfile_reg_r1_0_31_12_17 |    <0.001 |
+|           regfile_reg_r1_0_31_18_23 |    <0.001 |
+|           regfile_reg_r1_0_31_24_29 |    <0.001 |
+|           regfile_reg_r1_0_31_30_31 |    <0.001 |
+|           regfile_reg_r1_0_31_6_11  |    <0.001 |
+|           regfile_reg_r2_0_31_0_5   |    <0.001 |
+|           regfile_reg_r2_0_31_12_17 |    <0.001 |
+|           regfile_reg_r2_0_31_18_23 |    <0.001 |
+|           regfile_reg_r2_0_31_24_29 |    <0.001 |
+|           regfile_reg_r2_0_31_30_31 |    <0.001 |
+|           regfile_reg_r2_0_31_6_11  |    <0.001 |
+|           regfile_reg_r3_0_31_0_5   |    <0.001 |
+|           regfile_reg_r3_0_31_12_17 |    <0.001 |
+|           regfile_reg_r3_0_31_18_23 |    <0.001 |
+|           regfile_reg_r3_0_31_24_29 |    <0.001 |
+|           regfile_reg_r3_0_31_30_31 |    <0.001 |
+|           regfile_reg_r3_0_31_6_11  |    <0.001 |
+|   VGA                               |     0.076 |
+|   VGA_DEBUG                         |     0.446 |
+|     FONT_8X16                       |     0.001 |
+|     data_buf_reg_0_3_0_5            |     0.025 |
+|     data_buf_reg_0_3_12_17          |     0.028 |
+|     data_buf_reg_0_3_18_23          |     0.027 |
+|     data_buf_reg_0_3_24_29          |     0.030 |
+|     data_buf_reg_0_3_30_31          |     0.009 |
+|     data_buf_reg_0_3_6_11           |     0.025 |
++-------------------------------------+-----------+
+
+

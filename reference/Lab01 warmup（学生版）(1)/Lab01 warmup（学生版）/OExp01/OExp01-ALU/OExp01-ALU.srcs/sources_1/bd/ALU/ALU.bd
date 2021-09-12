@@ -1,0 +1,297 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x79AAE91879AAE918",
+      "device": "xc7k160tffg676-2L",
+      "name": "ALU",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "and32_0": "",
+      "or32_0": "",
+      "xlslice_0": "",
+      "xor32_0": "",
+      "nor32_0": "",
+      "srl32_0": "",
+      "MUX8T1_32_0": "",
+      "or_bit_32_0": "",
+      "addc_32_0": "",
+      "xlconcat_0": "",
+      "xlslice_1": "",
+      "SignalExt_32_0": "",
+      "xor32_1": "",
+      "xlslice_2": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "A": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "B": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "ALU_operation": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "o_0": {
+        "direction": "O"
+      },
+      "res": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      }
+    },
+    "components": {
+      "and32_0": {
+        "vlnv": "xilinx.com:user:and32:1.0",
+        "xci_name": "ALU_and32_0_0"
+      },
+      "or32_0": {
+        "vlnv": "xilinx.com:user:or32:1.0",
+        "xci_name": "ALU_or32_0_0"
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "ALU_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_WIDTH": {
+            "value": "33"
+          },
+          "DOUT_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "xor32_0": {
+        "vlnv": "xilinx.com:user:xor32:1.0",
+        "xci_name": "ALU_xor32_0_0"
+      },
+      "nor32_0": {
+        "vlnv": "xilinx.com:user:nor32:1.0",
+        "xci_name": "ALU_nor32_0_0"
+      },
+      "srl32_0": {
+        "vlnv": "xilinx.com:user:srl32:1.0",
+        "xci_name": "ALU_srl32_0_0"
+      },
+      "MUX8T1_32_0": {
+        "vlnv": "xilinx.com:user:MUX8T1_32:1.0",
+        "xci_name": "ALU_MUX8T1_32_0_0"
+      },
+      "or_bit_32_0": {
+        "vlnv": "xilinx.com:user:or_bit_32:1.0",
+        "xci_name": "ALU_or_bit_32_0_0"
+      },
+      "addc_32_0": {
+        "vlnv": "xilinx.com:user:addc_32:1.0",
+        "xci_name": "ALU_addc_32_0_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "ALU_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "31"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "ALU_xlslice_1_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "3"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "SignalExt_32_0": {
+        "vlnv": "xilinx.com:user:SignalExt_32:1.0",
+        "xci_name": "ALU_SignalExt_32_0_0"
+      },
+      "xor32_1": {
+        "vlnv": "xilinx.com:user:xor32:1.0",
+        "xci_name": "ALU_xor32_1_0"
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "ALU_xlslice_2_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "32"
+          },
+          "DIN_TO": {
+            "value": "32"
+          },
+          "DIN_WIDTH": {
+            "value": "33"
+          },
+          "DOUT_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "ALU_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          },
+          "CONST_WIDTH": {
+            "value": "31"
+          }
+        }
+      }
+    },
+    "nets": {
+      "A_0_1": {
+        "ports": [
+          "A",
+          "and32_0/A",
+          "or32_0/A",
+          "xor32_0/A",
+          "nor32_0/A",
+          "addc_32_0/A",
+          "srl32_0/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B",
+          "and32_0/B",
+          "or32_0/B",
+          "xor32_0/B",
+          "nor32_0/B",
+          "xor32_1/B",
+          "srl32_0/B"
+        ]
+      },
+      "and32_0_res": {
+        "ports": [
+          "and32_0/res",
+          "MUX8T1_32_0/I0"
+        ]
+      },
+      "or32_0_res": {
+        "ports": [
+          "or32_0/res",
+          "MUX8T1_32_0/I1"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "MUX8T1_32_0/I2",
+          "MUX8T1_32_0/I6"
+        ]
+      },
+      "xor32_0_res": {
+        "ports": [
+          "xor32_0/res",
+          "MUX8T1_32_0/I3"
+        ]
+      },
+      "nor32_0_res": {
+        "ports": [
+          "nor32_0/res",
+          "MUX8T1_32_0/I4"
+        ]
+      },
+      "srl32_0_res": {
+        "ports": [
+          "srl32_0/res",
+          "MUX8T1_32_0/I5"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "MUX8T1_32_0/I7"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "xlconcat_0/In0"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "SignalExt_32_0/S",
+          "addc_32_0/C0"
+        ]
+      },
+      "xor32_1_res": {
+        "ports": [
+          "xor32_1/res",
+          "addc_32_0/B"
+        ]
+      },
+      "addc_32_0_S": {
+        "ports": [
+          "addc_32_0/S",
+          "xlslice_0/Din",
+          "xlslice_2/Din"
+        ]
+      },
+      "SignalExt_32_0_So": {
+        "ports": [
+          "SignalExt_32_0/So",
+          "xor32_1/A"
+        ]
+      },
+      "Din_0_1": {
+        "ports": [
+          "ALU_operation",
+          "xlslice_1/Din",
+          "MUX8T1_32_0/s"
+        ]
+      },
+      "or_bit_32_0_o": {
+        "ports": [
+          "or_bit_32_0/o",
+          "o_0"
+        ]
+      },
+      "MUX8T1_32_0_o": {
+        "ports": [
+          "MUX8T1_32_0/o",
+          "res",
+          "or_bit_32_0/A"
+        ]
+      }
+    }
+  }
+}

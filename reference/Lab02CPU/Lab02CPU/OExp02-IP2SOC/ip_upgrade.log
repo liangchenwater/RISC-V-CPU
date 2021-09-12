@@ -1,0 +1,132 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri Mar 12 19:02:07 2021
+| Host         : DESKTOP-BJQ6VJA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_RAM_B_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_RAM_B_0_0 (xilinx.com:user:RAM_B:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Mar 10 17:11:25 2021
+| Host         : DESKTOP-BJQ6VJA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_VGA_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CSSTE_VGA_0_0 (xilinx.com:user:VGA:1.0) from (Rev. 2) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Mar 10 13:30:45 2021
+| Host         : DESKTOP-BJQ6VJA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_VGA_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_VGA_0_0 (xilinx.com:user:VGA:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Mar 10 11:03:31 2021
+| Host         : DESKTOP-BJQ6VJA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SSeg7_Dev_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of CSSTE_SSeg7_Dev_0_0 (xilinx.com:user:SSeg7_Dev:1.0 (Rev. 2)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'CSSTE_SSeg7_Dev_0_0'. These changes may impact your design.
+
+
+-Upgraded port order differs after port 'clk'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Mar 10 10:43:52 2021
+| Host         : DESKTOP-BJQ6VJA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_Counter_x_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_Counter_x_0_0 (xilinx.com:user:Counter_x:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Mar  9 17:25:25 2021
+| Host         : DESKTOP-BJQ6VJA running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SSeg7_Dev_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_SSeg7_Dev_0_0 (xilinx.com:user:SSeg7_Dev:1.0 (Rev. 2)) to Vivado generation flows.
+

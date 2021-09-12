@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Sat Jan 19 19:28:11 2019
+# Process ID: 6816
+# Log file: C:/archlabs/lab01/lab01.sim/sim_1/behav/webtalk.log
+# Journal file: C:/archlabs/lab01/lab01.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/archlabs/lab01/lab01.sim/sim_1/behav/xsim.dir/sim_mips_behav/webtalk/xsim_webtalk.tcl -notrace

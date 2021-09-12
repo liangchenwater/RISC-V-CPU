@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar  1 15:31:41 2021
+# Process ID: 8996
+# Current directory: C:/Users/ASUS/Desktop/OExp00-muxctrl/OExp00-muxctrl.runs/synth_1
+# Command line: vivado.exe -log OExp01_muxctrl_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OExp01_muxctrl_wrapper.tcl
+# Log file: C:/Users/ASUS/Desktop/OExp00-muxctrl/OExp00-muxctrl.runs/synth_1/OExp01_muxctrl_wrapper.vds
+# Journal file: C:/Users/ASUS/Desktop/OExp00-muxctrl/OExp00-muxctrl.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OExp01_muxctrl_wrapper.tcl -notrace

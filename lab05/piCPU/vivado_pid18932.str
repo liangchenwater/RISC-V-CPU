@@ -1,0 +1,2063 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 18932
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Jun 23 16:53:01 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	liang
+User home directory: C:/Users/liang
+User working directory: C:/Users/liang/Desktop/OrgLab/lab05/piCPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2020.2
+RDI_DATADIR: D:/Vivado/2020.2/data
+RDI_BINDIR: D:/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/liang/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/liang/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/liang/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/liang/Desktop/OrgLab/lab05/piCPU/vivado.log
+Vivado journal file location: 	C:/Users/liang/Desktop/OrgLab/lab05/piCPU/vivado.jou
+Engine tmp dir: 	C:/Users/liang/Desktop/OrgLab/lab05/piCPU/.Xil/Vivado-18932-DESKTOP-LII7R1O
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Vivado/2020.2
+XILINX_VIVADO: D:/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,044 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 83 MB (+84276kb) [00:00:13]
+// [Engine Memory]: 1,044 MB (+943258kb) [00:00:13]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,044 MB. GUI used memory: 52 MB. Current time: 6/23/21, 4:53:02 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 90 MB (+2859kb) [00:00:30]
+// [GUI Memory]: 103 MB (+9541kb) [00:00:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  4559 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'. 
+// Project name: piCPU; location: C:/Users/liang/Desktop/OrgLab/lab05/piCPU; part: xc7k160tffg676-2L
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1080.176 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 116 MB (+7438kb) [00:00:37]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 126 MB (+4452kb) [00:03:31]
+// Elapsed time: 177 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+// PAPropertyPanels.initPanels (datapath.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 132 MB (+405kb) [00:03:34]
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 8 seconds
+dismissDialog("Create and Package New IP"); // O
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP 
+// TclEventType: LOAD_FEATURE
+// bz (cr):  IP Packager : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1319 ms.
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Elapsed time: 13 seconds
+dismissDialog("IP Packager"); // bz
+// [GUI Memory]: 155 MB (+16432kb) [00:04:03]
+// Elapsed time: 23 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4, false, false, false, false, true); // ar - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,065 MB. GUI used memory: 83 MB. Current time: 6/23/21, 4:57:12 PM CST
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+// Elapsed time: 131 seconds
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+// Elapsed time: 12 seconds
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ACTIVE_HIGH", 1, (String) null, 1, false); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ACTIVE_HIGH", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Edit Interface"); // H
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// bz (cr):  Package IP : addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new'. 
+// TclEventType: LOAD_FEATURE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,087 MB. GUI used memory: 87 MB. Current time: 6/23/21, 5:09:17 PM CST
+// Elapsed time: 542 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+// Elapsed time: 351 seconds
+selectCodeEditor("pCPU.v", 70, 150); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("pCPU.v", 86, 213); // bP
+selectCodeEditor("pCPU.v", 290, 248); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("pCPU.v", 125, 128); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pCPU.v", 92, 76); // bP
+selectCodeEditor("pCPU.v", 75, 99); // bP
+selectCodeEditor("pCPU.v", 80, 101); // bP
+selectCodeEditor("pCPU.v", 78, 128); // bP
+selectCodeEditor("pCPU.v", 110, 150); // bP
+selectCodeEditor("pCPU.v", 111, 170); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("pCPU.v", 68, 288); // bP
+selectCodeEditor("pCPU.v", 74, 286); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("pCPU.v", 110, 287); // bP
+selectCodeEditor("pCPU.v", 72, 288); // bP
+selectCodeEditor("pCPU.v", 71, 292); // bP
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("datapath.v", 157, 263); // bP
+selectCodeEditor("datapath.v", 164, 34); // bP
+selectCodeEditor("datapath.v", 165, 38); // bP
+selectCodeEditor("datapath.v", 166, 126); // bP
+selectCodeEditor("datapath.v", 162, 235); // bP
+selectCodeEditor("datapath.v", 171, 238); // bP
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // C
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: FILE_SET_CHANGE
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,098 MB (+1606kb) [00:25:17]
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Jun 23 17:18:02 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 69 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+// Elapsed time: 40 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 8 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  IP Packager : addNotify
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+dismissDialog("IP Packager"); // bz
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4, false, false, false, false, true); // ar - Double Click
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0, "Clock and Reset Signals", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,110 MB. GUI used memory: 116 MB. Current time: 6/23/21, 5:20:17 PM CST
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Optional ;  ; ", 4, (String) null, 1, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 165 MB (+2978kb) [00:27:45]
+dismissDialog("Edit Interface"); // H
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0, (String) null, 1, true); // M - Node
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ACTIVE_HIGH", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 180 MB (+6454kb) [00:28:09]
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ;  ;  ; in ;  ;  ;  ;  ;  ; std_logic", 4, "clk", 0, false); // M
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ;  ;  ; in ;  ;  ;  ;  ;  ; std_logic", 4); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ;  ;  ; in ;  ;  ;  ;  ;  ; std_logic", 4, "clk", 0, false, false, false, false, false, true); // M - Double Click
+// af (cr): Edit Port: addNotify
+dismissDialog("Edit Port"); // af
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true); // M - Node
+collapseTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ACTIVE_HIGH", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 1,126 MB. GUI used memory: 87 MB. Current time: 6/23/21, 5:50:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,126 MB. GUI used memory: 84 MB. Current time: 6/23/21, 6:20:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,126 MB. GUI used memory: 84 MB. Current time: 6/23/21, 6:50:18 PM CST
+// Elapsed time: 5432 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 104 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+// Elapsed time: 156 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+// Elapsed time: 74 seconds
+selectCodeEditor("datapath.v", 195, 286); // bP
+// Elapsed time: 37 seconds
+selectCodeEditor("datapath.v", 199, 167); // bP
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 23 18:58:21 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+maximizeFrame(PAResourceOtoP.PAViews_DESIGN_RUNS, "Design Runs"); // az
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 35 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 8 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4, false, false, false, false, true); // ar - Double Click
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_RESET ;  ; rst", 1, "ASSOCIATED_RESET", 0, false); // M
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_RESET ;  ; rst", 1); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_RESET ;  ; rst", 1, "ASSOCIATED_RESET", 0, false, false, false, false, false, true); // M - Double Click
+// E (H): Edit Bus Parameter Name: addNotify
+dismissDialog("Edit Bus Parameter Name"); // E
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+// HMemoryUtils.trashcanNow. Engine heap size: 1,135 MB. GUI used memory: 103 MB. Current time: 6/23/21, 6:59:53 PM CST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 1,174 MB (+22237kb) [02:07:13]
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 170 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+// Elapsed time: 30 seconds
+selectCodeEditor("datapath.v", 317, 61); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("datapath.v", 294, 174); // bP
+selectCodeEditor("datapath.v", 204, 51); // bP
+selectCodeEditor("datapath.v", 466, 76); // bP
+selectCodeEditor("datapath.v", 177, 94); // bP
+selectCodeEditor("datapath.v", 192, 79); // bP
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Launch Runs"); // f
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 7 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - pCPU", 3); // m
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PORT_MAPPING, "Port Mapping", 1); // I
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+// HMemoryUtils.trashcanNow. Engine heap size: 1,197 MB. GUI used memory: 105 MB. Current time: 6/23/21, 7:04:48 PM CST
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 154 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("datapath.v", 291, 238); // bP
+selectCodeEditor("datapath.v", 291, 240); // bP
+selectCodeEditor("datapath.v", 227, 237); // bP
+selectCodeEditor("datapath.v", 294, 241); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("datapath.v", 294, 124); // bP
+selectCodeEditor("datapath.v", 292, 123); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("datapath.v", 270, 194); // bP
+selectCodeEditor("datapath.v", 287, 59); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 6 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+// [GUI Memory]: 191 MB (+2582kb) [02:16:34]
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// [GUI Memory]: 204 MB (+3647kb) [02:16:35]
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+// HMemoryUtils.trashcanNow. Engine heap size: 1,235 MB. GUI used memory: 114 MB. Current time: 6/23/21, 7:09:48 PM CST
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// [Engine Memory]: 1,235 MB (+2251kb) [02:17:06]
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// Elapsed time: 189 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 124 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// f (cr): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 23 19:15:28 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 116 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("datapath.v", 320, 125); // bP
+selectCodeEditor("datapath.v", 319, 240); // bP
+selectCodeEditor("datapath.v", 329, 239); // bP
+selectCodeEditor("datapath.v", 307, 282); // bP
+selectCodeEditor("datapath.v", 311, 156); // bP
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 23 19:18:08 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:73]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;73;-;;-;16;-;"); // ah
+// Elapsed time: 34 seconds
+selectCodeEditor("datapath.v", 129, 235); // bP
+selectCodeEditor("datapath.v", 166, 239); // bP
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'datapath' [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:23]. ]", 2, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:73]. ]", 1, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;73;-;;-;16;-;"); // ah
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 25 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:73]. ]", 1, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-91] ambiguous clock in event control [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:73]. ]", 1, false); // ah
+// Elapsed time: 93 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("datapath.v", 313, 123); // bP
+selectCodeEditor("datapath.v", 320, 123); // bP
+selectCodeEditor("datapath.v", 318, 125); // bP
+selectCodeEditor("datapath.v", 202, 239); // bP
+selectCodeEditor("datapath.v", 179, 287); // bP
+selectCodeEditor("datapath.v", 181, 287); // bP
+selectCodeEditor("datapath.v", 192, 266); // bP
+selectCodeEditor("datapath.v", 39, 154); // bP
+// Elapsed time: 210 seconds
+selectCodeEditor("datapath.v", 145, 333); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("datapath.v", 220, 251); // bP
+// Elapsed time: 120 seconds
+selectCodeEditor("datapath.v", 300, 205); // bP
+// Elapsed time: 194 seconds
+selectCodeEditor("datapath.v", 465, 290); // bP
+// Elapsed time: 52 seconds
+selectCodeEditor("datapath.v", 484, 268); // bP
+// Elapsed time: 25 seconds
+selectCodeEditor("datapath.v", 466, 410); // bP
+// Elapsed time: 127 seconds
+selectCodeEditor("datapath.v", 436, 291); // bP
+selectCodeEditor("datapath.v", 94, 427); // bP
+// Elapsed time: 146 seconds
+selectCodeEditor("datapath.v", 307, 325); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("datapath.v", 313, 389); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("datapath.v", 335, 332); // bP
+selectCodeEditor("datapath.v", 336, 300); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("datapath.v", 276, 340); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,251 MB. GUI used memory: 104 MB. Current time: 6/23/21, 7:39:48 PM CST
+// Elapsed time: 72 seconds
+selectCodeEditor("datapath.v", 539, 313); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), alu : alu (alu.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), alu : alu (alu.v)]", 5, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,261 MB. GUI used memory: 104 MB. Current time: 6/23/21, 7:41:03 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("datapath.v", 79, 196); // bP
+selectCodeEditor("datapath.v", 93, 218); // bP
+selectCodeEditor("datapath.v", 99, 244); // bP
+selectCodeEditor("datapath.v", 98, 262); // bP
+selectCodeEditor("datapath.v", 89, 287); // bP
+selectCodeEditor("datapath.v", 84, 327); // bP
+selectCodeEditor("datapath.v", 74, 316); // bP
+selectCodeEditor("datapath.v", 74, 337); // bP
+selectCodeEditor("datapath.v", 69, 364); // bP
+selectCodeEditor("datapath.v", 63, 391); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("Regs.v", 185, 133); // bP
+selectCodeEditor("Regs.v", 192, 156); // bP
+selectCodeEditor("Regs.v", 237, 181); // bP
+selectCodeEditor("Regs.v", 249, 197); // bP
+selectCodeEditor("Regs.v", 247, 228); // bP
+selectCodeEditor("Regs.v", 248, 244); // bP
+selectCodeEditor("Regs.v", 204, 269); // bP
+selectCodeEditor("Regs.v", 213, 307); // bP
+selectCodeEditor("Regs.v", 206, 319); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), alu : alu (alu.v)]", 5, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), alu : alu (alu.v)]", 5, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("alu.v", 79, 155); // bP
+selectCodeEditor("alu.v", 79, 155, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("alu.v", 77, 172); // bP
+selectCodeEditor("alu.v", 74, 193); // bP
+selectCodeEditor("alu.v", 65, 223); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 25 seconds
+selectCodeEditor("datapath.v", 547, 277); // bP
+// Elapsed time: 102 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.v", 6); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+// Elapsed time: 38 seconds
+selectCodeEditor("datapath.v", 345, 216); // bP
+selectCodeEditor("datapath.v", 348, 216); // bP
+// Elapsed time: 10 seconds
+selectCodeEditor("datapath.v", 487, 347); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("datapath.v", 407, 413); // bP
+selectCodeEditor("datapath.v", 404, 414); // bP
+typeControlKey((HResource) null, "datapath.v", 'c'); // bP
+// Elapsed time: 54 seconds
+selectCodeEditor("datapath.v", 270, 119); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 231 seconds
+selectCodeEditor("datapath.v", 174, 228); // bP
+selectCodeEditor("datapath.v", 161, 173); // bP
+// Elapsed time: 74 seconds
+selectCodeEditor("datapath.v", 179, 240); // bP
+selectCodeEditor("datapath.v", 186, 239); // bP
+selectCodeEditor("datapath.v", 162, 154); // bP
+selectCodeEditor("datapath.v", 166, 172); // bP
+selectCodeEditor("datapath.v", 181, 191); // bP
+selectCodeEditor("datapath.v", 36, 122); // bP
+selectCodeEditor("datapath.v", 81, 211); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("datapath.v", 80, 241); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("datapath.v", 77, 223); // bP
+selectCodeEditor("datapath.v", 77, 208); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("datapath.v", 136, 103); // bP
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pCPU.v", 2); // m
+selectCodeEditor("pCPU.v", 117, 125); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pCPU.v", 60, 260); // bP
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 23 19:53:21 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 156 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 1,261 MB. GUI used memory: 105 MB. Current time: 6/23/21, 8:11:04 PM CST
+// Elapsed time: 973 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin PC_out_OBUF[31] with 1st driver pin 'datapath/PC_out_reg[31]/Q' [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:77]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;77;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin PC_out_OBUF[31] with 1st driver pin 'datapath/PC_out_reg[31]/Q' [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:77]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;77;-;;-;16;-;"); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin PC_out_OBUF[31] with 1st driver pin 'datapath/PC_out_reg[31]/Q' [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:77]. ]", 1, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;77;-;;-;16;-;"); // ah
+// Elapsed time: 26 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 6 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PORT_MAPPING, "Port Mapping", 1); // I
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 1, "ASSOCIATED_BUSIF", 0, false); // M
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 1); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 1, "ASSOCIATED_BUSIF", 0, false, false, false, false, false, true); // M - Double Click
+// E (H): Edit Bus Parameter Name: addNotify
+setText(PAResourceAtoD.BusParameterFacetTable_NAME, (String) null); // aa
+setText(PAResourceAtoD.BusParameterFacetTable_NAME, "POLARITY"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property name POLARITY [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]] 
+dismissDialog("Edit Bus Parameter Name"); // E
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 1, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, (String) null, 1, true); // M - Node
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+collapseTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, (String) null, 1, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PORT_MAPPING, "Port Mapping", 1); // I
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 2, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Addressing and Memory", 5); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 3 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 452 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("datapath.v", 103, 284); // bP
+selectCodeEditor("datapath.v", 53, 356); // bP
+// Elapsed time: 158 seconds
+selectCodeEditor("datapath.v", 250, 263); // bP
+// Elapsed time: 685 seconds
+selectCodeEditor("datapath.v", 458, 268); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 83 seconds
+selectCodeEditor("controller.v", 181, 118); // bP
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 19 seconds
+selectCodeEditor("datapath.v", 264, 200); // bP
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 3, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 148 seconds
+selectCodeEditor("controller.v", 179, 127); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,261 MB. GUI used memory: 115 MB. Current time: 6/23/21, 8:41:04 PM CST
+// Elapsed time: 116 seconds
+selectCodeEditor("controller.v", 20, 173); // bP
+typeControlKey((HResource) null, "controller.v", 'c'); // bP
+selectCodeEditor("controller.v", 166, 130); // bP
+typeControlKey((HResource) null, "controller.v", 'v'); // bP
+selectCodeEditor("controller.v", 164, 149); // bP
+selectCodeEditor("controller.v", 38, 149); // bP
+selectCodeEditor("controller.v", 40, 150); // bP
+selectCodeEditor("controller.v", 25, 180); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("controller.v", 236, 146); // bP
+// Elapsed time: 29 seconds
+selectCodeEditor("controller.v", 136, 212); // bP
+selectCodeEditor("controller.v", 259, 222); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("controller.v", 398, 217); // bP
+selectCodeEditor("controller.v", 176, 243); // bP
+selectCodeEditor("controller.v", 297, 240); // bP
+selectCodeEditor("controller.v", 441, 241); // bP
+// Elapsed time: 37 seconds
+selectCodeEditor("controller.v", 179, 127); // bP
+selectCodeEditor("controller.v", 290, 125); // bP
+selectCodeEditor("controller.v", 434, 131); // bP
+selectCodeEditor("controller.v", 175, 148); // bP
+selectCodeEditor("controller.v", 293, 142); // bP
+selectCodeEditor("controller.v", 433, 153); // bP
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("datapath.v", 164, 98); // bP
+selectCodeEditor("datapath.v", 213, 140); // bP
+// Elapsed time: 109 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), controller : controller (controller.v)]", 6, false, false, false, false, false, true); // D - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller.v", 7); // m
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller.v", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+selectCodeEditor("datapath.v", 274, 243); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("datapath.v", 248, 127); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("datapath.v", 313, 284); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("datapath.v", 82, 29); // bP
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pCPU.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller.v", 3); // m
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+// Elapsed time: 32 seconds
+selectCodeEditor("datapath.v", 191, 128); // bP
+selectCodeEditor("datapath.v", 174, 87); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("datapath.v", 189, 200); // bP
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pCPU.v", 2); // m
+selectCodeEditor("pCPU.v", 76, 243); // bP
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pCPU.v", 2); // m
+selectCodeEditor("pCPU.v", 99, 129); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("pCPU.v", 120, 219); // bP
+selectCodeEditor("pCPU.v", 249, 227); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("pCPU.v", 66, 198); // bP
+selectCodeEditor("pCPU.v", 71, 192); // bP
+selectCodeEditor("pCPU.v", 156, 191); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("pCPU.v", 248, 251); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("pCPU.v", 281, 185); // bP
+selectCodeEditor("pCPU.v", 275, 166); // bP
+// Elapsed time: 20 seconds
+selectCodeEditor("pCPU.v", 156, 125); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("pCPU.v", 171, 217); // bP
+selectCodeEditor("pCPU.v", 105, 216); // bP
+// Elapsed time: 18 seconds
+selectCodeEditor("pCPU.v", 173, 236); // bP
+// Elapsed time: 42 seconds
+selectCodeEditor("pCPU.v", 21, 241); // bP
+typeControlKey((HResource) null, "pCPU.v", 'c'); // bP
+selectCodeEditor("pCPU.v", 201, 136); // bP
+typeControlKey((HResource) null, "pCPU.v", 'v'); // bP
+// Elapsed time: 21 seconds
+selectCodeEditor("pCPU.v", 194, 105); // bP
+selectCodeEditor("pCPU.v", 157, 170); // bP
+selectCodeEditor("pCPU.v", 203, 172); // bP
+selectCodeEditor("pCPU.v", 80, 198); // bP
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller.v", 3); // m
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 23 20:56:00 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near .. [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/pCPU.v:144]. ]", 2, false); // ah
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\pCPU.v;-;;-;16;-;line;-;144;-;;-;16;-;"); // ah
+selectCodeEditor("pCPU.v", 168, 215); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 13, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// am (cr): Save Project: addNotify
+dismissDialog("Save Project"); // am
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RUN_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jun 23 20:56:21 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 46 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.gen/sources_1'.. ]", 2, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.gen/sources_1'.. ]", 2, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.. ]", 3, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-1017] Problems encountered:. 1. Failed to delete one or more files in run directory C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1. . ]", 4, false); // ah
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Wt_data_wb_reg' [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:159]. ]", 6, true); // ah - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.srcs\sources_1\new\datapath.v;-;;-;16;-;line;-;159;-;;-;16;-;"); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'Wt_data_wb_reg' [C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new/datapath.v:159]. ]", 6); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 7 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4, false, false, false, false, true); // ar - Double Click
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 1,285 MB. GUI used memory: 143 MB. Current time: 6/23/21, 8:57:44 PM CST
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+// [Engine Memory]: 1,299 MB (+2927kb) [04:05:19]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 1,329 MB. GUI used memory: 171 MB. Current time: 6/23/21, 8:58:09 PM CST
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1180 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 13 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+selectCodeEditor("datapath.v", 236, 224); // bP
+selectCodeEditor("datapath.v", 250, 206); // bP
+// Elapsed time: 46 seconds
+selectCodeEditor("datapath.v", 20, 103); // bP
+selectCodeEditor("datapath.v", 155, 224); // bP
+selectCodeEditor("datapath.v", 223, 242); // bP
+// Elapsed time: 26 seconds
+selectCodeEditor("datapath.v", 97, 223); // bP
+selectCodeEditor("datapath.v", 144, 212); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("datapath.v", 210, 239); // bP
+// Elapsed time: 51 seconds
+selectCodeEditor("datapath.v", 59, 209); // bP
+selectCodeEditor("datapath.v", 65, 202); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller.v", 3); // m
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Jun 23 21:21:11 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.v", 1); // m
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 64 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 5 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+// [GUI Memory]: 216 MB (+1477kb) [04:29:50]
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+// [GUI Memory]: 236 MB (+10013kb) [04:30:10]
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 1,339 MB. GUI used memory: 128 MB. Current time: 6/23/21, 9:28:10 PM CST
+// Elapsed time: 732 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 354 seconds
+selectCodeEditor("datapath.v", 129, 101); // bP
+selectCodeEditor("datapath.v", 2, 124); // bP
+typeControlKey((HResource) null, "datapath.v", 'c'); // bP
+selectCodeEditor("datapath.v", 91, 138); // bP
+selectCodeEditor("datapath.v", 46, 141); // bP
+selectCodeEditor("datapath.v", 186, 134); // bP
+typeControlKey((HResource) null, "datapath.v", 'v'); // bP
+// Elapsed time: 117 seconds
+selectCodeEditor("datapath.v", 231, 185); // bP
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("datapath.v", 224, 272); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  1782357 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 2982ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2929 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,339 MB. GUI used memory: 128 MB. Current time: 6/23/21, 10:23:28 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2720 ms. Increasing delay to 8160 ms.
+// Elapsed time: 2463 seconds
+selectCodeEditor("datapath.v", 41, 219); // bP
+selectCodeEditor("datapath.v", 32, 218); // bP
+selectCodeEditor("datapath.v", 63, 212); // bP
+selectCodeEditor("datapath.v", 207, 194); // bP
+typeControlKey((HResource) null, "datapath.v", 'c'); // bP
+selectCodeEditor("datapath.v", 50, 216); // bP
+selectCodeEditor("datapath.v", 23, 188); // bP
+selectCodeEditor("datapath.v", 200, 220); // bP
+typeControlKey((HResource) null, "datapath.v", 'v'); // bP
+selectCodeEditor("datapath.v", 41, 237); // bP
+selectCodeEditor("datapath.v", 194, 240); // bP
+selectCodeEditor("datapath.v", 329, 302); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("datapath.v", 10, 196); // bP
+typeControlKey((HResource) null, "datapath.v", 'c'); // bP
+selectCodeEditor("datapath.v", 84, 211); // bP
+selectCodeEditor("datapath.v", 27, 281); // bP
+typeControlKey((HResource) null, "datapath.v", 'v'); // bP
+selectCodeEditor("datapath.v", 162, 284); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("datapath.v", 212, 193); // bP
+selectCodeEditor("datapath.v", 222, 196); // bP
+selectCodeEditor("datapath.v", 218, 197); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("datapath.v", 308, 195); // bP
+selectCodeEditor("datapath.v", 313, 191); // bP
+selectCodeEditor("datapath.v", 263, 237); // bP
+// Elapsed time: 57 seconds
+selectCodeEditor("datapath.v", 112, 397); // bP
+selectCodeEditor("datapath.v", 312, 315); // bP
+selectCodeEditor("datapath.v", 212, 328); // bP
+selectCodeEditor("datapath.v", 218, 331); // bP
+// Elapsed time: 16 seconds
+selectCodeEditor("datapath.v", 180, 304); // bP
+selectCodeEditor("datapath.v", 193, 327); // bP
+selectCodeEditor("datapath.v", 205, 334); // bP
+selectCodeEditor("datapath.v", 198, 335); // bP
+selectCodeEditor("datapath.v", 178, 277); // bP
+selectCodeEditor("datapath.v", 183, 285); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("datapath.v", 204, 333); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("datapath.v", 237, 263); // bP
+selectCodeEditor("datapath.v", 227, 288); // bP
+selectCodeEditor("datapath.v", 223, 313); // bP
+selectCodeEditor("datapath.v", 220, 337); // bP
+selectCodeEditor("datapath.v", 276, 390); // bP
+selectCodeEditor("datapath.v", 202, 307); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("datapath.v", 101, 159); // bP
+// Elapsed time: 12 seconds
+selectCodeEditor("datapath.v", 77, 60); // bP
+selectCodeEditor("datapath.v", 62, 124); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("datapath.v", 109, 332); // bP
+selectCodeEditor("datapath.v", 71, 336); // bP
+// Elapsed time: 72 seconds
+selectCodeEditor("datapath.v", 162, 404); // bP
+typeControlKey((HResource) null, "datapath.v", 'c'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("datapath.v", 174, 265); // bP
+typeControlKey((HResource) null, "datapath.v", 'v'); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("datapath.v", 216, 240); // bP
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), Regs : Regs (Regs.v)]", 4, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v), ImmGen : ImmGen (ImmGen.v)]", 3, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pCPU (pCPU.v), datapath : datapath (datapath.v)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 28 seconds
+selectCodeEditor("datapath.v", 95, 99); // bP
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // am
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Jun 23 22:33:23 2021] Launched synth_1... Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 81 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Synthesis Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 1,343 MB. GUI used memory: 127 MB. Current time: 6/23/21, 10:53:31 PM CST
+// Elapsed time: 2338 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// O (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceItoN.NewIpWizard_PACKAGE_YOUR_CURRENT_PROJECT_USE, "Package your current project. Use the project as the source for creating a new IP Definition."); // b
+// bz (O):  Analyze source files for top modules : addNotify
+selectButton("NEXT", "Next >"); // JButton
+dismissDialog("Analyze source files for top modules"); // bz
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Overwrite"); // JButton
+selectButton("FINISH", "Finish"); // JButton
+// 'p' command handler elapsed time: 7 seconds
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Create and Package New IP"); // O
+closeView(PAResourceOtoP.PAViews_PACKAGE_IP, "Package IP - pCPU"); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: ipx::package_project -root_dir c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new -vendor xilinx.com -library user -taxonomy /UserIP -force 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'. 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  IP Packager : addNotify
+dismissDialog("IP Packager"); // bz
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4, false, false, false, false, true); // ar - Double Click
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "Clock and Reset Signals ;  ;  ;  ;  ;  ;  ;  ;  ; ", 0); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "rst ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 1, "rst", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+// Elapsed time: 10 seconds
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "POLARITY"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]] 
+expandTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "Overridden ;  ; ", 0); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "POLARITY ;  ; ", 1, (String) null, 2, false); // M
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+dismissDialog("Edit Interface"); // H
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true); // M - Node
+expandTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3); // M
+selectTreeTable(PAResourceOtoP.PortAndInterfaceFacetTable_PORT_AND_INTERFACE_FACET_TABLE, "clk ; slave ;  ;  ;  ;  ;  ;  ;  ; ", 3, "clk", 0, true, false, false, false, false, true); // M - Double Click - Node
+// H (cr): Edit Interface: addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTab(PAResourceEtoH.EditInterfaceDialog_TABBED_PANE, PAResourceEtoH.EditInterfaceDialog_PARAMETERS, "Parameters", 2); // I
+selectButton(PAResourceAtoD.BusParameterFacetTable_ADD_RECOMMENDED_PARAMETER, (String) null); // E
+setText("PAResourceAtoD.BusParameterFacetTable_ENTER_NEW_BUS_PARAMETER_NAME", "ASSOCIATED_BUSIF"); // BasicOptionPaneUI.MultiplexingTextField
+// TclEventType: PACKAGER_OBJECT_ADD
+selectButton("OptionPane.button", "OK"); // JButton
+// Tcl Message: ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; ", 2, "List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c", 2, false); // M
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_RESET ;  ; rst", 1, (String) null, 1, false); // M
+selectTreeTable(PAResourceAtoD.BusParameterFacetTable_BUS_PARAMETER_FACET_TABLE, "ASSOCIATED_BUSIF ; List of bus interface names separated by colons. For example, m_axis_a:s_axis_b:s_axis_c ; clk", 2, (String) null, 1, false); // M
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Edit Interface"); // H
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 2 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// bz (cr):  Package IP : addNotify
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/users/liang/desktop/orglab/lab05/picpu/picpu.srcs/sources_1/new' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// HMemoryUtils.trashcanNow. Engine heap size: 1,344 MB. GUI used memory: 133 MB. Current time: 6/23/21, 11:23:31 PM CST

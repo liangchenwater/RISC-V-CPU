@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1547781573">
+  <File Type="PWROPT-DCP" Name="mips_top_pwropt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PLACE-DCP" Name="mips_top_placed.dcp"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DRC" Name="mips_top_drc_pwropted.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mips_top_timing_summary_routed.rpt"/>
+  <File Type="PA-TCL" Name="mips_top.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DCP" Name="mips_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="mips_top_drc_opted.rpt"/>
+  <File Type="PLACE-IO" Name="mips_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mips_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mips_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mips_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mips_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mips_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mips_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mips_top_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="mips_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mips_top_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="mips_top_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="mips_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mips_top_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="mips_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="mips_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="mips_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mips_top_route_status.pb"/>
+  <File Type="ROUTE-TIMING-PB" Name="mips_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mips_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mips_top_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mips_top_postroute_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="mips_top.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mips_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mips_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mips_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="mips_top.bit"/>
+  <File Type="BG-BIN" Name="mips_top.bin"/>
+  <File Type="BITSTR-MSK" Name="mips_top.msk"/>
+  <File Type="BITSTR-RBT" Name="mips_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="mips_top.nky"/>
+  <File Type="BITSTR-BMM" Name="mips_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="mips_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="mips_top.sysdef"/>
+  <File Type="BG-BGN" Name="mips_top.bgn"/>
+  <File Type="BG-DRC" Name="mips_top.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/define.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/define.vh"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/regfile.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/mips_define.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/mips_define.vh"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/alu.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab03/sources/controller.v"/>
+        <Attr Name="ImportTime" Val="1448712300"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab03/sources/datapath.v"/>
+        <Attr Name="ImportTime" Val="1448442030"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/vga_8x16.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/vga_8x16.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/function.vh">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/function.vh"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/parallel2serial.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/parallel2serial.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/inst_rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/inst_rom.v"/>
+        <Attr Name="ImportTime" Val="1547180302"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/data_ram.v"/>
+        <Attr Name="ImportTime" Val="1547180325"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources/mips_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab03/sources/mips_core.v"/>
+        <Attr Name="ImportTime" Val="1448441514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/vga_debug.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/vga_debug.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/vga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/vga.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/my_clk_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/my_clk_gen.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/display.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/clk_diff.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/clk_diff.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/btn_scan.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/btn_scan.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/mips.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/peripherals/mips_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/peripherals/mips_top.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/cpu/sim_mips.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/sources/cpu/sim_mips.v"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/data/inst_mem.hex">
+      <FileInfo SFType="DATA">
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/data/inst_mem.hex"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/data/data_mem.hex">
+      <FileInfo SFType="DATA">
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/data/data_mem.hex"/>
+        <Attr Name="ImportTime" Val="1546829427"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mips_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/constrs/sword4.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ComputerArchitecture/lab_source/lab2/constrs/sword4.xdc"/>
+        <Attr Name="ImportTime" Val="1546830894"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/constrs/sword4.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

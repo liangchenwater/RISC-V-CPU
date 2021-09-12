@@ -1,0 +1,1 @@
+-wto "0c159de9099d4ed7bcd5eaa1999b76f2" --debug "typical" --relax --include "../../../lab06.srcs/sources_1/imports/sources" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "sim_mips_behav" "xil_defaultlib.sim_mips" "xil_defaultlib.glbl" -log "elaborate.log" 

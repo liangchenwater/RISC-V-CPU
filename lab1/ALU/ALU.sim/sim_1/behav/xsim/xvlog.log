@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb

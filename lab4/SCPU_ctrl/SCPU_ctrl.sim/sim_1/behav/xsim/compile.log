@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new/SCPU_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sim_1/new/tb_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_ctrl
+INFO: [VRFC 10-2458] undeclared symbol MIOReady, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sim_1/new/tb_ctrl.v:75]

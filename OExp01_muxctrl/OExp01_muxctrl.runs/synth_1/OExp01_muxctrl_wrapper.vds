@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  8 14:31:27 2021
+# Process ID: 18292
+# Current directory: C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.runs/synth_1
+# Command line: vivado.exe -log OExp01_muxctrl_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OExp01_muxctrl_wrapper.tcl
+# Log file: C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.runs/synth_1/OExp01_muxctrl_wrapper.vds
+# Journal file: C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OExp01_muxctrl_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/MUX'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top OExp01_muxctrl_wrapper -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4540
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1139.477 ; gain = 28.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_wrapper' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/hdl/OExp01_muxctrl_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/synth/OExp01_muxctrl.v:13]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX2T1_5_0_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/synth/OExp01_muxctrl_MUX2T1_5_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_5' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/8109/MUX2T1_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_5' (1#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/8109/MUX2T1_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX2T1_5_0_0' (2#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_0_0/synth/OExp01_muxctrl_MUX2T1_5_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX2T1_5_1_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_1_0/synth/OExp01_muxctrl_MUX2T1_5_1_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX2T1_5_1_0' (3#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX2T1_5_1_0/synth/OExp01_muxctrl_MUX2T1_5_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX4T1_5_1_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_1_0/synth/OExp01_muxctrl_MUX4T1_5_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'MUX4T1_5' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/4dec/MUX4T1_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4T1_5' (4#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/4dec/MUX4T1_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX4T1_5_1_0' (5#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX4T1_5_1_0/synth/OExp01_muxctrl_MUX4T1_5_1_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_MUX8T1_8_0_1' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_1/synth/OExp01_muxctrl_MUX8T1_8_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'MUX8T1_8' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/b78a/MUX8T1_8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX8T1_8' (6#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/b78a/MUX8T1_8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_MUX8T1_8_0_1' (7#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_MUX8T1_8_0_1/synth/OExp01_muxctrl_MUX8T1_8_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconcat_0_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_0_0/synth/OExp01_muxctrl_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 4 - type: integer 
+	Parameter IN1_WIDTH bound to: 4 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 8 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (8#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconcat_0_0' (9#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_0_0/synth/OExp01_muxctrl_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconcat_1_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_1_0/synth/OExp01_muxctrl_xlconcat_1_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconcat_1_0' (10#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconcat_1_0/synth/OExp01_muxctrl_xlconcat_1_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_0/synth/OExp01_muxctrl_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 5'b00000 
+	Parameter CONST_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (11#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_0' (12#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_0/synth/OExp01_muxctrl_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_1' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_1/synth/OExp01_muxctrl_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 5'b00001 
+	Parameter CONST_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (12#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_1' (13#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_1/synth/OExp01_muxctrl_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_2' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_2/synth/OExp01_muxctrl_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 8'b00000001 
+	Parameter CONST_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized1' (13#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_2' (14#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_2/synth/OExp01_muxctrl_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlconstant_0_3' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_3/synth/OExp01_muxctrl_xlconstant_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1'b1 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized2' (14#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlconstant_0_3' (15#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlconstant_0_3/synth/OExp01_muxctrl_xlconstant_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_0_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_0_0/synth/OExp01_muxctrl_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 5 - type: integer 
+	Parameter DIN_FROM bound to: 3 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (16#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_0_0' (17#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_0_0/synth/OExp01_muxctrl_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_1_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_0/synth/OExp01_muxctrl_xlslice_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_1_0' (18#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_0/synth/OExp01_muxctrl_xlslice_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_3_0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_3_0/synth/OExp01_muxctrl_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 8 - type: integer 
+	Parameter DIN_FROM bound to: 4 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (18#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_3_0' (19#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_3_0/synth/OExp01_muxctrl_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'OExp01_muxctrl_xlslice_1_1' [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_1/synth/OExp01_muxctrl_xlslice_1_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_xlslice_1_1' (20#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/ip/OExp01_muxctrl_xlslice_1_1/synth/OExp01_muxctrl_xlslice_1_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl' (21#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/synth/OExp01_muxctrl.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'OExp01_muxctrl_wrapper' (22#1) [c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.gen/sources_1/bd/OExp01_muxctrl/hdl/OExp01_muxctrl_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1192.180 ; gain = 80.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1192.180 ; gain = 80.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1192.180 ; gain = 80.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1192.180 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new/muxctrl.xdc]
+Finished Parsing XDC File [C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new/muxctrl.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/constrs_1/new/muxctrl.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OExp01_muxctrl_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OExp01_muxctrl_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1234.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1234.703 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1234.703 ; gain = 123.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1234.703 ; gain = 123.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX2T1_5_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX2T1_5_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX4T1_5_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconcat_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlconstant_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/MUX8T1_8_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for OExp01_muxctrl_i/xlslice_2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1234.703 ; gain = 123.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1234.703 ; gain = 123.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1234.703 ; gain = 123.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1280.117 ; gain = 168.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1280.117 ; gain = 168.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1299.680 ; gain = 188.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     1|
+|2     |LUT4 |     5|
+|3     |LUT5 |     5|
+|4     |IBUF |    11|
+|5     |OBUF |     5|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1305.457 ; gain = 151.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1305.457 ; gain = 194.242
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1317.512 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1320.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1320.613 ; gain = 209.398
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.runs/synth_1/OExp01_muxctrl_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OExp01_muxctrl_wrapper_utilization_synth.rpt -pb OExp01_muxctrl_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  8 14:32:18 2021...

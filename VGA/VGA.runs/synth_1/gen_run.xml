@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k160tffg676-2L" LaunchTime="1624609849">
+  <File Type="PA-TCL" Name="VGA.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="VGA_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="VGA_reports.tcl"/>
+  <File Type="RDS-RDS" Name="VGA.vds"/>
+  <File Type="RDS-UTIL" Name="VGA_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="VGA_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="VGA.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="VGA_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="VGA_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Framework/VgaController.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2021_CompOrg_TA-master/Labs/lab5/Lab5-Material/Source/Framework/VgaController.v"/>
+        <Attr Name="ImportTime" Val="1621007351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Framework/VgaDebugger.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2021_CompOrg_TA-master/Labs/lab5/Lab5-Material/Source/Framework/VgaDebugger.v"/>
+        <Attr Name="ImportTime" Val="1621007351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Framework/VgaDisplay.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2021_CompOrg_TA-master/Labs/lab5/Lab5-Material/Source/Framework/VgaDisplay.v"/>
+        <Attr Name="ImportTime" Val="1621007351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Framework/VGA.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../2021_CompOrg_TA-master/Labs/lab5/Lab5-Material/Source/Framework/VGA.v"/>
+        <Attr Name="ImportTime" Val="1621007351"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/framework/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="VGA"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

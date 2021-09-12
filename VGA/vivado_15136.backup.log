@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jun 24 17:04:14 2021
+# Process ID: 15136
+# Current directory: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10492 C:\Users\liang\Desktop\OrgLab\reference\Lab05流水线\Lab05-1 流水线处理器集成  (学生版）\OExp05-Pipeline_CPU\VGA\VGA.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/VGA.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA'
+INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/VGA' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'VGA.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/VGA.srcs/sources_1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.195 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Thu Jun 24 17:06:33 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/VGA.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Thu Jun 24 17:08:47 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/reference/Lab05流水线/Lab05-1 流水线处理器集成  (学生版）/OExp05-Pipeline_CPU/VGA/VGA.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 17:12:07 2021...

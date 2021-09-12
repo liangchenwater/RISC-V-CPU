@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 17 19:33:52 2021
+# Process ID: 15932
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/and32/and32.runs/synth_1
+# Command line: vivado.exe -log and32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source and32.tcl
+# Log file: C:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/and32/and32.runs/synth_1/and32.vds
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/and32/and32.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source and32.tcl -notrace

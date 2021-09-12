@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 14:42:05 2021
+# Process ID: 15052
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1
+# Command line: vivado.exe -log pCPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pCPU.tcl
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1/pCPU.vds
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pCPU.tcl -notrace

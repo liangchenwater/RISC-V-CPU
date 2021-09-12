@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 15:04:17 2021
+# Process ID: 14396
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13860 C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd}
+launch_simulation
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+source tb.tcl
+close_sim

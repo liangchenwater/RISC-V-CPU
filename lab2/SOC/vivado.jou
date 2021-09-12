@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 28 14:01:42 2021
+# Process ID: 11200
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab2/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8720 C:\Users\liang\Desktop\OrgLab\lab2\SOC\SOC.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab2/SOC/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab2/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.xpr
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:SCPUC:1.0 SCPUC_0
+endgroup
+set_property location {10 3720 725} [get_bd_cells SCPUC_0]
+connect_bd_net [get_bd_pins SCPUC_0/clk] [get_bd_pins U8/Clk_CPU]
+connect_bd_net [get_bd_pins SCPUC_0/rst] [get_bd_pins U9/rst]
+connect_bd_net [get_bd_pins SCPUC_0/Inst_in] [get_bd_pins U2/spo]
+connect_bd_net [get_bd_pins SCPUC_0/Data_in] [get_bd_pins RAM_B_0/douta]
+delete_bd_objs [get_bd_nets pCPU_0_PC_id] [get_bd_nets pCPU_0_inst_id] [get_bd_nets pCPU_0_MemRW_ex] [get_bd_nets pCPU_0_PC_if] [get_bd_nets pCPU_0_PC_ex] [get_bd_nets pCPU_0_inst_if] [get_bd_nets pCPU_0_Wt_data] [get_bd_cells pCPU_0]
+connect_bd_net [get_bd_pins SCPUC_0/MemRW] [get_bd_pins VGA_0/MemRW_Mem]
+connect_bd_net [get_bd_pins SCPUC_0/Data_out] [get_bd_pins RAM_B_0/dina]
+connect_bd_net [get_bd_pins SCPUC_0/PC_out] [get_bd_pins U5/data7]
+connect_bd_net [get_bd_pins SCPUC_0/CPU_MIO] [get_bd_pins SCPUC_0/MIO_ready]
+undo
+connect_bd_net [get_bd_pins SCPUC_0/Addr_out] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins SCPUC_0/Addr_out] [get_bd_pins SCPUC_0/INT0]
+undo
+connect_bd_net [get_bd_pins SCPUC_0/PC_out] [get_bd_pins VGA_0/PC_IF]
+startgroup
+set_property -dict [list CONFIG.coefficient_file {C:/Users/liang/Desktop/OrgLab/lab4/inter_mem.coe}] [get_bd_cells U2]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.runs/impl_1/CSSTE_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]

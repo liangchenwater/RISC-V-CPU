@@ -1,0 +1,252 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 15:12:37 2021
+# Process ID: 16208
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18760 C:\Users\liang\Desktop\OrgLab\lab05\lab05_pipelinedCPU\lab05_pipelinedCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipiline_IF.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1089.164 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipeline_CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipeline_CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ex_reg_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Ex
+INFO: [VRFC 10-2458] undeclared symbol ALU_control_in_EX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_ID
+INFO: [VRFC 10-2458] undeclared symbol Inst_14_12, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:59]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_IF
+ERROR: [VRFC 10-4982] syntax error near 'always' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v:34]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword always used in incorrect context [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v:34]
+ERROR: [VRFC 10-2969] 'PC_selected_IF' is not a type [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v:36]
+ERROR: [VRFC 10-2969] 'PC_out_IF' is not a type [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v:37]
+ERROR: [VRFC 10-2865] module 'Pipeline_IF' ignored due to previous errors [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipeline_CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipeline_CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ex_reg_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Ex
+INFO: [VRFC 10-2458] undeclared symbol ALU_control_in_EX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_ID
+INFO: [VRFC 10-2458] undeclared symbol Inst_14_12, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:59]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/REG32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Regs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/SCPU_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SCPU_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/stall.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stall
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_CPU
+INFO: [VRFC 10-2458] undeclared symbol RegWrite_in_EXMem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:69]
+INFO: [VRFC 10-2458] undeclared symbol Rd_addr_EXMem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:70]
+INFO: [VRFC 10-2458] undeclared symbol RegWrite_in_MemWB, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:71]
+INFO: [VRFC 10-2458] undeclared symbol Rd_addr_MemWB, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:72]
+INFO: [VRFC 10-2458] undeclared symbol Branch_in_IDEX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:75]
+INFO: [VRFC 10-2458] undeclared symbol BranchN_in_IDEX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:76]
+INFO: [VRFC 10-2458] undeclared symbol Jump_in_IDEX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:77]
+INFO: [VRFC 10-2458] undeclared symbol Branch_in_EXMem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:78]
+INFO: [VRFC 10-2458] undeclared symbol BranchN_in_EXMem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:79]
+INFO: [VRFC 10-2458] undeclared symbol Jump_in_EXMem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:80]
+INFO: [VRFC 10-2458] undeclared symbol Branch_in_Mem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:81]
+INFO: [VRFC 10-2458] undeclared symbol BranchN_in_Mem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:82]
+INFO: [VRFC 10-2458] undeclared symbol Jump_in_Mem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:83]
+WARNING: [VRFC 10-2938] 'Branch_in_IDEX' is already implicitly declared on line 75 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:123]
+WARNING: [VRFC 10-2938] 'BranchN_in_IDEX' is already implicitly declared on line 76 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:124]
+WARNING: [VRFC 10-2938] 'Jump_in_IDEX' is already implicitly declared on line 77 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:126]
+INFO: [VRFC 10-2458] undeclared symbol RegWrite_ID_Mem, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:132]
+WARNING: [VRFC 10-2938] 'Rd_addr_EXMem' is already implicitly declared on line 70 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:160]
+WARNING: [VRFC 10-2938] 'Branch_in_EXMem' is already implicitly declared on line 78 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:161]
+WARNING: [VRFC 10-2938] 'BranchN_in_EXMem' is already implicitly declared on line 79 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:162]
+WARNING: [VRFC 10-2938] 'Jump_in_EXMem' is already implicitly declared on line 80 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:163]
+WARNING: [VRFC 10-2938] 'RegWrite_in_EXMem' is already implicitly declared on line 69 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:165]
+WARNING: [VRFC 10-3248] data object 'PC_imm_EXMem' is already declared [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:201]
+WARNING: [VRFC 10-3703] second declaration of 'PC_imm_EXMem' ignored [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:201]
+WARNING: [VRFC 10-2938] 'Rd_addr_MemWB' is already implicitly declared on line 72 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:223]
+WARNING: [VRFC 10-2938] 'Branch_in_Mem' is already implicitly declared on line 81 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:226]
+WARNING: [VRFC 10-2938] 'BranchN_in_Mem' is already implicitly declared on line 82 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:227]
+WARNING: [VRFC 10-2938] 'Jump_in_Mem' is already implicitly declared on line 83 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:228]
+WARNING: [VRFC 10-2938] 'RegWrite_in_MemWB' is already implicitly declared on line 71 [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:230]
+INFO: [VRFC 10-2458] undeclared symbol MemtoReg_inWB, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:298]
+WARNING: [VRFC 10-3380] identifier 'inst_in_ID' is used before its declaration [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:47]
+WARNING: [VRFC 10-3380] identifier 'ALU_in_MemWB' is used before its declaration [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:49]
+WARNING: [VRFC 10-3380] identifier 'Rs2_out_EXMem' is used before its declaration [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:50]
+WARNING: [VRFC 10-3380] identifier 'MemRW_in_EXMem' is used before its declaration [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:52]
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1089.164 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+"xelab -wto 6efc89b115344b31bfa63370ab97aa81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipeline_CPU_behav xil_defaultlib.Pipeline_CPU xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6efc89b115344b31bfa63370ab97aa81 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipeline_CPU_behav xil_defaultlib.Pipeline_CPU xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'Rs1_addr_ID' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:67]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'Rs2_addr_ID' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:68]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'Rs1_addr_ID' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:148]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 'Rs2_addr_ID' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:149]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'Fun3' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:84]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en_IDEX' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:170]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 3 for port 'ALU_operation' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en_EXMem' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:234]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'en_MemWB' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:278]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'MemtoReg_in_WB' [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v:298]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs1_out_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:76]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs2_out_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:77]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Imm_out_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:81]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'ImmSel' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:86]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'ALUSrc_B_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:87]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'MemtoReg_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:88]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Jump_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:89]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Branch_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:90]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'BranchN_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:91]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'RegWrite_out_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:92]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'MemRW_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:93]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'ALU_Control_ID' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:94]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs1_used' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:95]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Rs2_used' is not permitted [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:96]
+WARNING: [VRFC 10-5021] port 'MIO_ready' is not connected on this instance [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:83]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1089.164 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipeline_CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipeline_CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ex_reg_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Ex
+INFO: [VRFC 10-2458] undeclared symbol ALU_control_in_EX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_ID
+INFO: [VRFC 10-2458] undeclared symbol Inst_14_12, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:59]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rd_addr_out_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:64]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs1_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:65]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs2_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:66]
+ERROR: [VRFC 10-2865] module 'Pipeline_ID' ignored due to previous errors [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipeline_CPU' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Pipeline_CPU_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ex_reg_Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_reg_Ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_reg_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem_reg_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_Ex
+INFO: [VRFC 10-2458] undeclared symbol ALU_control_in_EX, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipeline_ID
+INFO: [VRFC 10-2458] undeclared symbol Inst_14_12, assumed default net type wire [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:59]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rd_addr_out_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:64]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs1_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:65]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register Rs2_addr_ID is not permitted, left-hand side should be reg/integer/time/genvar [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:66]
+ERROR: [VRFC 10-2865] module 'Pipeline_ID' ignored due to previous errors [C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 21 15:18:24 2021...

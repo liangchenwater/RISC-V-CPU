@@ -1,0 +1,188 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar  8 12:54:35 2021
+# Process ID: 22544
+# Current directory: C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.runs/synth_1
+# Command line: vivado.exe -log MUX2T1_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MUX2T1_5.tcl
+# Log file: C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.runs/synth_1/MUX2T1_5.vds
+# Journal file: C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MUX2T1_5.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/liang/desktop/orglab/mux2t1_5/mux2t1_5.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top MUX2T1_5 -part xc7k160tffg676-2L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22840
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_5' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+WARNING: [Synth 8-6104] Input port 'o' has an internal driver [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_5' (1#1) [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[4] with 1st driver pin 'i_0/p_0_out[4]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[4] with 2nd driver pin 'o[4]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[3] with 1st driver pin 'i_0/p_0_out[3]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[3] with 2nd driver pin 'o[3]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[2] with 1st driver pin 'i_0/p_0_out[2]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[2] with 2nd driver pin 'o[2]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[1] with 1st driver pin 'i_0/p_0_out[1]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[1] with 2nd driver pin 'o[1]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[0] with 1st driver pin 'i_0/p_0_out[0]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:8]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin o[0] with 2nd driver pin 'o[0]' [C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.srcs/sources_1/new/MUX2T1_5.v:1]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 10 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1109.566 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1109.566 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1195.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 1 Warnings, 10 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1195.648 ; gain = 86.082
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liang/Desktop/OrgLab/MUX2T1_5/MUX2T1_5.runs/synth_1/MUX2T1_5.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1537.500 ; gain = 341.852
+INFO: [runtcl-4] Executing : report_utilization -file MUX2T1_5_utilization_synth.rpt -pb MUX2T1_5_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  8 12:55:16 2021...

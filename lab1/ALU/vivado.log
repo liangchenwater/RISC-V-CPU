@@ -1,0 +1,1204 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 18 19:45:35 2021
+# Process ID: 22148
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab1/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27248 C:\Users\liang\Desktop\OrgLab\lab1\ALU\ALU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab1/ALU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab1/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/liang/desktop/orglab'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/liang/Desktop/OrgLab/reference'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ALU_wrapper:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/lab1/ALU/ALU.srcs
+   c:/users/liang/desktop/orglab/lab4/ALUasIP
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/MUX2T1_5/MUX2T1_5.srcs
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:datapath:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab4/datapathIP' will take precedence over the same IP in location c:/users/liang/desktop/orglab/lab4/datapathOOC/datapathOOC.srcs/sources_1/imports/lab4
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MCPU:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab4/MCPUIP' will take precedence over the same IP in location c:/users/liang/desktop/orglab/lab4/CPUO/CPUO.srcs/sources_1/imports/lab4
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab4/SCPU_ctrl/SCPU_ctrl.srcs' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+   c:/users/liang/desktop/orglab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1076.020 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/tb.v w ]
+add_files -fileset sim_1 C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1076.020 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd}
+Reading block design file <C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd>...
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:user:SignalExt_32:1.0 - SignalExt_32_0
+Adding component instance block -- xilinx.com:user:xor32:1.0 - xor32_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:user:addc_32:1.0 - addc_32_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:user:or32:1.0 - or32_0
+Adding component instance block -- xilinx.com:user:xor32:1.0 - xor32_1
+Adding component instance block -- xilinx.com:user:nor32:1.0 - nor32_0
+Adding component instance block -- xilinx.com:user:srl32:1.0 - srl32_0
+Adding component instance block -- xilinx.com:user:MUX8T1_32:1.0 - MUX8T1_32_0
+Adding component instance block -- xilinx.com:user:or_bit_32:1.0 - or_bit_32_0
+Adding component instance block -- xilinx.com:ip:util_vector_logic:2.0 - and32
+Successfully read diagram <ALU> from block design file <C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd>
+set_property  ip_repo_paths  c:/users/liang/desktop/orglab [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/users/liang/desktop/orglab'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ALU_wrapper:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/lab1/ALU/ALU.srcs
+   c:/users/liang/desktop/orglab/lab4/ALUasIP
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/MUX2T1_5/MUX2T1_5.srcs
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab1/ALU/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/OExp01_muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/users/liang/desktop/orglab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:datapath:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab4/datapathIP' will take precedence over the same IP in location c:/users/liang/desktop/orglab/lab4/datapathOOC/datapathOOC.srcs/sources_1/imports/lab4
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MCPU:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab4/MCPUIP' will take precedence over the same IP in location c:/users/liang/desktop/orglab/lab4/CPUO/CPUO.srcs/sources_1/imports/lab4
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/users/liang/desktop/orglab/lab4/SCPU_ctrl/SCPU_ctrl.srcs' will take precedence over the same IP in locations: 
+   c:/users/liang/desktop/orglab/lab4/SCPU_ctrl/SCPU_ctrl.srcs/sources_1/new
+   c:/users/liang/desktop/orglab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+   c:/users/liang/desktop/orglab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/liang/Desktop/OrgLab/reference [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k160tffg676-2L
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1404.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1406.391 ; gain = 327.477
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Vivado 12-5357] 'setup' step aborted
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1406.391 ; gain = 327.477
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/tb.v
+set_property top ALU_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+generate_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+INFO: [BD 41-1662] The design 'ALU.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab1\ALU\ALU.srcs\sources_1\bd\ALU\ALU.bd> 
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SignalExt_32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xor32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block addc_32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block or32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xor32_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block nor32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block srl32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block MUX8T1_32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block or_bit_32_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and32 .
+Exporting to file c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hw_handoff/ALU.hwh
+Generated Block Design Tcl file c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hw_handoff/ALU_bd.tcl
+Generated Hardware Definition File c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -top
+add_files -norecurse c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May 18 19:59:28 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:MUX8T1_32:1.0 MUX8T1_32_1
+endgroup
+delete_bd_objs [get_bd_cells MUX8T1_32_1]
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+save_bd_design
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab1\ALU\ALU.srcs\sources_1\bd\ALU\ALU.bd> 
+Wrote  : <C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ui/bd_3914498a.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd
+
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Implementation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd
+
+[Tue May 18 20:01:36 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Simulation target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd
+
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_MUX8T1_32_1_0/ALU_MUX8T1_32_1_0.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v" into library xlslice_v1_0_2
+INFO: [VRFC 10-311] analyzing module xlslice_v1_0_2_xlslice
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" into library xlconstant_v1_1_7
+INFO: [VRFC 10-311] analyzing module xlconstant_v1_1_7_xlconstant
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" into library xlconcat_v2_1_4
+INFO: [VRFC 10-311] analyzing module xlconcat_v2_1_4_xlconcat
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v" into library util_vector_logic_v2_0_1
+INFO: [VRFC 10-311] analyzing module util_vector_logic_v2_0_1_util_vector_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property  ip_repo_paths  C:/Users/liang/Desktop/OrgLab/reference [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+generate_target Simulation [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab1\ALU\ALU.srcs\sources_1\bd\ALU\ALU.bd> 
+Wrote  : <C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ui/bd_3914498a.ui> 
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+Exporting to file c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hw_handoff/ALU.hwh
+Generated Block Design Tcl file c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hw_handoff/ALU_bd.tcl
+Generated Hardware Definition File c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1549.836 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd}
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+generate_target Simulation [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+INFO: [BD 41-1662] The design 'ALU.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\liang\Desktop\OrgLab\lab1\ALU\ALU.srcs\sources_1\bd\ALU\ALU.bd> 
+Wrote  : <C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ui/bd_3914498a.ui> 
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v
+VHDL Output written to : c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block and32 .
+Exporting to file c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hw_handoff/ALU.hwh
+Generated Block Design Tcl file c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hw_handoff/ALU_bd.tcl
+Generated Hardware Definition File c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/synth/ALU.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlslice_2_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconstant_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_xlconcat_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_util_vector_logic_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 18 21:37:13 2021...

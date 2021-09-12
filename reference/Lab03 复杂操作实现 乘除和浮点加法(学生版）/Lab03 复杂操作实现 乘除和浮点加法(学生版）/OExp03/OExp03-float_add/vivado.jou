@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 21 11:12:18 2021
+# Process ID: 1440
+# Current directory: F:/实验准备2021.01/3/float_add
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9644 F:\实验准备2021.01\3\float_add\float_add.xpr
+# Log file: F:/实验准备2021.01/3/float_add/vivado.log
+# Journal file: F:/实验准备2021.01/3/float_add\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/实验准备2021.01/3/float_add/float_add.xpr
+update_compile_order -fileset sources_1
+close_project

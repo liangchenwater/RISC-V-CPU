@@ -1,0 +1,77 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Tue Jan 15 13:56:21 2019
+| Host         : Dell-PC running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file mips_top_control_sets_placed.rpt
+| Design       : mips_top
+| Device       : xc7k325t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    24 |
+| Minimum Number of register sites lost to control set restrictions |    69 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             123 |           68 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              69 |           29 |
+| Yes          | No                    | No                     |              33 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             554 |          229 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------+------------------------------------------+----------------------------------+------------------+----------------+
+|    Clock Signal   |               Enable Signal              |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-------------------+------------------------------------------+----------------------------------+------------------+----------------+
+|  CLK_GEN/CLK_OUT3 |                                          | VGA/O17                          |                2 |              4 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_LED/n_0_data_count[3]_i_1    | rst_all                          |                1 |              4 |
+|  CLK_GEN/CLK_OUT3 |                                          | VGA/O5                           |                4 |              5 |
+|  CLK_GEN/CLK_OUT3 | BTN_SCAN/p_0_in                          |                                  |                2 |              5 |
+|  CLK_GEN/CLK_OUT3 | VGA/O7                                   | VGA/O8                           |                4 |              5 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/n_0_data_count[5]_i_1    | rst_all                          |                3 |              6 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_LED/n_0_buff[15]_i_1         | DISPLAY/P2S_LED/n_0_buff[16]_i_1 |                4 |              7 |
+|  CLK_GEN/CLK_OUT3 |                                          | VGA/O4                           |                4 |              8 |
+|  CLK_GEN/CLK_OUT3 |                                          | VGA/n_0_h_count[9]_i_1           |                4 |             10 |
+|  CLK_GEN/CLK_OUT3 | VGA/n_0_v_count[9]_i_1                   |                                  |                6 |             10 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_LED/n_0_buff[15]_i_1         |                                  |                6 |             12 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/n_0_buff[64]_i_2         | DISPLAY/P2S_SEG/n_0_buff[64]_i_1 |                4 |             13 |
+| ~CLK_GEN/CLK_OUT4 |                                          | MIPS/MIPS_CORE/DATAPATH/O61[0]   |                5 |             14 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/n_0_buff[64]_i_2         |                                  |                4 |             14 |
+| ~CLK_GEN/CLK_OUT4 |                                          |                                  |               10 |             15 |
+|  CLK_GEN/CLK_OUT3 | DISPLAY/P2S_SEG/n_0_buff[64]_i_2         | DISPLAY/P2S_SEG/n_0_buff[63]_i_1 |                5 |             15 |
+|  CLK_GEN/CLK_OUT3 |                                          | rst_all                          |               10 |             28 |
+| ~CLK_GEN/CLK_OUT3 | VGA/O55                                  |                                  |                6 |             48 |
+|  CLK_GEN/CLK_OUT4 |                                          |                                  |               31 |             50 |
+|  CLK_GEN/CLK_OUT3 |                                          |                                  |               27 |             58 |
+|  CLK_GEN/CLK_OUT4 | MIPS/MIPS_CORE/DATAPATH/id_en            | rst_all                          |               53 |            124 |
+| ~CLK_GEN/CLK_OUT4 | MIPS/MIPS_CORE/DATAPATH/REGFILE/p_0_in_0 |                                  |               18 |            144 |
+|  CLK_GEN/CLK_OUT4 | MIPS/MIPS_CORE/CONTROLLER/E[0]           | MIPS/MIPS_CORE/DATAPATH/exe_rst  |               78 |            175 |
+|  CLK_GEN/CLK_OUT4 | MIPS/MIPS_CORE/CONTROLLER/E[0]           | rst_all                          |               77 |            205 |
++-------------------+------------------------------------------+----------------------------------+------------------+----------------+
+
+

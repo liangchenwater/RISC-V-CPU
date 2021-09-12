@@ -1,0 +1,456 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Mar  3 14:34:12 2021
+# Process ID: 4840
+# Current directory: C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6508 C:\Users\ASUS\Desktop\OExp_RISCV\OExp02\IP\Supplementary\clk_div\clk_div.v.xpr
+# Log file: C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/vivado.log
+# Journal file: C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.srcs'.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.srcs/sources_1/new'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'.
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir c:/users/asus/desktop/oexp_riscv/oexp02/ip/supplementary/clk_div/clk_div.v.srcs -vendor xilinx.com -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 'rst' as interface 'rst'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'rst'.
+set_property description clk_div [ipx::current_core]
+set_property display_name clk_div [ipx::current_core]
+ipx::add_bus_parameter POLARITY [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]
+set_property value ACTIVE_HIGH [ipx::get_bus_parameters POLARITY -of_objects [ipx::get_bus_interfaces rst -of_objects [ipx::current_core]]]
+ipx::add_bus_parameter ASSOCIATED_BUSIF [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]
+set_property value clk [ipx::get_bus_parameters ASSOCIATED_BUSIF -of_objects [ipx::get_bus_interfaces clk -of_objects [ipx::current_core]]]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.srcs
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.srcs'
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:clk_div:1.0'. The one found in IP location 'c:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.srcs/sources_1/new' will take precedence over the same IP in location c:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/clk_div.v.srcs
+close_project
+open_hw
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'.
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp/risc32_play/risc32_play.runs/impl_1/Top_SwordV4.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1488.281 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+close_project
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/OExp_RISCV/OExp02/IP/Supplementary/clk_div/.Xil/Vivado-4840-DESKTOP-BJQ6VJA/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  3 18:14:16 2021...
+create_project soc C:/Users/ASUS/Desktop/soc -part xc7k160tffg676-2L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'.
+set_property  ip_repo_paths  C:/Users/ASUS/Desktop/soc/IP [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Desktop/soc/IP'.
+file mkdir C:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/new
+close [ open C:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/new/soc.v w ]
+add_files C:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/new/soc.v
+update_compile_order -fileset sources_1
+create_ip -name SCPU_wrapper -vendor xilinx.com -library user -version 1.0 -module_name SCPU_wrapper_0 -dir c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SCPU_wrapper_0/SCPU_wrapper_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SCPU_wrapper_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SCPU_wrapper_0/SCPU_wrapper_0.xci]
+generate_target all [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SCPU_wrapper_0/SCPU_wrapper_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SCPU_wrapper_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'SCPU_wrapper_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'SCPU_wrapper_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'SCPU_wrapper_0'...
+generate_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1780.516 ; gain = 75.227
+export_ip_user_files -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SCPU_wrapper_0/SCPU_wrapper_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SCPU_wrapper_0/SCPU_wrapper_0.xci] -directory C:/Users/ASUS/Desktop/soc/soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name VGA -vendor xilinx.com -library user -version 1.0 -module_name VGA_0 -dir c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/VGA_0/VGA_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VGA_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/VGA_0/VGA_0.xci]
+generate_target all [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/VGA_0/VGA_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'VGA_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'VGA_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'VGA_0'...
+export_ip_user_files -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/VGA_0/VGA_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/VGA_0/VGA_0.xci] -directory C:/Users/ASUS/Desktop/soc/soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+create_ip -name clk_div -vendor xilinx.com -library user -version 1.0 -module_name clk_div_0 -dir c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/clk_div_0/clk_div_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_div_0'...
+set_property generate_synth_checkpoint false [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/clk_div_0/clk_div_0.xci]
+generate_target all [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/clk_div_0/clk_div_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_div_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_div_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_div_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'clk_div_0'...
+export_ip_user_files -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/clk_div_0/clk_div_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/clk_div_0/clk_div_0.xci] -directory C:/Users/ASUS/Desktop/soc/soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+create_ip -name SAnti_jitter -vendor xilinx.com -library user -version 1.0 -module_name SAnti_jitter_0 -dir c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SAnti_jitter_0/SAnti_jitter_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SAnti_jitter_0'...
+set_property generate_synth_checkpoint false [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SAnti_jitter_0/SAnti_jitter_0.xci]
+generate_target all [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SAnti_jitter_0/SAnti_jitter_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'SAnti_jitter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'SAnti_jitter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'SAnti_jitter_0'...
+export_ip_user_files -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SAnti_jitter_0/SAnti_jitter_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/SAnti_jitter_0/SAnti_jitter_0.xci] -directory C:/Users/ASUS/Desktop/soc/soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {1024} CONFIG.data_width {32} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/ASUS/Desktop/soc/I_mem.coe}] [get_ips dist_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ASUS/Desktop/soc/I_mem.coe' provided. It will be converted relative to IP Instance files '../../../../I_mem.coe'
+generate_target {instantiation_template} [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+update_compile_order -fileset sources_1
+set_property generate_synth_checkpoint false [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+generate_target all [get_files  c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+export_ip_user_files -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory C:/Users/ASUS/Desktop/soc/soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property IS_MANAGED 0 [get_files c:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/VGA_0/VGA_0.xci]
+add_files -fileset constrs_1 -norecurse C:/Users/ASUS/Desktop/OExp02-IP2SOC/Org-Sword.xdc
+import_files -fileset constrs_1 C:/Users/ASUS/Desktop/OExp02-IP2SOC/Org-Sword.xdc
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 19:02:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/synth_1/runme.log
+[Wed Mar  3 19:02:10 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 19:06:13 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/synth_1/runme.log
+[Wed Mar  3 19:06:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 19:11:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/synth_1/runme.log
+[Wed Mar  3 19:11:01 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1846.910 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_project
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ASUS/Desktop/soc/soc.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  3 20:11:23 2021...
+open_project C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/ip/IP2SOC_RAM_B_0_0/RAM_B.srcs/D_mem.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Desktop/OExp02-IP2SOC/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'IP2SOC.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+IP2SOC_VGA_0_0
+
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1856.422 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Desktop/OExp02-IP2SOC/IP'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:VGA:1.0 [get_ips  IP2SOC_VGA_0_0] -log ip_upgrade.log
+Adding cell -- xilinx.com:user:SCPU_wrapper:1.0 - U1
+Adding cell -- xilinx.com:user:SAnti_jitter:1.0 - U9
+Adding cell -- xilinx.com:user:RAM_B:1.0 - U3
+Adding cell -- xilinx.com:ip:dist_mem_gen:8.0 - U2
+Adding cell -- xilinx.com:user:clk_div:1.0 - U8
+Adding cell -- xilinx.com:user:VGA:1.0 - VGA_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - sw8
+Adding cell -- xilinx.com:ip:xlslice:1.0 - sw2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - btny0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pc11_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - div1
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_100mhz(clk) and /VGA_0/clk_100m(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /U8/Clk_CPU(undef) and /U1/clk(clk)
+Successfully read diagram <IP2SOC> from BD file <C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd>
+Upgrading 'C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd'
+INFO: [IP_Flow 19-3422] Upgraded IP2SOC_VGA_0_0 (VGA 1.0) from revision 2 to revision 3
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_100mhz(clk) and /VGA_0_upgraded_ipi/clk_100m(undef)
+Wrote  : <C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ASUS/Desktop/OExp02-IP2SOC/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1918.332 ; gain = 57.867
+export_ip_user_files -of_objects [get_ips IP2SOC_VGA_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd]
+CRITICAL WARNING: [BD 41-1348] Reset pin /U1/rst (associated clock /U1/clk) is connected to asynchronous reset source /U9/rst.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /U8/Clk_CPU.
+CRITICAL WARNING: [BD 41-1347] Reset pin /U8/rst (associated clock /U8/clk) is connected to asynchronous reset source /U9/rst.
+This may prevent design from meeting timing. Instead it should be connected to reset source /RSTN.
+WARNING: [BD 41-927] Following properties on pin /U9/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=IP2SOC_clk_100mhz 
+WARNING: [BD 41-927] Following properties on pin /U8/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=IP2SOC_clk_100mhz 
+Wrote  : <C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd> 
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/U3/addra'(10) to net 'U1_Addr_out'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/synth/IP2SOC.v
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/U3/addra'(10) to net 'U1_Addr_out'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/sim/IP2SOC.v
+VHDL Output written to : C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/hdl/IP2SOC_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block U1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block U9 .
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [BD 41-1029] Generation completed for the IP Integrator block U3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block U2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block U8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw8 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block sw2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btny0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pc11_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block div1 .
+Exporting to file C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/hw_handoff/IP2SOC.hwh
+Generated Block Design Tcl file C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/hw_handoff/IP2SOC_bd.tcl
+Generated Hardware Definition File C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/synth/IP2SOC.hwdef
+generate_target: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2208.684 ; gain = 285.527
+export_ip_user_files -of_objects [get_files C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd] -directory C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd] -top
+add_files -norecurse C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/hdl/IP2SOC_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 20:21:28 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.runs/synth_1/runme.log
+[Wed Mar  3 20:21:28 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/IP2SOC_wrapper.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/IP2SOC_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2208.957 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+report_ip_status -name ip_status 
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 20:34:12 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.runs/impl_1/IP2SOC_wrapper.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.535 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_bd_design {C:/Users/ASUS/Desktop/OExp02-IP2SOC/OExp02-IP2SOC.srcs/sources_1/bd/IP2SOC/IP2SOC.bd}
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+close_project
+open_project C:/Users/ASUS/Desktop/soc/soc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ASUS/Desktop/soc/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'VGA_0' is locked:
+* IP 'VGA_0' is configured as a user-managed IP. In this mode it is the user's responsibility to manage all IP files.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.535 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201612300081
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.535 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 21:04:49 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.535 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property -dict [list CONFIG.coefficient_file {C:/Users/ASUS/Desktop/soc/I_mem.coe}] [get_ips dist_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/ASUS/Desktop/soc/I_mem.coe' provided. It will be converted relative to IP Instance files '../../../../I_mem.coe'
+generate_target all [get_files  C:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+export_ip_user_files -of_objects [get_files C:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ASUS/Desktop/soc/soc.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory C:/Users/ASUS/Desktop/soc/soc.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files -ipstatic_source_dir C:/Users/ASUS/Desktop/soc/soc.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/modelsim} {questa=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/questa} {riviera=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/riviera} {activehdl=C:/Users/ASUS/Desktop/soc/soc.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Mar  3 21:07:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/synth_1/runme.log
+[Wed Mar  3 21:07:55 2021] Launched impl_1...
+Run output will be captured here: C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/ASUS/Desktop/soc/soc.runs/impl_1/soc.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2213.535 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201612300081
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  3 21:13:29 2021...

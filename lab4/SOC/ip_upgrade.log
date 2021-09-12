@@ -1,0 +1,121 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 14:47:40 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CSSTE_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0) from (Rev. 3) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 14:34:37 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CSSTE_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 13:51:31 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 13:31:27 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Jun 28 13:14:07 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_SCPUC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of CSSTE_SCPUC_0_0 (xilinx.com:user:SCPUC:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Jun 27 02:16:56 2021
+| Host         : DESKTOP-LII7R1O running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k160tffg676-2L
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'CSSTE_VGA_orig_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of CSSTE_VGA_orig_0_0 (xilinx.com:user:VGA_orig:1.0) from (Rev. 2) to (Rev. 3)
+

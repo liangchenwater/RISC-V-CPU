@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_0/sim/ALU_xlslice_0_0.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_0_1/sim/ALU_xlslice_0_1.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/ip/ALU_xlslice_2_0/sim/ALU_xlslice_2_0.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/ip/ALU_xlconstant_0_0/sim/ALU_xlconstant_0_0.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/ip/ALU_xlconcat_0_0/sim/ALU_xlconcat_0_0.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/ip/ALU_util_vector_logic_0_0/sim/ALU_util_vector_logic_0_0.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/sim/ALU.v" \
+"../../../../ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v" \
+"../../../../ALU.srcs/sim_1/new/ALU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

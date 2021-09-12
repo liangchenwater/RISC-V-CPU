@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Mon Jan 14 21:58:56 2019
+# Process ID: 5352
+# Log file: C:/archlabs/lab02/lab02.sim/sim_1/behav/webtalk.log
+# Journal file: C:/archlabs/lab02/lab02.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/archlabs/lab02/lab02.sim/sim_1/behav/xsim.dir/sim_mips_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/archlabs/lab02/lab02.sim/sim_1/behav/xsim.dir/sim_mips_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Jan 14 21:59:00 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2014.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Jan 14 21:59:00 2019...

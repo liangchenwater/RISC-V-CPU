@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="213580fs"></ZoomStartTime>
+      <ZoomEndTime time="359181fs"></ZoomEndTime>
+      <Cursor1Time time="235000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="264"></NameColumnWidth>
+      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/state" type="array">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/hit" type="logic">
+      <obj_property name="ElementShortName">hit</obj_property>
+      <obj_property name="ObjectShortName">hit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cpu_addr" type="array">
+      <obj_property name="ElementShortName">cpu_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/cpu_tag" type="array">
+      <obj_property name="ElementShortName">cpu_tag[22:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_tag[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/cpu_idx" type="array">
+      <obj_property name="ElementShortName">cpu_idx[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_idx[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/cpu_offset" type="array">
+      <obj_property name="ElementShortName">cpu_offset[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_offset[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_cpu_rd" type="array">
+      <obj_property name="ElementShortName">data_cpu_rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cpu_rd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/data_cpu_wt" type="array">
+      <obj_property name="ElementShortName">data_cpu_wt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cpu_wt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/tag_out_orig0" type="array">
+      <obj_property name="ElementShortName">tag_out_orig0[25:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_out_orig0[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/tag_out_orig1" type="array">
+      <obj_property name="ElementShortName">tag_out_orig1[25:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_out_orig1[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/tag_out0" type="array">
+      <obj_property name="ElementShortName">tag_out0[22:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_out0[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/tag_out1" type="array">
+      <obj_property name="ElementShortName">tag_out1[22:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_out1[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/tag_in0" type="array">
+      <obj_property name="ElementShortName">tag_in0[25:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_in0[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/tag_in1" type="array">
+      <obj_property name="ElementShortName">tag_in1[25:0]</obj_property>
+      <obj_property name="ObjectShortName">tag_in1[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/dout0" type="array">
+      <obj_property name="ElementShortName">dout0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dout0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/dout1" type="array">
+      <obj_property name="ElementShortName">dout1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">dout1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/din0" type="array">
+      <obj_property name="ElementShortName">din0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">din0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/din1" type="array">
+      <obj_property name="ElementShortName">din1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">din1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/data_mem_wt" type="array">
+      <obj_property name="ElementShortName">data_mem_wt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_wt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/data_mem_rd" type="array">
+      <obj_property name="ElementShortName">data_mem_rd[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_rd[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/mem_ready" type="logic">
+      <obj_property name="ElementShortName">mem_ready</obj_property>
+      <obj_property name="ObjectShortName">mem_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/wt_mem" type="logic">
+      <obj_property name="ElementShortName">wt_mem</obj_property>
+      <obj_property name="ObjectShortName">wt_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rd_mem" type="logic">
+      <obj_property name="ElementShortName">rd_mem</obj_property>
+      <obj_property name="ObjectShortName">rd_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_mem_wt" type="array">
+      <obj_property name="ElementShortName">data_mem_wt[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_wt[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cpu_data_wt" type="array">
+      <obj_property name="ElementShortName">cpu_data_wt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_data_wt[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/data_mem_rd" type="array">
+      <obj_property name="ElementShortName">data_mem_rd[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data_mem_rd[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/addr_cpu" type="array">
+      <obj_property name="ElementShortName">addr_cpu[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_cpu[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/wt_cpu" type="logic">
+      <obj_property name="ElementShortName">wt_cpu</obj_property>
+      <obj_property name="ObjectShortName">wt_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/rd_cpu" type="logic">
+      <obj_property name="ElementShortName">rd_cpu</obj_property>
+      <obj_property name="ObjectShortName">rd_cpu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/mem_ready" type="logic">
+      <obj_property name="ElementShortName">mem_ready</obj_property>
+      <obj_property name="ObjectShortName">mem_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/wt_mem" type="logic">
+      <obj_property name="ElementShortName">wt_mem</obj_property>
+      <obj_property name="ObjectShortName">wt_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/rd_mem" type="logic">
+      <obj_property name="ElementShortName">rd_mem</obj_property>
+      <obj_property name="ObjectShortName">rd_mem</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/data_cpu_rd" type="array">
+      <obj_property name="ElementShortName">data_cpu_rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_cpu_rd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/dirty" type="logic">
+      <obj_property name="ElementShortName">dirty</obj_property>
+      <obj_property name="ObjectShortName">dirty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/wt0" type="logic">
+      <obj_property name="ElementShortName">wt0</obj_property>
+      <obj_property name="ObjectShortName">wt0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/wt_t0" type="logic">
+      <obj_property name="ElementShortName">wt_t0</obj_property>
+      <obj_property name="ObjectShortName">wt_t0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/wt1" type="logic">
+      <obj_property name="ElementShortName">wt1</obj_property>
+      <obj_property name="ObjectShortName">wt1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/cache/wt_t1" type="logic">
+      <obj_property name="ElementShortName">wt_t1</obj_property>
+      <obj_property name="ObjectShortName">wt_t1</obj_property>
+   </wvobject>
+</wave_config>

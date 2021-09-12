@@ -1,0 +1,1106 @@
+
+*** Running vivado
+    with args -log CSSTE_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CSSTE_wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source CSSTE_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/piCPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/VGA/VGA.srcs/sources_1/imports/Framework'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab4/CPUC'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_5/MUX2T1_5.srcs/MUX2T1_5
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX2T1_5/MUX2T1_5.srcs/sources_1/imports/ip
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:addc_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/addc_32/addc_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:add_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/add_32/add_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:and32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/and32/and32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:Ext_imm16:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/Ext_imm16/Ext_imm16.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:nor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/nor32/nor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/or32/or32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:or_bit_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/or_bit_32/or_bit_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SignalExt_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/SignalExt_32/SignalExt_32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:srl32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/srl32/srl32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:xor32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/Logic/xor32/xor32.srcs/sources_1/imports/Logic_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX2T1_32/MUX2T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_64:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX2T1_64/MUX2T1_64.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX2T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX2T1_8/MUX2T1_8.srcs/MUX2T1_8
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX2T1_8/MUX2T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX4T1_32/MUX4T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX4T1_5:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX4T1_5/MUX4T1_5.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_32:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX8T1_32/MUX8T1_32.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:MUX8T1_8:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-Element/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W' will take precedence over the same IP in locations: 
+   c:/Users/liang/Desktop/OrgLab/reference/Lab0 Vivado介绍和模块封装（学生版）(1)/Lab0 Vivado介绍和模块封装（学生版）/OExp00/OExp00-muxctrl/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/new
+   c:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/IP_Include/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/reference/Lab02CPU/Lab02CPU/OExp02-IP2SOC/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+   c:/Users/liang/Desktop/OrgLab/lab1/ALU/IP/MUX/MUX8T1_8/MUX8T1_8.srcs/sources_1/imports/MUX_W
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:SCPU_ctrl:1.0'. The one found in IP location 'c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-0 CPU核集成设计（学生版）/Lab04-0 CPU核集成设计（学生版）/OExp04-IP2CPU/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W' will take precedence over the same IP in location c:/Users/liang/Desktop/OrgLab/reference/Lab04单周期CPU设计/Lab04单周期CPU设计/Lab04-1 CPU设计之数据通路（学生版）/Lab04-1 CPU设计之数据通路（学生版）/IP/scpu/OExp04-SCPU_ctrl/OExp04-SCPU_ctrl.srcs/sources_1/imports/CPU_W
+Command: synth_design -top CSSTE_wrapper -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3328
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1145.988 ; gain = 39.648
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_wrapper' [C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/hdl/CSSTE_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:13]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_0/synth/CSSTE_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 4 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (1#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_0' (2#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_0/synth/CSSTE_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_3' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_3/synth/CSSTE_xlslice_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 11 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (2#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_3' (3#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_3/synth/CSSTE_xlslice_0_3.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_7' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_7/synth/CSSTE_xlslice_0_7.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 31 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (3#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_7' (4#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_7/synth/CSSTE_xlslice_0_7.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_RAM_B_0_2' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_RAM_B_0_2/synth/CSSTE_RAM_B_0_2.v:58]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v:23]
+INFO: [Synth 8-638] synthesizing module 'RAM' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_RAM_B_0_2/RAM_B.srcs/sources_1/ip/RAM/synth/RAM.vhd:69]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: kintex7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: RAM.mif - type: string 
+	Parameter C_INIT_FILE bound to: RAM.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 1024 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 1024 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 10 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.95215 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_RAM_B_0_2/RAM_B.srcs/sources_1/ip/RAM/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_RAM_B_0_2/RAM_B.srcs/sources_1/ip/RAM/synth/RAM.vhd:234]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (13#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_RAM_B_0_2/RAM_B.srcs/sources_1/ip/RAM/synth/RAM.vhd:69]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (14#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/cc35/RAM_B.srcs/sources_1/new/RAM_B.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_RAM_B_0_2' (15#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_RAM_B_0_2/synth/CSSTE_RAM_B_0_2.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_SCPUC_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SCPUC_0_0/synth/CSSTE_SCPUC_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'SCPUC' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/SCPUC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'controller' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (16#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:23]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/ImmGen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (17#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/ImmGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/Regs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (18#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/Regs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (19#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/alu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (20#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/datapath.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SCPUC' (21#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/SCPUC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_SCPUC_0_0' (22#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SCPUC_0_0/synth/CSSTE_SCPUC_0_0.v:58]
+WARNING: [Synth 8-7071] port 'CPU_MIO' of module 'CSSTE_SCPUC_0_0' is unconnected for instance 'SCPUC_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:143]
+WARNING: [Synth 8-7023] instance 'SCPUC_0' of module 'CSSTE_SCPUC_0_0' has 11 connections declared, but only 10 given [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:143]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_Counter_x_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Counter_x_0_0/synth/CSSTE_Counter_x_0_0.v:93]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Counter_x_0_0/synth/CSSTE_Counter_x_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_Counter_x_0_0' (23#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Counter_x_0_0/synth/CSSTE_Counter_x_0_0.v:93]
+INFO: [Synth 8-638] synthesizing module 'CSSTE_dist_mem_gen_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_dist_mem_gen_0_0/synth/CSSTE_dist_mem_gen_0_0.vhd:66]
+	Parameter C_FAMILY bound to: kintex7 - type: string 
+	Parameter C_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_DEPTH bound to: 1024 - type: integer 
+	Parameter C_HAS_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_D bound to: 0 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
+	Parameter C_HAS_I_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QDPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_CE bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_RST bound to: 0 - type: integer 
+	Parameter C_HAS_QSPO_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_SPO bound to: 1 - type: integer 
+	Parameter C_HAS_WE bound to: 0 - type: integer 
+	Parameter C_MEM_INIT_FILE bound to: CSSTE_dist_mem_gen_0_0.mif - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_MEM_TYPE bound to: 0 - type: integer 
+	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_QCE_JOINED bound to: 0 - type: integer 
+	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
+	Parameter C_READ_MIF bound to: 1 - type: integer 
+	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
+	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
+	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at 'c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/0bf5/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_dist_mem_gen_0_0/synth/CSSTE_dist_mem_gen_0_0.vhd:132]
+INFO: [Synth 8-256] done synthesizing module 'CSSTE_dist_mem_gen_0_0' (27#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_dist_mem_gen_0_0/synth/CSSTE_dist_mem_gen_0_0.vhd:66]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_MIO_BUS_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_MIO_BUS_0_0/synth/CSSTE_MIO_BUS_0_0.v:111]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_MIO_BUS_0_0/synth/CSSTE_MIO_BUS_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_MIO_BUS_0_0' (28#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_MIO_BUS_0_0/synth/CSSTE_MIO_BUS_0_0.v:111]
+WARNING: [Synth 8-7071] port 'data_ram_we' of module 'CSSTE_MIO_BUS_0_0' is unconnected for instance 'U4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:170]
+WARNING: [Synth 8-7071] port 'Cpu_data4bus' of module 'CSSTE_MIO_BUS_0_0' is unconnected for instance 'U4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:170]
+WARNING: [Synth 8-7071] port 'ram_addr' of module 'CSSTE_MIO_BUS_0_0' is unconnected for instance 'U4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:170]
+WARNING: [Synth 8-7071] port 'ram_data_in' of module 'CSSTE_MIO_BUS_0_0' is unconnected for instance 'U4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:170]
+WARNING: [Synth 8-7023] instance 'U4' of module 'CSSTE_MIO_BUS_0_0' has 21 connections declared, but only 17 given [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:170]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_Multi_8CH32_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Multi_8CH32_0_0/synth/CSSTE_Multi_8CH32_0_0.v:103]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Multi_8CH32_0_0/synth/CSSTE_Multi_8CH32_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_Multi_8CH32_0_0' (29#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Multi_8CH32_0_0/synth/CSSTE_Multi_8CH32_0_0.v:103]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_SSeg7_Dev_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SSeg7_Dev_0_0/synth/CSSTE_SSeg7_Dev_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'SSeg7_Dev' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/SSeg7_Dev.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2T1_64' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/MUX2T1_64.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2T1_64' (30#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/MUX2T1_64.v:23]
+INFO: [Synth 8-6157] synthesizing module 'P2S' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/P2S.v:23]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
+	Parameter S_IDLE bound to: 0 - type: integer 
+	Parameter S_TRAN bound to: 1 - type: integer 
+	Parameter S_CLKN bound to: 2 - type: integer 
+	Parameter S_DONE bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/P2S.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'P2S' (31#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/P2S.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HexTo8SEG' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/HexTo8SEG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Seg' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/HexTo8SEG.v:43]
+INFO: [Synth 8-6157] synthesizing module 'MC14495_ZJU' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/MC14495_ZJU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'INV' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36164]
+INFO: [Synth 8-6155] done synthesizing module 'INV' (32#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:36164]
+INFO: [Synth 8-6157] synthesizing module 'AND4' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:570]
+INFO: [Synth 8-6155] done synthesizing module 'AND4' (33#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:570]
+INFO: [Synth 8-6157] synthesizing module 'OR4' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50116]
+INFO: [Synth 8-6155] done synthesizing module 'OR4' (34#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50116]
+INFO: [Synth 8-6157] synthesizing module 'AND3' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:522]
+INFO: [Synth 8-6155] done synthesizing module 'AND3' (35#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:522]
+INFO: [Synth 8-6157] synthesizing module 'OR3' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50068]
+INFO: [Synth 8-6155] done synthesizing module 'OR3' (36#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50068]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:474]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (37#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:474]
+INFO: [Synth 8-6157] synthesizing module 'OR2' [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50022]
+INFO: [Synth 8-6155] done synthesizing module 'OR2' (38#1) [D:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:50022]
+INFO: [Synth 8-6155] done synthesizing module 'MC14495_ZJU' (39#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/MC14495_ZJU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Seg' (40#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/HexTo8SEG.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'HexTo8SEG' (41#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/HexTo8SEG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SSeg_map' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/SSeg_map.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg_map' (42#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/SSeg_map.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SSeg7_Dev' (43#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/67de/SSeg7_Dev.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_SSeg7_Dev_0_0' (44#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SSeg7_Dev_0_0/synth/CSSTE_SSeg7_Dev_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_SPIO_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SPIO_0_0/synth/CSSTE_SPIO_0_0.v:95]
+INFO: [Synth 8-6157] synthesizing module 'SPIO' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SPIO_0_0/synth/CSSTE_SPIO_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_SPIO_0_0' (45#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SPIO_0_0/synth/CSSTE_SPIO_0_0.v:95]
+WARNING: [Synth 8-7071] port 'GPIOf0' of module 'CSSTE_SPIO_0_0' is unconnected for instance 'U7' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:219]
+WARNING: [Synth 8-7023] instance 'U7' of module 'CSSTE_SPIO_0_0' has 12 connections declared, but only 11 given [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:219]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_clk_div_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_clk_div_0_0/synth/CSSTE_clk_div_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/0ee6/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (46#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/0ee6/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_clk_div_0_0' (47#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_clk_div_0_0/synth/CSSTE_clk_div_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_SAnti_jitter_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SAnti_jitter_0_0/synth/CSSTE_SAnti_jitter_0_0.v:97]
+INFO: [Synth 8-6157] synthesizing module 'SAnti_jitter' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SAnti_jitter_0_0/synth/CSSTE_SAnti_jitter_0_0.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_SAnti_jitter_0_0' (48#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SAnti_jitter_0_0/synth/CSSTE_SAnti_jitter_0_0.v:97]
+WARNING: [Synth 8-7071] port 'CR' of module 'CSSTE_SAnti_jitter_0_0' is unconnected for instance 'U9' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:239]
+WARNING: [Synth 8-7071] port 'Key_ready' of module 'CSSTE_SAnti_jitter_0_0' is unconnected for instance 'U9' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:239]
+WARNING: [Synth 8-7071] port 'Key_out' of module 'CSSTE_SAnti_jitter_0_0' is unconnected for instance 'U9' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:239]
+WARNING: [Synth 8-7071] port 'Key_x' of module 'CSSTE_SAnti_jitter_0_0' is unconnected for instance 'U9' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:239]
+WARNING: [Synth 8-7071] port 'pulse_out' of module 'CSSTE_SAnti_jitter_0_0' is unconnected for instance 'U9' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:239]
+WARNING: [Synth 8-7023] instance 'U9' of module 'CSSTE_SAnti_jitter_0_0' has 13 connections declared, but only 8 given [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:239]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_VGA_0_1' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_VGA_0_1/synth/CSSTE_VGA_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VGA.v:2]
+INFO: [Synth 8-6157] synthesizing module 'VgaController' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaController.v:1]
+	Parameter HS_1 bound to: 96 - type: integer 
+	Parameter VS_1 bound to: 2 - type: integer 
+	Parameter HS_2 bound to: 157 - type: integer 
+	Parameter VS_2 bound to: 57 - type: integer 
+	Parameter WIDTH bound to: 640 - type: integer 
+	Parameter HEIGHT bound to: 480 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'VgaController' (49#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaController.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VgaDisplay' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDisplay.v:1]
+INFO: [Synth 8-3876] $readmem data file 'D://vga_debugger.mem' is read successfully [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDisplay.v:15]
+INFO: [Synth 8-3876] $readmem data file 'D://font_8x16.mem' is read successfully [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDisplay.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDisplay' (50#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDisplay.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VgaDebugger' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDebugger.v:31]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Ascii' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDebugger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Ascii' (51#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDebugger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDebugger' (52#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VgaDebugger.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (53#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4dad/VGA.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_VGA_0_1' (54#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_VGA_0_1/synth/CSSTE_VGA_0_1.v:58]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlconstant_0_1' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconstant_0_1/synth/CSSTE_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 2'b00 
+	Parameter CONST_WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (55#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlconstant_0_1' (56#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconstant_0_1/synth/CSSTE_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlconstant_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconstant_0_0/synth/CSSTE_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter CONST_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant__parameterized0' (56#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlconstant_0_0' (57#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconstant_0_0/synth/CSSTE_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_div11_1' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div11_1/synth/CSSTE_div11_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 1 - type: integer 
+	Parameter DIN_TO bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized2' (57#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_div11_1' (58#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div11_1/synth/CSSTE_div11_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_6' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_6/synth/CSSTE_xlslice_0_6.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 11 - type: integer 
+	Parameter DIN_TO bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized3' (58#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_6' (59#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_6/synth/CSSTE_xlslice_0_6.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_div11_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div11_0/synth/CSSTE_div11_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 20 - type: integer 
+	Parameter DIN_TO bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized4' (59#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_div11_0' (60#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div11_0/synth/CSSTE_div11_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_div20_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div20_0/synth/CSSTE_div20_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 25 - type: integer 
+	Parameter DIN_TO bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized5' (60#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_div20_0' (61#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div20_0/synth/CSSTE_div20_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlconcat_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconcat_0_0/synth/CSSTE_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 32 - type: integer 
+	Parameter IN1_WIDTH bound to: 32 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (62#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlconcat_0_0' (63#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconcat_0_0/synth/CSSTE_xlconcat_0_0.v:60]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_4' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_4/synth/CSSTE_xlslice_0_4.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized6' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 6 - type: integer 
+	Parameter DIN_TO bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized6' (63#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_4' (64#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_4/synth/CSSTE_xlslice_0_4.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_5' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_5/synth/CSSTE_xlslice_0_5.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized7' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 32 - type: integer 
+	Parameter DIN_FROM bound to: 9 - type: integer 
+	Parameter DIN_TO bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized7' (64#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_5' (65#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_5/synth/CSSTE_xlslice_0_5.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_div20_1' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div20_1/synth/CSSTE_div20_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized8' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 0 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized8' (65#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_div20_1' (66#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_div20_1/synth/CSSTE_div20_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_2' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_2/synth/CSSTE_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized9' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 2 - type: integer 
+	Parameter DIN_TO bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized9' (66#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_2' (67#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_2/synth/CSSTE_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_sw0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_sw0_0/synth/CSSTE_sw0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized10' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized10' (67#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_sw0_0' (68#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_sw0_0/synth/CSSTE_sw0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_sw2_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_sw2_0/synth/CSSTE_sw2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized11' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 8 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized11' (68#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_sw2_0' (69#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_sw2_0/synth/CSSTE_sw2_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_util_vector_logic_0_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_util_vector_logic_0_0/synth/CSSTE_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (70#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/3f90/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_util_vector_logic_0_0' (71#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_util_vector_logic_0_0/synth/CSSTE_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_util_vector_logic_1_0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_util_vector_logic_1_0/synth/CSSTE_util_vector_logic_1_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_util_vector_logic_1_0' (72#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_util_vector_logic_1_0/synth/CSSTE_util_vector_logic_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlconcat_0_1' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconcat_0_1/synth/CSSTE_xlconcat_0_1.v:60]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 30 - type: integer 
+	Parameter IN1_WIDTH bound to: 2 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter IN32_WIDTH bound to: 1 - type: integer 
+	Parameter IN33_WIDTH bound to: 1 - type: integer 
+	Parameter IN34_WIDTH bound to: 1 - type: integer 
+	Parameter IN35_WIDTH bound to: 1 - type: integer 
+	Parameter IN36_WIDTH bound to: 1 - type: integer 
+	Parameter IN37_WIDTH bound to: 1 - type: integer 
+	Parameter IN38_WIDTH bound to: 1 - type: integer 
+	Parameter IN39_WIDTH bound to: 1 - type: integer 
+	Parameter IN40_WIDTH bound to: 1 - type: integer 
+	Parameter IN41_WIDTH bound to: 1 - type: integer 
+	Parameter IN42_WIDTH bound to: 1 - type: integer 
+	Parameter IN43_WIDTH bound to: 1 - type: integer 
+	Parameter IN44_WIDTH bound to: 1 - type: integer 
+	Parameter IN45_WIDTH bound to: 1 - type: integer 
+	Parameter IN46_WIDTH bound to: 1 - type: integer 
+	Parameter IN47_WIDTH bound to: 1 - type: integer 
+	Parameter IN48_WIDTH bound to: 1 - type: integer 
+	Parameter IN49_WIDTH bound to: 1 - type: integer 
+	Parameter IN50_WIDTH bound to: 1 - type: integer 
+	Parameter IN51_WIDTH bound to: 1 - type: integer 
+	Parameter IN52_WIDTH bound to: 1 - type: integer 
+	Parameter IN53_WIDTH bound to: 1 - type: integer 
+	Parameter IN54_WIDTH bound to: 1 - type: integer 
+	Parameter IN55_WIDTH bound to: 1 - type: integer 
+	Parameter IN56_WIDTH bound to: 1 - type: integer 
+	Parameter IN57_WIDTH bound to: 1 - type: integer 
+	Parameter IN58_WIDTH bound to: 1 - type: integer 
+	Parameter IN59_WIDTH bound to: 1 - type: integer 
+	Parameter IN60_WIDTH bound to: 1 - type: integer 
+	Parameter IN61_WIDTH bound to: 1 - type: integer 
+	Parameter IN62_WIDTH bound to: 1 - type: integer 
+	Parameter IN63_WIDTH bound to: 1 - type: integer 
+	Parameter IN64_WIDTH bound to: 1 - type: integer 
+	Parameter IN65_WIDTH bound to: 1 - type: integer 
+	Parameter IN66_WIDTH bound to: 1 - type: integer 
+	Parameter IN67_WIDTH bound to: 1 - type: integer 
+	Parameter IN68_WIDTH bound to: 1 - type: integer 
+	Parameter IN69_WIDTH bound to: 1 - type: integer 
+	Parameter IN70_WIDTH bound to: 1 - type: integer 
+	Parameter IN71_WIDTH bound to: 1 - type: integer 
+	Parameter IN72_WIDTH bound to: 1 - type: integer 
+	Parameter IN73_WIDTH bound to: 1 - type: integer 
+	Parameter IN74_WIDTH bound to: 1 - type: integer 
+	Parameter IN75_WIDTH bound to: 1 - type: integer 
+	Parameter IN76_WIDTH bound to: 1 - type: integer 
+	Parameter IN77_WIDTH bound to: 1 - type: integer 
+	Parameter IN78_WIDTH bound to: 1 - type: integer 
+	Parameter IN79_WIDTH bound to: 1 - type: integer 
+	Parameter IN80_WIDTH bound to: 1 - type: integer 
+	Parameter IN81_WIDTH bound to: 1 - type: integer 
+	Parameter IN82_WIDTH bound to: 1 - type: integer 
+	Parameter IN83_WIDTH bound to: 1 - type: integer 
+	Parameter IN84_WIDTH bound to: 1 - type: integer 
+	Parameter IN85_WIDTH bound to: 1 - type: integer 
+	Parameter IN86_WIDTH bound to: 1 - type: integer 
+	Parameter IN87_WIDTH bound to: 1 - type: integer 
+	Parameter IN88_WIDTH bound to: 1 - type: integer 
+	Parameter IN89_WIDTH bound to: 1 - type: integer 
+	Parameter IN90_WIDTH bound to: 1 - type: integer 
+	Parameter IN91_WIDTH bound to: 1 - type: integer 
+	Parameter IN92_WIDTH bound to: 1 - type: integer 
+	Parameter IN93_WIDTH bound to: 1 - type: integer 
+	Parameter IN94_WIDTH bound to: 1 - type: integer 
+	Parameter IN95_WIDTH bound to: 1 - type: integer 
+	Parameter IN96_WIDTH bound to: 1 - type: integer 
+	Parameter IN97_WIDTH bound to: 1 - type: integer 
+	Parameter IN98_WIDTH bound to: 1 - type: integer 
+	Parameter IN99_WIDTH bound to: 1 - type: integer 
+	Parameter IN100_WIDTH bound to: 1 - type: integer 
+	Parameter IN101_WIDTH bound to: 1 - type: integer 
+	Parameter IN102_WIDTH bound to: 1 - type: integer 
+	Parameter IN103_WIDTH bound to: 1 - type: integer 
+	Parameter IN104_WIDTH bound to: 1 - type: integer 
+	Parameter IN105_WIDTH bound to: 1 - type: integer 
+	Parameter IN106_WIDTH bound to: 1 - type: integer 
+	Parameter IN107_WIDTH bound to: 1 - type: integer 
+	Parameter IN108_WIDTH bound to: 1 - type: integer 
+	Parameter IN109_WIDTH bound to: 1 - type: integer 
+	Parameter IN110_WIDTH bound to: 1 - type: integer 
+	Parameter IN111_WIDTH bound to: 1 - type: integer 
+	Parameter IN112_WIDTH bound to: 1 - type: integer 
+	Parameter IN113_WIDTH bound to: 1 - type: integer 
+	Parameter IN114_WIDTH bound to: 1 - type: integer 
+	Parameter IN115_WIDTH bound to: 1 - type: integer 
+	Parameter IN116_WIDTH bound to: 1 - type: integer 
+	Parameter IN117_WIDTH bound to: 1 - type: integer 
+	Parameter IN118_WIDTH bound to: 1 - type: integer 
+	Parameter IN119_WIDTH bound to: 1 - type: integer 
+	Parameter IN120_WIDTH bound to: 1 - type: integer 
+	Parameter IN121_WIDTH bound to: 1 - type: integer 
+	Parameter IN122_WIDTH bound to: 1 - type: integer 
+	Parameter IN123_WIDTH bound to: 1 - type: integer 
+	Parameter IN124_WIDTH bound to: 1 - type: integer 
+	Parameter IN125_WIDTH bound to: 1 - type: integer 
+	Parameter IN126_WIDTH bound to: 1 - type: integer 
+	Parameter IN127_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat__parameterized0' (72#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlconcat_0_1' (73#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlconcat_0_1/synth/CSSTE_xlconcat_0_1.v:60]
+INFO: [Synth 8-6157] synthesizing module 'CSSTE_xlslice_0_8' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_8/synth/CSSTE_xlslice_0_8.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_xlslice_0_8' (74#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_xlslice_0_8/synth/CSSTE_xlslice_0_8.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE' (75#1) [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/synth/CSSTE.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'CSSTE_wrapper' (76#1) [C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/hdl/CSSTE_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1457.250 ; gain = 350.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1461.613 ; gain = 355.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1461.613 ; gain = 355.273
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.117 . Memory (MB): peak = 1461.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/liang/Desktop/OrgLab/lab2/Org-Sword.xdc]
+Finished Parsing XDC File [C:/Users/liang/Desktop/OrgLab/lab2/Org-Sword.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/liang/Desktop/OrgLab/lab2/Org-Sword.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CSSTE_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CSSTE_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1461.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 320 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1461.613 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.613 ; gain = 355.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.613 ; gain = 355.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/U2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div20. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div25. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/sw0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/sw7_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/sw8. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/util_vector_logic_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div31_31. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/b64_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/b2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/BTN_OK0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/sw2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/PC11_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div9. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/div11. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/PC31_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/VGA_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/RAM_B_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/RAM_B_0/inst/RAM_B. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/util_vector_logic_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CSSTE_i/SCPUC_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.613 ; gain = 355.273
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'P2S'
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_src_control_reg' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:91]
+WARNING: [Synth 8-327] inferring latch for variable 'interr_reg' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:92]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                  S_TRAN |                               01 |                               01
+                  S_DONE |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'P2S'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1461.613 ; gain = 355.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 33    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   3 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 15    
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	 416 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   9 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 2     
+	  11 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 45    
+	   4 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 5     
+	 416 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:03 ; elapsed = 00:03:07 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++---------------------+--------------------------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                                             | Depth x Width | Implemented As | 
++---------------------+--------------------------------------------------------+---------------+----------------+
+|rom                  | rom[1023]                                              | 1024x31       | LUT            | 
+|VgaDisplay           | p_0_out                                                | 4096x8        | LUT            | 
+|dist_mem_gen_v8_0_13 | synth_options.dist_mem_inst/gen_rom.rom_inst/rom[1023] | 1024x31       | LUT            | 
+|CSSTE_VGA_0_1        | p_0_out                                                | 4096x8        | LUT            | 
++---------------------+--------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++--------------+-----------------------------------+-----------+----------------------+------------------------------+
+|Module Name   | RTL Object                        | Inference | Size (Depth x Width) | Primitives                   | 
++--------------+-----------------------------------+-----------+----------------------+------------------------------+
+|CSSTE_i/VGA_0 | inst/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64X1D x 128	RAM64M x 128	 | 
++--------------+-----------------------------------+-----------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:10 ; elapsed = 00:03:15 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:24 ; elapsed = 00:03:29 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++--------------+-----------------------------------+-----------+----------------------+------------------------------+
+|Module Name   | RTL Object                        | Inference | Size (Depth x Width) | Primitives                   | 
++--------------+-----------------------------------+-----------+----------------------+------------------------------+
+|CSSTE_i/VGA_0 | inst/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64X1D x 128	RAM64M x 128	 | 
++--------------+-----------------------------------+-----------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[0] with 1st driver pin 'CSSTE_i/SCPUC_0/inst/CONTROL/MemtoReg_inferred__0/i___1/O' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[0] with 2nd driver pin 'GND' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q[0] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[1] with 1st driver pin 'CSSTE_i/SCPUC_0/inst/CONTROL/MemtoReg_inferred__0/i___5/O' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[1] with 2nd driver pin 'VCC' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q[1] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I49[0] with 1st driver pin 'CSSTE_i/SCPUC_0/inst/CONTROL/pc_src_control_inferred__0/i___10/Z' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I49[0] with 2nd driver pin 'GND' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I49[0] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I49[1] with 1st driver pin 'CSSTE_i/SCPUC_0/inst/CONTROL/pc_src_control_inferred__0/i___15/Z' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I49[1] with 2nd driver pin 'GND' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I49[1] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I49[2] with 1st driver pin 'CSSTE_i/SCPUC_0/inst/CONTROL/pc_src_control_inferred__0/i___18/Z' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin I49[2] with 2nd driver pin 'VCC' [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net I49[2] is connected to at least one constant driver which has been preserved, other driver is ignored [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ipshared/9775/controller.v:42]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:29 ; elapsed = 00:03:34 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Counter_x     |         1|
+|2     |MIO_BUS       |         1|
+|3     |Multi_8CH32   |         1|
+|4     |SPIO          |         1|
+|5     |SAnti_jitter  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |Counter_x_bbox    |     1|
+|2     |MIO_BUS_bbox      |     1|
+|3     |Multi_8CH32_bbox  |     1|
+|4     |SAnti_jitter_bbox |     1|
+|5     |SPIO_bbox         |     1|
+|6     |AND2              |     8|
+|7     |AND3              |    88|
+|8     |AND4              |    72|
+|9     |BUFG              |     1|
+|10    |CARRY4            |    19|
+|11    |INV               |    40|
+|12    |LUT1              |     7|
+|13    |LUT2              |    61|
+|14    |LUT3              |    25|
+|15    |LUT4              |    39|
+|16    |LUT5              |    75|
+|17    |LUT6              |   747|
+|18    |MUXF7             |   249|
+|19    |MUXF8             |   120|
+|20    |OR2               |    56|
+|21    |OR3               |    24|
+|22    |OR4               |    32|
+|23    |RAM64M            |   128|
+|24    |RAM64X1D          |    64|
+|25    |FDCE              |    43|
+|26    |FDPE              |     1|
+|27    |FDRE              |   101|
+|28    |FDSE              |     2|
+|29    |IBUF              |    22|
+|30    |OBUF              |    22|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:34 ; elapsed = 00:03:38 . Memory (MB): peak = 1461.734 ; gain = 355.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 15 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:03 ; elapsed = 00:03:35 . Memory (MB): peak = 1461.734 ; gain = 355.395
+Synthesis Optimization Complete : Time (s): cpu = 00:03:34 ; elapsed = 00:03:39 . Memory (MB): peak = 1461.734 ; gain = 355.395
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Counter_x_0_0/Counter_x.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Counter_x_0_0/Counter_x.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_MIO_BUS_0_0/MIO_BUS.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_MIO_BUS_0_0/MIO_BUS.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Multi_8CH32_0_0/Multi_8CH32.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_Multi_8CH32_0_0/Multi_8CH32.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SPIO_0_0/SPIO.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SPIO_0_0/SPIO.edf]
+Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SAnti_jitter_0_0/SAnti_jitter.edf]
+Finished Parsing EDIF File [c:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.gen/sources_1/bd/CSSTE/ip/CSSTE_SAnti_jitter_0_0/SAnti_jitter.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1461.734 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 990 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1461.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 512 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 37 Warnings, 15 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:41 ; elapsed = 00:03:47 . Memory (MB): peak = 1461.734 ; gain = 355.395
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/liang/Desktop/OrgLab/lab2/SOC/SOC.runs/synth_1/CSSTE_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CSSTE_wrapper_utilization_synth.rpt -pb CSSTE_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 28 14:17:18 2021...

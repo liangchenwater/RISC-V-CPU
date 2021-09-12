@@ -1,0 +1,11 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sim_1/new/tb.v,1616145415,verilog,,,,tb,,,,,,,,
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/addone.v,1597931462,verilog,,C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/div32.v,,addone,,,,,,,,
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/div32.v,1597931462,verilog,,C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/largeALU.v,,div_rill,,,,,,,,
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/largeALU.v,1597931462,verilog,,C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/smallALU.v,,largeALU,,,,,,,,
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/smallALU.v,1597931462,verilog,,C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sim_1/new/tb.v,,smallALU,,,,,,,,
+C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/new/add.v,1616141685,verilog,,C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.srcs/sources_1/imports/FPU/addone.v,,float_add,,,,,,,,

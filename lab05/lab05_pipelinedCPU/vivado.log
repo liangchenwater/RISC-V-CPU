@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 21 16:52:50 2021
+# Process ID: 18212
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11620 C:\Users\liang\Desktop\OrgLab\lab05\lab05_pipelinedCPU\lab05_pipelinedCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new/Pipiline_IF.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.238 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jun 21 17:03:25 2021] Launched synth_1...
+Run output will be captured here: C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.runs/synth_1/runme.log
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP C:/Users/liang/Desktop/OrgLab/lab05
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/glbl.v'.
+WARNING: [IP_Flow 19-965] There are no component ports to infer bus interfaces.
+ERROR: [IP_Flow 19-748] Component Definition 'xilinx.com:user:tb:1.0 (tb_v1_0)': No ports found. There must be an interface when the IP has at least one source file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ERROR: [Ipptcl 7-1559] Failed to create an IP from the files in 'c:/Users/liang/Desktop/OrgLab/lab05'.  Please review the documentation for recommended guidelines.
+ipx::infer_core: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.238 ; gain = 0.000
+ERROR: [Common 17-39] 'ipx::infer_core' failed due to earlier errors.
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP C:/Users/liang/Desktop/OrgLab/lab05
+WARNING: [IP_Flow 19-378] There are no ports found from top-level file 'c:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.sim/sim_1/behav/xsim/glbl.v'.
+WARNING: [IP_Flow 19-965] There are no component ports to infer bus interfaces.
+ERROR: [IP_Flow 19-748] Component Definition 'xilinx.com:user:tb:1.0 (tb_v1_0)': No ports found. There must be an interface when the IP has at least one source file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ERROR: [Ipptcl 7-1559] Failed to create an IP from the files in 'c:/Users/liang/Desktop/OrgLab/lab05'.  Please review the documentation for recommended guidelines.
+ipx::infer_core: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1108.238 ; gain = 0.000
+ERROR: [Common 17-39] 'ipx::infer_core' failed due to earlier errors.
+ipx::infer_core -vendor xilinx.com -library user -taxonomy /UserIP C:/Users/liang/Desktop/OrgLab/lab05
+WARNING: [IP_Flow 19-5464] No port map found for required logical port RST on bus interface abstraction bram_rtl for interface type slave.
+WARNING: [IP_Flow 19-5462] Defaulting to slave bus interface due to conflicts in bus interface inference.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'BRAM_PORTA' of definition 'xilinx.com:interface:bram:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'BRAM_PORTA' of definition 'xilinx.com:interface:bram:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'BRAM_PORTA': Added interface parameter 'MEM_SIZE' with value '8192'.
+INFO: [IP_Flow 19-4728] Bus Interface 'BRAM_PORTA': Added interface parameter 'MEM_WIDTH' with value '32'.
+INFO: [IP_Flow 19-4728] Bus Interface 'BRAM_PORTA': Added interface parameter 'MEM_ECC' with value 'NONE'.
+INFO: [IP_Flow 19-4728] Bus Interface 'BRAM_PORTA': Added interface parameter 'MASTER_TYPE' with value 'OTHER'.
+INFO: [IP_Flow 19-4728] Bus Interface 'BRAM_PORTA': Added interface parameter 'READ_LATENCY' with value '1'.
+WARNING: [IP_Flow 19-1965] Bus Interface 'BRAM_PORTA': A port map to the required logical port "RST" of the bus abstraction "xilinx.com:interface:bram_rtl:1.0" is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'BRAM_PORTA': A port map to the required logical port "RST" of the bus abstraction "xilinx.com:interface:bram_rtl:1.0" is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::infer_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:40 . Memory (MB): peak = 1108.238 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name edit_ip_project -directory C:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.tmp c:/Users/liang/Desktop/OrgLab/lab05/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/lab05_pipelinedCPU/lab05_pipelinedCPU.srcs/sources_1/new'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1108.238 ; gain = 0.000
+ipx::current_core c:/Users/liang/Desktop/OrgLab/lab05/component.xml
+update_compile_order -fileset sources_1
+close_project

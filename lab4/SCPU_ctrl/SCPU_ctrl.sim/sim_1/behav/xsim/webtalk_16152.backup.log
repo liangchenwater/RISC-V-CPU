@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 17 20:15:19 2021
+# Process ID: 16152
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/xsim.dir/tb_ctrl_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/liang/Desktop/OrgLab/lab4/SCPU_ctrl/SCPU_ctrl.sim/sim_1/behav/xsim/xsim.dir/tb_ctrl_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 02:25:15 . Memory (MB): peak = 116.672 ; gain = 23.691
+INFO: [Common 17-206] Exiting Webtalk at Mon May 17 22:40:24 2021...

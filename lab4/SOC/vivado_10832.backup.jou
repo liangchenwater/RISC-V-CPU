@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 04:50:24 2021
+# Process ID: 10832
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/SOC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17944 C:\Users\liang\Desktop\OrgLab\lab4\SOC\SOC.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/SOC/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/SOC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.xpr
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.srcs/sources_1/bd/CSSTE/CSSTE.bd}
+connect_bd_net [get_bd_pins U8/Clk_CPU] [get_bd_pins util_vector_logic_0/Op1]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

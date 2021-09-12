@@ -1,0 +1,125 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.625",
+   "Default View_TopLeft":"-165,155",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port RSTN -pg 1 -lvl 0 -x -40 -y 540 -defaultsOSRD
+preplace port clk_100mhz -pg 1 -lvl 0 -x -40 -y 560 -defaultsOSRD
+preplace port seg_clk -pg 1 -lvl 13 -x 4910 -y 890 -defaultsOSRD
+preplace port seg_clrn -pg 1 -lvl 13 -x 4910 -y 910 -defaultsOSRD
+preplace port SEG_PEN -pg 1 -lvl 13 -x 4910 -y 930 -defaultsOSRD
+preplace port seg_sout -pg 1 -lvl 13 -x 4910 -y 950 -defaultsOSRD
+preplace port HSYNC -pg 1 -lvl 13 -x 4910 -y 610 -defaultsOSRD
+preplace port VSYNC -pg 1 -lvl 13 -x 4910 -y 630 -defaultsOSRD
+preplace port LED_PEN -pg 1 -lvl 13 -x 4910 -y 120 -defaultsOSRD
+preplace port led_clk -pg 1 -lvl 13 -x 4910 -y 140 -defaultsOSRD
+preplace port led_clrn -pg 1 -lvl 13 -x 4910 -y 160 -defaultsOSRD
+preplace port led_sout -pg 1 -lvl 13 -x 4910 -y 180 -defaultsOSRD
+preplace portBus BTN_y -pg 1 -lvl 0 -x -40 -y 600 -defaultsOSRD
+preplace portBus SW -pg 1 -lvl 0 -x -40 -y 620 -defaultsOSRD
+preplace portBus Red -pg 1 -lvl 13 -x 4910 -y 650 -defaultsOSRD
+preplace portBus Green -pg 1 -lvl 13 -x 4910 -y 670 -defaultsOSRD
+preplace portBus Blue -pg 1 -lvl 13 -x 4910 -y 690 -defaultsOSRD
+preplace inst U4 -pg 1 -lvl 6 -x 2230 -y 610 -defaultsOSRD
+preplace inst U5 -pg 1 -lvl 9 -x 3230 -y 260 -defaultsOSRD
+preplace inst U7 -pg 1 -lvl 11 -x 4030 -y 180 -defaultsOSRD
+preplace inst U9 -pg 1 -lvl 1 -x 360 -y 580 -defaultsOSRD
+preplace inst U10 -pg 1 -lvl 5 -x 1770 -y 630 -defaultsOSRD
+preplace inst U6 -pg 1 -lvl 11 -x 4030 -y 940 -defaultsOSRD
+preplace inst U8 -pg 1 -lvl 3 -x 930 -y 810 -defaultsOSRD
+preplace inst U2 -pg 1 -lvl 6 -x 2230 -y 870 -defaultsOSRD
+preplace inst div20 -pg 1 -lvl 10 -x 3710 -y 160 -defaultsOSRD
+preplace inst div1 -pg 1 -lvl 10 -x 3710 -y 330 -defaultsOSRD
+preplace inst div25 -pg 1 -lvl 10 -x 3710 -y 890 -defaultsOSRD
+preplace inst sw0 -pg 1 -lvl 10 -x 3710 -y 990 -defaultsOSRD
+preplace inst sw7_5 -pg 1 -lvl 8 -x 2890 -y 440 -defaultsOSRD
+preplace inst sw8 -pg 1 -lvl 2 -x 610 -y 590 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 4 -x 1320 -y 830 -defaultsOSRD -resize 239 93
+preplace inst div31_31 -pg 1 -lvl 8 -x 2890 -y 570 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -x 2890 -y 1030 -defaultsOSRD
+preplace inst b64_0 -pg 1 -lvl 8 -x 2890 -y 140 -defaultsOSRD
+preplace inst b2_0 -pg 1 -lvl 7 -x 2580 -y 970 -defaultsOSRD
+preplace inst BTN_OK0 -pg 1 -lvl 2 -x 610 -y 490 -defaultsOSRD
+preplace inst sw2 -pg 1 -lvl 2 -x 610 -y 690 -defaultsOSRD
+preplace inst PC11_2 -pg 1 -lvl 5 -x 1770 -y 840 -defaultsOSRD
+preplace inst div6 -pg 1 -lvl 4 -x 1320 -y 480 -defaultsOSRD
+preplace inst div9 -pg 1 -lvl 4 -x 1320 -y 580 -defaultsOSRD
+preplace inst div11 -pg 1 -lvl 4 -x 1320 -y 680 -defaultsOSRD
+preplace inst PC31_2 -pg 1 -lvl 7 -x 2580 -y 740 -defaultsOSRD
+preplace inst RAM_B_0 -pg 1 -lvl 5 -x 1770 -y 330 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -x 1770 -y 80 -defaultsOSRD
+preplace inst VGA_orig_0 -pg 1 -lvl 12 -x 4370 -y 670 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -x 610 -y 220 -defaultsOSRD
+preplace inst util_vector_logic_1 -pg 1 -lvl 4 -x 1320 -y 170 -defaultsOSRD
+preplace inst SCPUC_0 -pg 1 -lvl 4 -x 1320 -y 330 -defaultsOSRD
+preplace netloc Key_y_0_1 1 0 1 NJ 600
+preplace netloc SW_0_1 1 0 1 NJ 620
+preplace netloc RSTN_0_1 1 0 1 NJ 540
+preplace netloc clk_0_1 1 0 12 -20 400 NJ 400 740 710 1030 920 NJ 920 2030 410 2450 640 NJ 640 NJ 640 N 640 3870 640 4160
+preplace netloc U9_BTN_OK 1 1 5 480 420 NJ 420 1040J 900 1540J 500 1980
+preplace netloc U9_SW_OK 1 1 9 500 410 NJ 410 1050J 910 NJ 910 1990 390 NJ 390 2690 380 3000J 480 3360
+preplace netloc BTN_OK0_Dout 1 2 1 730 490n
+preplace netloc sw8_Dout 1 2 1 720 590n
+preplace netloc sw2_Dout 1 2 1 710 690n
+preplace netloc U9_rst 1 1 11 490 430 750 430 1090J 740 1520 490 2020 370 N 370 NJ 370 3010 470 N 470 3850 620 N
+preplace netloc U2_spo 1 3 9 1100 760 N 760 1910 790 2450 660 NJ 660 3080 660 N 660 N 660 N
+preplace netloc U8_clkdiv 1 3 7 1060 750 1510J 480 1940J 400 NJ 400 2680 500 N 500 3370
+preplace netloc util_vector_logic_0_Res 1 4 7 1500 150 NJ 150 2440J 80 NJ 80 3010 70 3360 100 3850J
+preplace netloc div6_Dout 1 4 1 1490 480n
+preplace netloc div9_Dout 1 4 1 1470 580n
+preplace netloc div11_Dout 1 4 1 1530 620n
+preplace netloc U4_counter_we 1 4 3 1570 470 1960J 420 2390
+preplace netloc U7_counter_set 1 4 8 1550 20 NJ 20 NJ 20 NJ 20 NJ 20 N 20 NJ 20 4200
+preplace netloc U5_point_out 1 9 2 3360 390 3810
+preplace netloc U5_LE_out 1 9 2 N 260 3820
+preplace netloc U5_Disp_num 1 9 2 N 240 3830
+preplace netloc U6_seg_clk 1 11 2 NJ 910 4500
+preplace netloc U6_seg_clrn 1 11 2 NJ 930 4510
+preplace netloc U6_SEG_PEN 1 11 2 NJ 950 4530
+preplace netloc U6_seg_sout 1 11 2 NJ 970 4540
+preplace netloc div20_Dout 1 10 1 3840 160n
+preplace netloc div1_Dout 1 10 2 NJ 330 4200
+preplace netloc U7_LED_out 1 5 7 2070 50 NJ 50 NJ 50 NJ 50 N 50 NJ 50 4170
+preplace netloc U10_counter_out 1 5 4 1970 290 NJ 290 NJ 290 N
+preplace netloc U10_counter0_OUT 1 5 1 2000 510n
+preplace netloc U10_counter1_OUT 1 5 1 2040 530n
+preplace netloc U10_counter2_OUT 1 5 1 2050 550n
+preplace netloc div31_31_dout 1 8 1 3090J 390n
+preplace netloc b64_0_dout 1 8 1 3000J 140n
+preplace netloc U4_GPIOe0000000_we 1 6 3 2410J 70 NJ 70 3000
+preplace netloc U4_GPIOf0000000_we 1 6 5 2400J 40 NJ 40 NJ 40 N 40 3870
+preplace netloc U4_Peripheral_in 1 4 7 1560 460 1920J 380 2440 200 NJ 200 2990 60 3370 90 3860J
+preplace netloc U7_LED_PEN 1 11 2 NJ 120 N
+preplace netloc U7_led_clk 1 11 2 NJ 140 N
+preplace netloc U7_led_clrn 1 11 2 NJ 160 N
+preplace netloc U7_led_sout 1 11 2 NJ 180 N
+preplace netloc div25_Dout 1 10 1 NJ 890
+preplace netloc sw0_Dout 1 10 1 3810J 990n
+preplace netloc sw7_5_Dout 1 8 1 3060J 230n
+preplace netloc xlconcat_0_dout 1 8 1 3070 250n
+preplace netloc PC31_2_Dout 1 7 1 2690 740n
+preplace netloc b2_0_dout 1 7 1 2680J 970n
+preplace netloc PC11_2_Dout 1 5 1 1910J 840n
+preplace netloc pCPU_0_MemRW_ex 1 4 8 1520 440 2060 430 2420 680 2690 700 N 700 N 700 N 700 N
+preplace netloc RAM_B_0_douta 1 3 9 1110 930 N 930 1930J 340 NJ 340 NJ 340 3050 690 N 690 N 690 4160
+preplace netloc xlslice_0_Dout 1 4 2 1570 140 1970
+preplace netloc SCPUC_0_PC_out 1 4 8 1480 450 1910 360 2430 360 N 360 3030 630 N 630 N 630 4180
+preplace netloc VGA_orig_0_hs 1 12 1 4500 610n
+preplace netloc VGA_orig_0_vs 1 12 1 4510 630n
+preplace netloc VGA_orig_0_vga_r 1 12 1 4520 650n
+preplace netloc VGA_orig_0_vga_g 1 12 1 4530 670n
+preplace netloc VGA_orig_0_vga_b 1 12 1 4540 690n
+preplace netloc SCPUC_0_Data_out 1 4 8 1510 430 2010 350 N 350 N 350 3040J 450 NJ 450 NJ 450 4190
+preplace netloc SCPUC_0_Addr_out 1 4 8 1540 420 1950J 330 NJ 330 NJ 330 3020 460 N 460 N 460 4170
+preplace netloc U8_Clk_CPU 1 3 1 1070 170n
+preplace netloc util_vector_logic_1_Res 1 4 1 1530 170n
+preplace netloc xlslice_1_Dout 1 2 2 NJ 220 1080
+levelinfo -pg 1 -40 360 610 930 1320 1770 2230 2580 2890 3230 3710 4030 4370 4910
+pagesize -pg 1 -db -bbox -sgen -170 -600 5030 1150
+"
+}
+{
+   "da_clkrst_cnt":"2"
+}

@@ -1,0 +1,34 @@
+(edif MUX2T1_5
+  (edifversion 2 0 0)
+  (edifLevel 0)
+  (keywordmap (keywordlevel 0))
+(status
+ (written
+  (timeStamp 2021 03 08 12 59 20)
+  (program "Vivado" (version "2020.2"))
+  (comment "Built on 'Wed Nov 18 09:12:45 MST 2020'")
+  (comment "Built by 'xbuild'")
+ )
+)
+  (Library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+   (cell MUX2T1_5 (celltype GENERIC)
+     (view MUX2T1_5 (viewtype NETLIST)
+       (interface 
+        (port s (direction INPUT))
+        (port (array (rename I0 "I0[4:0]") 5) (direction INPUT))
+        (port (array (rename I1 "I1[4:0]") 5) (direction INPUT))
+        (port (array (rename o "o[4:0]") 5) (direction INPUT))
+       )
+     )
+   )
+  )
+(comment "Reference To The Cell Of Highest Level")
+
+  (design MUX2T1_5
+    (cellref MUX2T1_5 (libraryref work))
+    (property XLNX_PROJ_DIR (string "C:/Users/liang/Desktop/OrgLab/MUX2T1_5"))
+    (property part (string "xc7k160tffg676-2L"))
+  )
+)

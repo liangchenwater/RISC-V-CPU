@@ -1,0 +1,218 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x824B0EC738D66A7F",
+      "device": "xc7k160tffg676-2L",
+      "gen_directory": "../../../../simPipeCPU.gen/sources_1/bd/simPipeCPU",
+      "name": "simPipeCPU",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "None",
+      "tool_version": "2020.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ROM": "",
+      "pc11_2": "",
+      "addr11_2": "",
+      "RAM_B_0": "",
+      "util_vector_logic_0": "",
+      "pCPU_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "simPipeCPU_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "ROM": {
+        "vlnv": "xilinx.com:ip:dist_mem_gen:8.0",
+        "xci_name": "simPipeCPU_dist_mem_gen_0_0",
+        "xci_path": "ip\\simPipeCPU_dist_mem_gen_0_0\\simPipeCPU_dist_mem_gen_0_0.xci",
+        "inst_hier_path": "ROM",
+        "parameters": {
+          "coefficient_file": {
+            "value": "../../../../../../../h.coe"
+          },
+          "data_width": {
+            "value": "32"
+          },
+          "depth": {
+            "value": "1024"
+          },
+          "memory_type": {
+            "value": "rom"
+          }
+        }
+      },
+      "pc11_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "simPipeCPU_xlslice_0_0",
+        "xci_path": "ip\\simPipeCPU_xlslice_0_0\\simPipeCPU_xlslice_0_0.xci",
+        "inst_hier_path": "pc11_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "11"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DOUT_WIDTH": {
+            "value": "10"
+          }
+        }
+      },
+      "addr11_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "simPipeCPU_xlslice_0_1",
+        "xci_path": "ip\\simPipeCPU_xlslice_0_1\\simPipeCPU_xlslice_0_1.xci",
+        "inst_hier_path": "addr11_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "11"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DOUT_WIDTH": {
+            "value": "10"
+          }
+        }
+      },
+      "RAM_B_0": {
+        "vlnv": "xilinx.com:user:RAM_B:1.0",
+        "xci_name": "simPipeCPU_RAM_B_0_0",
+        "xci_path": "ip\\simPipeCPU_RAM_B_0_0\\simPipeCPU_RAM_B_0_0.xci",
+        "inst_hier_path": "RAM_B_0"
+      },
+      "util_vector_logic_0": {
+        "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+        "xci_name": "simPipeCPU_util_vector_logic_0_0",
+        "xci_path": "ip\\simPipeCPU_util_vector_logic_0_0\\simPipeCPU_util_vector_logic_0_0.xci",
+        "inst_hier_path": "util_vector_logic_0",
+        "parameters": {
+          "C_OPERATION": {
+            "value": "not"
+          },
+          "C_SIZE": {
+            "value": "1"
+          }
+        }
+      },
+      "pCPU_0": {
+        "vlnv": "xilinx.com:user:pCPU:1.0",
+        "xci_name": "simPipeCPU_pCPU_0_0",
+        "xci_path": "ip\\simPipeCPU_pCPU_0_0\\simPipeCPU_pCPU_0_0.xci",
+        "inst_hier_path": "pCPU_0"
+      }
+    },
+    "nets": {
+      "dist_mem_gen_0_spo": {
+        "ports": [
+          "ROM/spo",
+          "pCPU_0/instr"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "pCPU_0/rst"
+        ]
+      },
+      "pc11_2_Dout": {
+        "ports": [
+          "pc11_2/Dout",
+          "ROM/a"
+        ]
+      },
+      "RAM_B_0_douta": {
+        "ports": [
+          "RAM_B_0/douta",
+          "pCPU_0/Data_in"
+        ]
+      },
+      "addr11_2_Dout": {
+        "ports": [
+          "addr11_2/Dout",
+          "RAM_B_0/addra"
+        ]
+      },
+      "pCPU_0_Addr_out": {
+        "ports": [
+          "pCPU_0/Addr_out",
+          "addr11_2/Din"
+        ]
+      },
+      "pCPU_0_PC": {
+        "ports": [
+          "pCPU_0/PC_out",
+          "pc11_2/Din"
+        ]
+      },
+      "pCPU_0_Data_out": {
+        "ports": [
+          "pCPU_0/Data_out",
+          "RAM_B_0/dina"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "util_vector_logic_0/Op1",
+          "pCPU_0/clk"
+        ]
+      },
+      "util_vector_logic_0_Res": {
+        "ports": [
+          "util_vector_logic_0/Res",
+          "RAM_B_0/clka"
+        ]
+      },
+      "pCPU_0_MemRW": {
+        "ports": [
+          "pCPU_0/MemRW",
+          "RAM_B_0/wea"
+        ]
+      }
+    }
+  }
+}

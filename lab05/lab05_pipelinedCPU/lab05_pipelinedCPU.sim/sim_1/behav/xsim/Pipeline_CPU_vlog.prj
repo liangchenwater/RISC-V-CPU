@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Ex_reg_Mem.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/ID_reg_Ex.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/IF_reg_ID.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/ImmGen.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Mem_reg_WB.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Ex.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_ID.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_IF.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_Mem.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_WB.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/REG32.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Regs.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/SCPU_ctrl.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/alu.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/stall.v" \
+"../../../../lab05_pipelinedCPU.srcs/sources_1/new/Pipeline_CPU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

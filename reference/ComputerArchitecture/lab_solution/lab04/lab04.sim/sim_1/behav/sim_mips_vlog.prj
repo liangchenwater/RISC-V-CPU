@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/cpu/regfile.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/cpu/alu.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/sources/datapath.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/sources/controller.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/cpu/inst_rom.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/cpu/data_ram.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/sources/mips_core.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/cpu/mips.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+verilog xil_defaultlib  "../../../lab04.srcs/sources_1/imports/cpu/sim_mips.v" --include "../../../lab04.srcs/sources_1/imports/cpu"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"

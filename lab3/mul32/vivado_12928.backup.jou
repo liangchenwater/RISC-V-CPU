@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 10 04:15:18 2021
+# Process ID: 12928
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab3/mul32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6664 C:\Users\liang\Desktop\OrgLab\lab3\mul32\mul32.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab3/mul32/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab3/mul32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab3/mul32/mul32.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+run all
+run all
+relaunch_sim
+run 100 us
+close_sim

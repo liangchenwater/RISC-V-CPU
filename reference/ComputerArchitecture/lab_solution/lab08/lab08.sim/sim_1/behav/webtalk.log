@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Jan 22 20:49:00 2019
+# Process ID: 3356
+# Log file: C:/archlabs/lab08/lab08.sim/sim_1/behav/webtalk.log
+# Journal file: C:/archlabs/lab08/lab08.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/archlabs/lab08/lab08.sim/sim_1/behav/xsim.dir/sim_cache_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2038631630 -regid "" -xml C:/archlabs/lab08/lab08.sim/sim_1/behav/xsim.dir/sim_cache_behav/webtalk/usage_statistics_ext_xsi..."
+    (file "C:/archlabs/lab08/lab08.sim/sim_1/behav/xsim.dir/sim_cache_behav/webtalk/xsim_webtalk.tcl" line 32)
+INFO: [Common 17-206] Exiting Webtalk at Tue Jan 22 20:49:05 2019...

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 30 18:37:46 2021
+# Process ID: 22428
+# Current directory: C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22264 C:\Users\liang\Desktop\OrgLab\OExp01_muxctrl\OExp01_muxctrl.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/MUX'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1111.211 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}
+Reading block design file <C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd>...
+Adding component instance block -- xilinx.com:user:MUX2T1_5:1.0 - MUX2T1_5_0
+Adding component instance block -- xilinx.com:user:MUX2T1_5:1.0 - MUX2T1_5_1
+Adding component instance block -- xilinx.com:user:MUX4T1_5:1.0 - MUX4T1_5_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_3
+Adding component instance block -- xilinx.com:user:MUX8T1_8:1.0 - MUX8T1_8_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Successfully read diagram <OExp01_muxctrl> from block design file <C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1111.211 ; gain = 0.000
+open_bd_design {C:/Users/liang/Desktop/OrgLab/OExp01_muxctrl/OExp01_muxctrl.srcs/sources_1/bd/OExp01_muxctrl/OExp01_muxctrl.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 30 18:39:43 2021...

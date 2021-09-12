@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../OExp00-Element.gen/sources_1/ip/RAM/sim/RAM.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

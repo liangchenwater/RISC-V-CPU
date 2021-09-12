@@ -1,0 +1,288 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 1440
+License: Customer
+
+Current time: 	Sun Feb 21 11:12:32 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 50 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/VIVADO/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	D:/VIVADO/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	ASUS
+User home directory: C:/Users/ASUS
+User working directory: F:/实验准备2021.01/3/float_add
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/VIVADO/Vivado
+HDI_APPROOT: D:/VIVADO/Vivado/2017.4
+RDI_DATADIR: D:/VIVADO/Vivado/2017.4/data
+RDI_BINDIR: D:/VIVADO/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/ASUS/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	D:/VIVADO/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	F:/实验准备2021.01/3/float_add/vivado.log
+Vivado journal file location: 	F:/实验准备2021.01/3/float_add/vivado.jou
+Engine tmp dir: 	F:/实验准备2021.01/3/float_add/.Xil/Vivado-1440-DESKTOP-BJQ6VJA
+
+GUI allocated memory:	195 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 635 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 47 MB (+46716kb) [00:00:04]
+// [Engine Memory]: 498 MB (+370530kb) [00:00:04]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: F:\实验准备2021.01\3\float_add\float_add.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/实验准备2021.01/3/float_add/float_add.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project F:/实验准备2021.01/3/float_add/float_add.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ASUS/Desktop/float_add' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 62 MB (+12971kb) [00:00:07]
+// [Engine Memory]: 580 MB (+59807kb) [00:00:07]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 624 MB (+16377kb) [00:00:08]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VIVADO/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 638 MB. GUI used memory: 37 MB. Current time: 2/21/21 11:12:32 AM CST
+// Project name: float_add; location: F:/实验准备2021.01/3/float_add; part: xc7vx485tffg1157-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax (aF, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, floatadd (add.v)]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, floatadd (add.v)]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// Elapsed time: 92 seconds
+selectCodeEditor("add.v", 612, 191); // cd (w, cj)
+selectCodeEditor("add.v", 612, 221); // cd (w, cj)
+// Elapsed time: 62 seconds
+selectCodeEditor("add.v", 470, 7); // cd (w, cj)
+// [GUI Memory]: 65 MB (+222kb) [00:03:36]
+// Elapsed time: 58 seconds
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// [GUI Memory]: 68 MB (+153kb) [00:04:01]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 5, true); // B (D, cj) - Node
+// [GUI Memory]: 74 MB (+1989kb) [00:04:10]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 5, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [GUI Memory]: 80 MB (+2318kb) [00:05:31]
+// Elapsed time: 80 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "add.v", 1); // k (j, cj)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectCodeEditor("add.v", 332, 277); // cd (w, cj)
+// Elapsed time: 108 seconds
+selectCodeEditor("add.v", 28, 194); // cd (w, cj)
+selectCodeEditor("add.v", 22, 84); // cd (w, cj)
+selectCodeEditor("add.v", 22, 48); // cd (w, cj)
+selectCodeEditor("add.v", 20, 166); // cd (w, cj)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u (f, cj): TRUE
+selectCodeEditor("add.v", 1, 110); // cd (w, cj)
+// Elapsed time: 14 seconds
+selectCodeEditor("add.v", 108, 128); // cd (w, cj)
+selectCodeEditor("add.v", 115, 144); // cd (w, cj)
+selectCodeEditor("add.v", 110, 164); // cd (w, cj)
+selectCodeEditor("add.v", 81, 289); // cd (w, cj)
+selectCodeEditor("add.v", 23, 289); // cd (w, cj)
+selectCodeEditor("add.v", 122, 137); // cd (w, cj)
+selectCodeEditor("add.v", 130, 308); // cd (w, cj)
+selectCodeEditor("add.v", 135, 111); // cd (w, cj)
+selectCodeEditor("add.v", 135, 111, false, false, false, false, true); // cd (w, cj) - Double Click
+// [GUI Memory]: 85 MB (+994kb) [00:08:23]
+selectCodeEditor("add.v", 255, 153); // cd (w, cj)
+selectCodeEditor("add.v", 5, 236); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cj)
+// [Engine Memory]: 660 MB (+4711kb) [00:08:35]
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cj)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cj)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cj)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cj)
+selectCodeEditor("add.v", 2, 244); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 660 MB. GUI used memory: 39 MB. Current time: 2/21/21 11:21:02 AM CST
+selectCodeEditor("add.v", 19, 113); // cd (w, cj)
+selectCodeEditor("add.v", 3, 134); // cd (w, cj)
+// Elapsed time: 19 seconds
+selectCodeEditor("add.v", 528, 272); // cd (w, cj)
+selectCodeEditor("add.v", 149, 262); // cd (w, cj)
+selectCodeEditor("add.v", 175, 335); // cd (w, cj)
+selectCodeEditor("add.v", 126, 59); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("add.v", 331, 318); // cd (w, cj)
+// Elapsed time: 49 seconds
+selectCodeEditor("add.v", 0, 135); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("add.v", 20, 13); // cd (w, cj)
+selectCodeEditor("add.v", 3, 59); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("add.v", 407, 364); // cd (w, cj)
+selectCodeEditor("add.v", 32, 308); // cd (w, cj)
+selectCodeEditor("add.v", 219, 290); // cd (w, cj)
+selectCodeEditor("add.v", 151, 212); // cd (w, cj)
+selectCodeEditor("add.v", 153, 257); // cd (w, cj)
+selectCodeEditor("add.v", 159, 287); // cd (w, cj)
+selectCodeEditor("add.v", 150, 308); // cd (w, cj)
+selectCodeEditor("add.v", 150, 328); // cd (w, cj)
+// Elapsed time: 11 seconds
+selectCodeEditor("add.v", 150, 287); // cd (w, cj)
+// [GUI Memory]: 92 MB (+2871kb) [00:11:48]
+selectCodeEditor("add.v", 149, 234); // cd (w, cj)
+selectCodeEditor("add.v", 147, 270); // cd (w, cj)
+selectCodeEditor("add.v", 149, 291); // cd (w, cj)
+selectCodeEditor("add.v", 149, 310); // cd (w, cj)
+selectCodeEditor("add.v", 147, 337); // cd (w, cj)
+selectCodeEditor("add.v", 152, 357); // cd (w, cj)
+selectCodeEditor("add.v", 155, 312); // cd (w, cj)
+selectCodeEditor("add.v", 160, 334); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("add.v", 147, 368); // cd (w, cj)
+// Elapsed time: 41 seconds
+selectCodeEditor("add.v", 143, 85); // cd (w, cj)
+selectCodeEditor("add.v", 143, 85, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("add.v", 147, 135); // cd (w, cj)
+selectCodeEditor("add.v", 151, 167); // cd (w, cj)
+selectCodeEditor("add.v", 150, 188); // cd (w, cj)
+// Elapsed time: 23 seconds
+selectCodeEditor("add.v", 193, 363); // cd (w, cj)
+selectCodeEditor("add.v", 160, 156); // cd (w, cj)
+selectCodeEditor("add.v", 150, 192); // cd (w, cj)
+selectCodeEditor("add.v", 153, 210); // cd (w, cj)
+selectCodeEditor("add.v", 152, 233); // cd (w, cj)
+selectCodeEditor("add.v", 157, 269); // cd (w, cj)
+selectCodeEditor("add.v", 156, 286); // cd (w, cj)
+selectCodeEditor("add.v", 151, 307); // cd (w, cj)
+selectCodeEditor("add.v", 158, 332); // cd (w, cj)
+selectCodeEditor("add.v", 154, 359); // cd (w, cj)
+selectCodeEditor("add.v", 149, 316); // cd (w, cj)
+selectCodeEditor("add.v", 147, 339); // cd (w, cj)
+selectCodeEditor("add.v", 151, 357); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("add.v", 214, 370); // cd (w, cj)
+selectCodeEditor("add.v", 214, 370, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 25 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 142 seconds
+selectCodeEditor("add.v", 132, 112); // cd (w, cj)
+selectCodeEditor("add.v", 132, 112, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 34 seconds
+selectCodeEditor("add.v", 479, 39); // cd (w, cj)
+selectCodeEditor("add.v", 479, 39, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 471, 36, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 36 seconds
+selectCodeEditor("add.v", 544, 42); // cd (w, cj)
+selectCodeEditor("add.v", 544, 42, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 544, 42, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 20 seconds
+selectCodeEditor("add.v", 604, 185); // cd (w, cj)
+selectCodeEditor("add.v", 604, 185, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 604, 185, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+selectCodeEditor("add.v", 661, 187); // cd (w, cj)
+selectCodeEditor("add.v", 661, 187, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 661, 187, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+selectCodeEditor("add.v", 657, 230); // cd (w, cj)
+selectCodeEditor("add.v", 719, 187); // cd (w, cj)
+selectCodeEditor("add.v", 719, 187, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "add.v", 'c'); // cd (w, cj)
+// [GUI Memory]: 98 MB (+1954kb) [00:19:48]
+// Elapsed time: 51 seconds
+selectCodeEditor("add.v", 407, 230); // cd (w, cj)
+// Elapsed time: 827 seconds
+selectCodeEditor("add.v", 90, 264); // cd (w, cj)
+selectCodeEditor("add.v", 90, 264, false, false, false, false, true); // cd (w, cj) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 674 MB. GUI used memory: 42 MB. Current time: 2/21/21 11:51:03 AM CST
+// Elapsed time: 279 seconds
+selectCodeEditor("add.v", 111, 113); // cd (w, cj)
+selectCodeEditor("add.v", 437, 111, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+selectCodeEditor("add.v", 635, 118); // cd (w, cj)
+// Elapsed time: 42 seconds
+selectCodeEditor("add.v", 131, 164); // cd (w, cj)
+selectCodeEditor("add.v", 131, 164, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 195, 163); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("add.v", 103, 90); // cd (w, cj)
+selectCodeEditor("add.v", 132, 82, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 54 seconds
+selectCodeEditor("add.v", 418, 209); // cd (w, cj)
+selectCodeEditor("add.v", 271, 110); // cd (w, cj)
+selectCodeEditor("add.v", 271, 110, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 271, 110); // cd (w, cj)
+selectCodeEditor("add.v", 271, 110); // cd (w, cj)
+selectCodeEditor("add.v", 271, 110, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 271, 110); // cd (w, cj)
+selectCodeEditor("add.v", 103, 115); // cd (w, cj)
+selectButton(RDIResource.CodeView_TOGGLE_COLUMN_SELECTION_MODE, (String) null); // u (f, cj): FALSE
+selectCodeEditor("add.v", 273, 109); // cd (w, cj)
+selectCodeEditor("add.v", 273, 109, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 273, 109); // cd (w, cj)
+selectCodeEditor("add.v", 273, 109, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 71 seconds
+selectCodeEditor("add.v", 227, 127); // cd (w, cj)
+selectCodeEditor("add.v", 168, 161); // cd (w, cj)
+selectCodeEditor("add.v", 168, 161, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 168, 161); // cd (w, cj)
+selectCodeEditor("add.v", 168, 161, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 67 seconds
+selectCodeEditor("add.v", 173, 156); // cd (w, cj)
+selectCodeEditor("add.v", 173, 156, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("add.v", 173, 156); // cd (w, cj)
+selectCodeEditor("add.v", 173, 156, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ac (ai, Popup.HeavyWeightWindow)
+// Elapsed time: 44 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // ac (cj, Popup.HeavyWeightWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// x (cj): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (x)
+// bs (cj):  Close Project : addNotify
+dismissDialog("Close Project"); // x (cj)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 674 MB. GUI used memory: 44 MB. Current time: 2/21/21 11:56:56 AM CST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bs (cj)

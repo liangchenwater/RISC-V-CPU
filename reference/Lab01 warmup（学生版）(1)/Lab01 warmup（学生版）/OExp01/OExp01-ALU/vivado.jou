@@ -1,0 +1,179 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 18 20:07:22 2021
+# Process ID: 26716
+# Current directory: C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25876 C:\Users\liang\Desktop\OrgLab\reference\Lab01 warmup（学生版）(1)\Lab01 warmup（学生版）\OExp01\OExp01-ALU\OExp01-ALU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.xpr}
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}
+create_bd_design "ALU"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:and32:1.0 and32_0
+endgroup
+set_property location {1.5 324 -55} [get_bd_cells and32_0]
+set_property location {1 310 -88} [get_bd_cells and32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:or32:1.0 or32_0
+endgroup
+set_property location {2 292 15} [get_bd_cells or32_0]
+set_property location {1 325 -210} [get_bd_cells and32_0]
+set_property location {1 338 -102} [get_bd_cells or32_0]
+open_bd_design {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}
+open_bd_design {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/hdl/ALU_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/hdl/ALU_wrapper.v}}
+open_bd_design {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {2 286 -120} [get_bd_cells xlslice_0]
+set_property location {1 319 75} [get_bd_cells xlslice_0]
+set_property location {1 314 -124} [get_bd_cells or32_0]
+set_property location {1 327 -21} [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_FROM {31} CONFIG.DIN_WIDTH {33} CONFIG.DOUT_WIDTH {32}] [get_bd_cells xlslice_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:xor32:1.0 xor32_0
+endgroup
+set_property location {2 328 80} [get_bd_cells xor32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:nor32:1.0 nor32_0
+endgroup
+set_property location {2 319 191} [get_bd_cells nor32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:srl32:1.0 srl32_0
+endgroup
+set_property location {2 295 298} [get_bd_cells srl32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:MUX8T1_32:1.0 MUX8T1_32_0
+endgroup
+set_property location {2.5 547 -84} [get_bd_cells MUX8T1_32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:or_bit_32:1.0 or_bit_32_0
+endgroup
+set_property location {3.5 770 45} [get_bd_cells or_bit_32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:addc_32:1.0 addc_32_0
+endgroup
+set_property location {0.5 12 -96} [get_bd_cells addc_32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {2 194 102} [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.IN1_WIDTH.VALUE_SRC USER CONFIG.IN0_WIDTH.VALUE_SRC USER] [get_bd_cells xlconcat_0]
+set_property -dict [list CONFIG.IN1_WIDTH {31}] [get_bd_cells xlconcat_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1
+endgroup
+set_property location {0.5 -335 -128} [get_bd_cells xlslice_1]
+set_property -dict [list CONFIG.DIN_TO {2} CONFIG.DIN_FROM {2} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:SignalExt_32:1.0 SignalExt_32_0
+endgroup
+set_property location {2.5 21 -46} [get_bd_cells SignalExt_32_0]
+set_property location {0.5 -264 -125} [get_bd_cells xlslice_1]
+set_property location {2 -39 -97} [get_bd_cells SignalExt_32_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:xor32:1.0 xor32_1
+endgroup
+set_property location {3 90 41} [get_bd_cells xor32_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_2
+endgroup
+set_property location {3 103 167} [get_bd_cells xlslice_2]
+set_property -dict [list CONFIG.DIN_TO {32} CONFIG.DIN_FROM {32} CONFIG.DIN_WIDTH {33} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_2]
+startgroup
+make_bd_pins_external  [get_bd_pins and32_0/A]
+endgroup
+set_property name A [get_bd_ports A_0]
+startgroup
+make_bd_pins_external  [get_bd_pins and32_0/B]
+endgroup
+set_property name B [get_bd_ports B_0]
+connect_bd_net [get_bd_ports A] [get_bd_pins or32_0/A]
+connect_bd_net [get_bd_ports B] [get_bd_pins or32_0/B]
+connect_bd_net [get_bd_ports A] [get_bd_pins xor32_0/A]
+connect_bd_net [get_bd_ports B] [get_bd_pins xor32_0/B]
+connect_bd_net [get_bd_pins nor32_0/A] [get_bd_pins nor32_0/B]
+undo
+connect_bd_net [get_bd_ports A] [get_bd_pins nor32_0/A]
+connect_bd_net [get_bd_ports B] [get_bd_pins nor32_0/B]
+connect_bd_net [get_bd_pins and32_0/res] [get_bd_pins MUX8T1_32_0/I0]
+connect_bd_net [get_bd_pins or32_0/res] [get_bd_pins MUX8T1_32_0/I1]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins MUX8T1_32_0/I2]
+connect_bd_net [get_bd_pins xor32_0/res] [get_bd_pins MUX8T1_32_0/I3]
+connect_bd_net [get_bd_pins nor32_0/res] [get_bd_pins MUX8T1_32_0/I4]
+connect_bd_net [get_bd_pins srl32_0/res] [get_bd_pins MUX8T1_32_0/I5]
+connect_bd_net [get_bd_pins MUX8T1_32_0/I6] [get_bd_pins xlslice_0/Dout]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins MUX8T1_32_0/s]
+undo
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins xlconcat_0/In0]
+undo
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins MUX8T1_32_0/I7]
+connect_bd_net [get_bd_pins xlslice_2/Dout] [get_bd_pins xlconcat_0/In0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+set_property location {3 128 264} [get_bd_cells xlconstant_0]
+set_property -dict [list CONFIG.CONST_WIDTH {31} CONFIG.CONST_VAL {0}] [get_bd_cells xlconstant_0]
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins MUX8T1_32_0/o] [get_bd_pins or_bit_32_0/A]
+startgroup
+make_bd_pins_external  [get_bd_pins xlslice_1/Din]
+endgroup
+set_property name ALU [get_bd_ports Din_0]
+set_property name ALU_operation [get_bd_ports ALU]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins SignalExt_32_0/S]
+connect_bd_net [get_bd_pins addc_32_0/C0] [get_bd_pins xlslice_1/Dout]
+set_property location {3 307 -109} [get_bd_cells addc_32_0]
+connect_bd_net [get_bd_ports A] [get_bd_pins addc_32_0/A]
+connect_bd_net [get_bd_pins addc_32_0/B] [get_bd_pins xor32_1/res]
+connect_bd_net [get_bd_pins addc_32_0/S] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins xlslice_2/Din] [get_bd_pins addc_32_0/S]
+connect_bd_net [get_bd_pins SignalExt_32_0/So] [get_bd_pins xor32_1/A]
+connect_bd_net [get_bd_ports B] [get_bd_pins xor32_1/B]
+regenerate_bd_layout
+connect_bd_net [get_bd_ports ALU_operation] [get_bd_pins MUX8T1_32_0/s]
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {3}] [get_bd_cells xlslice_1]
+endgroup
+startgroup
+endgroup
+delete_bd_objs [get_bd_ports ALU_operation]
+delete_bd_objs [get_bd_nets Din_0_1]
+startgroup
+make_bd_pins_external  [get_bd_pins xlslice_1/Din]
+endgroup
+set_property name ALU_operation [get_bd_ports Din_0]
+connect_bd_net [get_bd_ports ALU_operation] [get_bd_pins MUX8T1_32_0/s]
+regenerate_bd_layout
+set_property location {8 1462 497} [get_bd_cells or_bit_32_0]
+startgroup
+make_bd_pins_external  [get_bd_pins or_bit_32_0/o]
+endgroup
+delete_bd_objs [get_bd_nets MUX8T1_32_0_o]
+startgroup
+make_bd_pins_external  [get_bd_pins MUX8T1_32_0/o]
+endgroup
+connect_bd_net [get_bd_pins or_bit_32_0/A] [get_bd_pins MUX8T1_32_0/o]
+set_property name res [get_bd_ports o_1]
+connect_bd_net [get_bd_ports A] [get_bd_pins srl32_0/A]
+connect_bd_net [get_bd_ports B] [get_bd_pins srl32_0/B]
+regenerate_bd_layout
+set_property synth_checkpoint_mode None [get_files  {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}]
+generate_target all [get_files  {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}] -directory {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.ip_user_files} -ipstatic_source_dir {C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}] -top
+add_files -norecurse {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/hdl/ALU_wrapper.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/liang/Desktop/OrgLab/reference/Lab01 warmup（学生版）(1)/Lab01 warmup（学生版）/OExp01/OExp01-ALU/OExp01-ALU.srcs/sources_1/bd/ALU/ALU.bd}}

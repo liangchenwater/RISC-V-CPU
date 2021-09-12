@@ -1,0 +1,144 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 19372
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Jun 29 22:18:17 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	liang
+User home directory: C:/Users/liang
+User working directory: C:/Users/liang/Desktop/OrgLab/lab4/simCPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado
+HDI_APPROOT: D:/Vivado/2020.2
+RDI_DATADIR: D:/Vivado/2020.2/data
+RDI_BINDIR: D:/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/liang/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/liang/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/liang/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/liang/Desktop/OrgLab/lab4/simCPU/vivado.log
+Vivado journal file location: 	C:/Users/liang/Desktop/OrgLab/lab4/simCPU/vivado.jou
+Engine tmp dir: 	C:/Users/liang/Desktop/OrgLab/lab4/simCPU/.Xil/Vivado-19372-DESKTOP-LII7R1O
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: D:/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Vivado/2020.2
+XILINX_VIVADO: D:/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,102 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 84 MB (+85992kb) [00:00:06]
+// [Engine Memory]: 1,102 MB (+1003801kb) [00:00:06]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\liang\Desktop\OrgLab\lab4\simCPU\simCPU.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 54 MB. Current time: 6/29/21, 10:18:19 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 89 MB (+583kb) [00:00:14]
+// [GUI Memory]: 113 MB (+20464kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3241 ms.
+// Tcl Message: open_project C:/Users/liang/Desktop/OrgLab/lab4/simCPU/simCPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/reference'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab4/CPUC'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1112.164 ; gain = 0.000 
+// Project name: simCPU; location: C:/Users/liang/Desktop/OrgLab/lab4/simCPU; part: xc7k160tffg676-2L
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// a (cr): Critical Messages: addNotify
+// [GUI Memory]: 125 MB (+6833kb) [00:00:20]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simCPU_wrapper (simCPU_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simCPU_wrapper (simCPU_wrapper.v), simCPU_i : simCPU (simCPU.bd), simCPU (simCPU.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simCPU_wrapper (simCPU_wrapper.v), simCPU_i : simCPU (simCPU.bd), simCPU (simCPU.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simCPU_wrapper (simCPU_wrapper.v), simCPU_i : simCPU (simCPU.bd), simCPU (simCPU.v), SCPUC_0 : simCPU_SCPUC_0_0 (simCPU_SCPUC_0_0.xci)]", 6, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 138 MB (+7149kb) [00:00:43]
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, simCPU_wrapper (simCPU_wrapper.v)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb (tb.v)]", 6, true); // D - Node
+// Elapsed time: 190 seconds
+selectCodeEditor("tb.v", 172, 44); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 79 MB. Current time: 6/29/21, 10:48:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/29/21, 11:18:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/29/21, 11:48:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/30/21, 12:18:20 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/30/21, 12:48:20 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/30/21, 1:18:20 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/30/21, 1:48:21 AM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1238 ms. Increasing delay to 3714 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,102 MB. GUI used memory: 69 MB. Current time: 6/30/21, 2:42:48 AM CST

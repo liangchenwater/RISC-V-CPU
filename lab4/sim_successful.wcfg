@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="815460fs"></ZoomStartTime>
+      <ZoomEndTime time="876311fs"></ZoomEndTime>
+      <Cursor1Time time="386920fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="233"></NameColumnWidth>
+      <ValueColumnWidth column_width="82"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="57" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/MemtoReg" type="array">
+      <obj_property name="ElementShortName">MemtoReg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/ALUSrc_B" type="logic">
+      <obj_property name="ElementShortName">ALUSrc_B</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/ImmSel" type="array">
+      <obj_property name="ElementShortName">ImmSel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmSel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/ALU_operation" type="array">
+      <obj_property name="ElementShortName">ALU_operation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_operation[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Data_in" type="array">
+      <obj_property name="ElementShortName">Data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Inst_in" type="array">
+      <obj_property name="ElementShortName">Inst_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/PC_out" type="array">
+      <obj_property name="ElementShortName">PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/PC_next" type="array">
+      <obj_property name="ElementShortName">PC_next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_next[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Wt_data" type="array">
+      <obj_property name="ElementShortName">Wt_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Wt_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/ALU_out" type="array">
+      <obj_property name="ElementShortName">ALU_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Data_out" type="array">
+      <obj_property name="ElementShortName">Data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Imm_out" type="array">
+      <obj_property name="ElementShortName">Imm_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Imm_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/PC_jump" type="array">
+      <obj_property name="ElementShortName">PC_jump[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_jump[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/rs_rt_equal" type="logic">
+      <obj_property name="ElementShortName">rs_rt_equal</obj_property>
+      <obj_property name="ObjectShortName">rs_rt_equal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Rs1_addr" type="array">
+      <obj_property name="ElementShortName">Rs1_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Rs1_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Rs2_addr" type="array">
+      <obj_property name="ElementShortName">Rs2_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Rs2_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Wt_addr" type="array">
+      <obj_property name="ElementShortName">Wt_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Wt_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Rs1_data" type="array">
+      <obj_property name="ElementShortName">Rs1_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Rs1_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/Rs2_data" type="array">
+      <obj_property name="ElementShortName">Rs2_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Rs2_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/alu_a" type="array">
+      <obj_property name="ElementShortName">alu_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/alu_b" type="array">
+      <obj_property name="ElementShortName">alu_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_b[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/alu_out" type="array">
+      <obj_property name="ElementShortName">alu_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">alu_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/Inst_in" type="array">
+      <obj_property name="ElementShortName">Inst_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Inst_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/Data_in" type="array">
+      <obj_property name="ElementShortName">Data_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/MIO_ready" type="logic">
+      <obj_property name="ElementShortName">MIO_ready</obj_property>
+      <obj_property name="ObjectShortName">MIO_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/MemRW" type="logic">
+      <obj_property name="ElementShortName">MemRW</obj_property>
+      <obj_property name="ObjectShortName">MemRW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/CPU_MIO" type="logic">
+      <obj_property name="ElementShortName">CPU_MIO</obj_property>
+      <obj_property name="ObjectShortName">CPU_MIO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/Addr_out" type="array">
+      <obj_property name="ElementShortName">Addr_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Addr_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/Data_out" type="array">
+      <obj_property name="ElementShortName">Data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/PC_out" type="array">
+      <obj_property name="ElementShortName">PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/mepc" type="array">
+      <obj_property name="ElementShortName">mepc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mepc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/DATAPATH/pc_src_control" type="array">
+      <obj_property name="ElementShortName">pc_src_control[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_src_control[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/OPcode" type="array">
+      <obj_property name="ElementShortName">OPcode[4:0]</obj_property>
+      <obj_property name="ObjectShortName">OPcode[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/Fun3" type="array">
+      <obj_property name="ElementShortName">Fun3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Fun3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/Fun7" type="logic">
+      <obj_property name="ElementShortName">Fun7</obj_property>
+      <obj_property name="ObjectShortName">Fun7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/Fun12" type="array">
+      <obj_property name="ElementShortName">Fun12[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Fun12[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/MIO_ready" type="logic">
+      <obj_property name="ElementShortName">MIO_ready</obj_property>
+      <obj_property name="ObjectShortName">MIO_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/ImmSel" type="array">
+      <obj_property name="ElementShortName">ImmSel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmSel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/ALUSrc_B" type="logic">
+      <obj_property name="ElementShortName">ALUSrc_B</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/MemtoReg" type="array">
+      <obj_property name="ElementShortName">MemtoReg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/pc_src_control" type="array">
+      <obj_property name="ElementShortName">pc_src_control[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_src_control[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/RegWrite" type="logic">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/MemRW" type="logic">
+      <obj_property name="ElementShortName">MemRW</obj_property>
+      <obj_property name="ObjectShortName">MemRW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/ALU_Control" type="array">
+      <obj_property name="ElementShortName">ALU_Control[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_Control[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/CPU_MIO" type="logic">
+      <obj_property name="ElementShortName">CPU_MIO</obj_property>
+      <obj_property name="ObjectShortName">CPU_MIO</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/interr" type="array">
+      <obj_property name="ElementShortName">interr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">interr[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/ALUop" type="array">
+      <obj_property name="ElementShortName">ALUop[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/SCPUC_0/inst/CONTROL/Fun" type="array">
+      <obj_property name="ElementShortName">Fun[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Fun[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/u/simCPU_i/INT0" type="logic">
+      <obj_property name="ElementShortName">INT0</obj_property>
+      <obj_property name="ObjectShortName">INT0</obj_property>
+   </wvobject>
+</wave_config>

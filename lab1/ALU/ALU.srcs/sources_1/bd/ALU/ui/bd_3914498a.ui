@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.572825",
+   "Default View_TopLeft":"-683,-489",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port zero -pg 1 -lvl 8 -x 1260 -y -200 -defaultsOSRD
+preplace portBus A -pg 1 -lvl 0 -x -510 -y -448 -defaultsOSRD
+preplace portBus B -pg 1 -lvl 0 -x -510 -y -210 -defaultsOSRD
+preplace portBus ALU_operation -pg 1 -lvl 0 -x -510 -y -340 -defaultsOSRD
+preplace portBus res -pg 1 -lvl 8 -x 1260 -y -250 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 5 -x 640 -y -90 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -x -140 -y -350 -defaultsOSRD
+preplace inst SignalExt_32_0 -pg 1 -lvl 3 -x 90 -y -340 -defaultsOSRD
+preplace inst xor32_0 -pg 1 -lvl 3 -x 90 -y -220 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 3 -x 90 -y -110 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 90 -y -10 -defaultsOSRD
+preplace inst addc_32_0 -pg 1 -lvl 4 -x 330 -y -230 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 330 -y -60 -defaultsOSRD
+preplace inst or32_0 -pg 1 -lvl 5 -x 640 -y -200 -defaultsOSRD
+preplace inst xor32_1 -pg 1 -lvl 5 -x 640 -y 20 -defaultsOSRD
+preplace inst nor32_0 -pg 1 -lvl 5 -x 640 -y 140 -defaultsOSRD
+preplace inst srl32_0 -pg 1 -lvl 5 -x 640 -y 260 -defaultsOSRD
+preplace inst MUX8T1_32_0 -pg 1 -lvl 6 -x 960 -y -250 -defaultsOSRD
+preplace inst or_bit_32_0 -pg 1 -lvl 7 -x 1140 -y -200 -defaultsOSRD
+preplace inst and32 -pg 1 -lvl 5 -x 640 -y -400 -defaultsOSRD
+preplace netloc A_0_1 1 0 5 NJ -448 N -448 NJ -448 210J -410 460J
+preplace netloc B_0_1 1 0 5 NJ -210 N -210 -40J -420 N -420 430
+preplace netloc Din_0_1 1 0 6 N -340 -370 -430 N -430 N -430 470 -280 820
+preplace netloc xlslice_1_Dout 1 2 2 -30 -400 200
+preplace netloc SignalExt_32_0_So 1 2 2 -20 -410 190
+preplace netloc xor32_0_res 1 3 1 200 -220n
+preplace netloc addc_32_0_S 1 2 3 -20 50 200 -130 440
+preplace netloc xlslice_2_Dout 1 3 1 190 -110n
+preplace netloc xlconstant_0_dout 1 3 1 210 -50n
+preplace netloc xlconcat_0_dout 1 4 2 450J -270 810
+preplace netloc or32_0_res 1 5 1 790 -310n
+preplace netloc xlslice_0_Dout 1 5 1 800 -290n
+preplace netloc xor32_1_res 1 5 1 830 -270n
+preplace netloc nor32_0_res 1 5 1 840 -250n
+preplace netloc srl32_0_res 1 5 1 850 -230n
+preplace netloc MUX8T1_32_0_o 1 6 2 1050J -260 1220J
+preplace netloc or_bit_32_0_o 1 7 1 N -200
+preplace netloc util_vector_logic_0_Res 1 5 1 790 -400n
+levelinfo -pg 1 -510 -390 -140 90 330 640 960 1140 1260
+pagesize -pg 1 -db -bbox -sgen -690 -710 1370 330
+"
+}
+0

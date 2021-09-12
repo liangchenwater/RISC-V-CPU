@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 18 15:42:58 2021
+# Process ID: 17124
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab1/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24212 C:\Users\liang\Desktop\OrgLab\lab1\ALU\ALU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab1/ALU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab1/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd}
+startgroup
+set_property -dict [list CONFIG.DIN_TO {32} CONFIG.DIN_FROM {32} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_TO {2} CONFIG.DIN_FROM {2} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_1]
+endgroup
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/imports/hdl/ALU_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/imports/hdl/ALU_wrapper.v
+generate_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -top
+add_files -norecurse c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir C:/Users/liang/Desktop/OrgLab/lab4/ALUasIP -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Users/liang/Desktop/OrgLab/lab4/ALUasIP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/liang/Desktop/OrgLab/lab4/ALUasIP c:/Users/liang/Desktop/OrgLab/lab4/ALUasIP/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab
+export_ip_user_files -of_objects  [get_files c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+make_wrapper -files [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -top
+add_files -norecurse c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+export_ip_user_files -of_objects  [get_files c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v] -no_script -reset -force -quiet
+remove_files  c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+reset_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects  [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -sync -no_script -force -quiet
+generate_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd]
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.srcs/sources_1/bd/ALU/ALU.bd] -top
+add_files -norecurse c:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/hdl/ALU_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Users/liang/Desktop/OrgLab/lab4/ALUasIP -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Users/liang/Desktop/OrgLab/lab4/ALUasIP/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/liang/Desktop/OrgLab/lab4/ALUasIP c:/Users/liang/Desktop/OrgLab/lab4/ALUasIP/component.xml
+update_compile_order -fileset sources_1
+current_project ALU
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project tmp_edit_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/users/liang/desktop/orglab

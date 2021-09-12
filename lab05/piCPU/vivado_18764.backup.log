@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jun 25 16:11:17 2021
+# Process ID: 18764
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/piCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20372 C:\Users\liang\Desktop\OrgLab\lab05\piCPU\piCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/piCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/piCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/liang/Desktop/OrgLab/lab05/piCPU/piCPU.srcs/sources_1/new'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1105.766 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 25 16:45:00 2021...

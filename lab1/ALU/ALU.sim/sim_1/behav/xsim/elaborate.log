@@ -1,0 +1,16 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 46f56ef04efe4ac58a5538fce55efd1c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconstant_v1_1_7 -L xlconcat_v2_1_4 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <ALU_MUX8T1_32_0_0> not found while processing module instance <MUX8T1_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:49]
+ERROR: [VRFC 10-2063] Module <ALU_SignalExt_32_0_0> not found while processing module instance <SignalExt_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:60]
+ERROR: [VRFC 10-2063] Module <ALU_addc_32_0_0> not found while processing module instance <addc_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:63]
+ERROR: [VRFC 10-2063] Module <ALU_nor32_0_0> not found while processing module instance <nor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:72]
+ERROR: [VRFC 10-2063] Module <ALU_or32_0_0> not found while processing module instance <or32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:76]
+ERROR: [VRFC 10-2063] Module <ALU_or_bit_32_0_0> not found while processing module instance <or_bit_32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:80]
+ERROR: [VRFC 10-2063] Module <ALU_srl32_0_0> not found while processing module instance <srl32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:83]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_0_0> not found while processing module instance <xor32_0> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:102]
+ERROR: [VRFC 10-2063] Module <ALU_xor32_1_0> not found while processing module instance <xor32_1> [C:/Users/liang/Desktop/OrgLab/lab1/ALU/ALU.gen/sources_1/bd/ALU/sim/ALU.v:106]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

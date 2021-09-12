@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 27 04:10:49 2021
+# Process ID: 8860
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12596 C:\Users\liang\Desktop\OrgLab\lab05\simPipeCPU\simPipeCPU.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+source tb.tcl
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd}
+delete_bd_objs [get_bd_nets clk_0_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
+endgroup
+set_property location {1 -48 -30} [get_bd_cells util_vector_logic_0]
+set_property -dict [list CONFIG.C_SIZE {1} CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
+connect_bd_net [get_bd_ports clk] [get_bd_pins util_vector_logic_0/Op1]
+connect_bd_net [get_bd_pins util_vector_logic_0/Res] [get_bd_pins RAM_B_0/clka]
+connect_bd_net [get_bd_ports clk] [get_bd_pins pCPU_0/clk]
+close_sim
+save_bd_design
+generate_target Simulation [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd]
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+source tb.tcl
+open_bd_design {C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:pCPU:1.0 [get_ips  simPipeCPU_pCPU_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips simPipeCPU_pCPU_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd]
+export_ip_user_files -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.srcs/sources_1/bd/simPipeCPU/simPipeCPU.bd] -directory C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files -ipstatic_source_dir C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/modelsim} {questa=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/questa} {riviera=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/riviera} {activehdl=C:/Users/liang/Desktop/OrgLab/lab05/simPipeCPU/simPipeCPU.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+close_sim
+launch_simulation
+open_wave_config C:/Users/liang/Desktop/OrgLab/lab05/piCPUsim.wcfg
+source tb.tcl
+close_sim

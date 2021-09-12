@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sim_1/new/tb.v,1624989339,verilog,,,,tb,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sources_1/new/Data_ram.v,1624982004,verilog,,C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sources_1/new/Tag_ram.v,,Data_ram,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sources_1/new/Tag_ram.v,1624982004,verilog,,C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sources_1/new/cache.v,,Tag_ram,,,,,,,,
+C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sources_1/new/cache.v,1624988626,verilog,,C:/Users/liang/Desktop/OrgLab/lab6/cache/cache.srcs/sim_1/new/tb.v,,cache,,,,,,,,

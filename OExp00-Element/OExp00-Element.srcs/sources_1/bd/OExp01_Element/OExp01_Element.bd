@@ -1,0 +1,38 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7k160tffg676-2L",
+      "gen_directory": "../../../../OExp00-Element.gen/sources_1/bd/OExp01_Element",
+      "name": "OExp01_Element",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.2"
+    },
+    "design_tree": {
+      "and32_0": "",
+      "MUX2T1_32_0": "",
+      "xor32_0": ""
+    },
+    "components": {
+      "and32_0": {
+        "vlnv": "xilinx.com:user:and32:1.0",
+        "xci_name": "OExp01_Element_and32_0_0",
+        "xci_path": "ip\\OExp01_Element_and32_0_0\\OExp01_Element_and32_0_0.xci",
+        "inst_hier_path": "and32_0"
+      },
+      "MUX2T1_32_0": {
+        "vlnv": "xilinx.com:user:MUX2T1_32:1.0",
+        "xci_name": "OExp01_Element_MUX2T1_32_0_0",
+        "xci_path": "ip\\OExp01_Element_MUX2T1_32_0_0\\OExp01_Element_MUX2T1_32_0_0.xci",
+        "inst_hier_path": "MUX2T1_32_0"
+      },
+      "xor32_0": {
+        "vlnv": "xilinx.com:user:xor32:1.0",
+        "xci_name": "OExp01_Element_xor32_0_0",
+        "xci_path": "ip\\OExp01_Element_xor32_0_0\\OExp01_Element_xor32_0_0.xci",
+        "inst_hier_path": "xor32_0"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jun 30 18:07:07 2021
+# Process ID: 8484
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11000 C:\Users\liang\Desktop\OrgLab\lab0\lab0.xpr
+# Log file: C:/Users/liang/Desktop/OrgLab/lab0/vivado.log
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liang/Desktop/OrgLab/lab0/lab0.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Water_LED_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/Water_LED_tb/Water_LED_U}} 
+restart
+run 140 ns
+run 140 ns
+close_sim

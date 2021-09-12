@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jun 28 14:51:38 2021
+# Process ID: 17292
+# Current directory: C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.runs/impl_1
+# Command line: vivado.exe -log CSSTE_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source CSSTE_wrapper.tcl -notrace
+# Log file: C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.runs/impl_1/CSSTE_wrapper.vdi
+# Journal file: C:/Users/liang/Desktop/OrgLab/lab4/SOC/SOC.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source CSSTE_wrapper.tcl -notrace

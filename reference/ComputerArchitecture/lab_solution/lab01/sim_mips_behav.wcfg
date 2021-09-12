@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_mips_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_mips" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject db_ref_id="1" fp_name="/sim_mips/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/inst_addr" type="array">
+      <obj_property name="ElementShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/inst" type="array">
+      <obj_property name="ElementShortName">inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/pc_src" type="array">
+      <obj_property name="ElementShortName">pc_src[2:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_src[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/imm_ext" type="logic">
+      <obj_property name="ElementShortName">imm_ext</obj_property>
+      <obj_property name="ObjectShortName">imm_ext</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/exe_a_src" type="array">
+      <obj_property name="ElementShortName">exe_a_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_a_src[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/exe_b_src" type="array">
+      <obj_property name="ElementShortName">exe_b_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_b_src[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/exe_alu_oper" type="array">
+      <obj_property name="ElementShortName">exe_alu_oper[3:0]</obj_property>
+      <obj_property name="ObjectShortName">exe_alu_oper[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/mem_ren" type="logic">
+      <obj_property name="ElementShortName">mem_ren</obj_property>
+      <obj_property name="ObjectShortName">mem_ren</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/mem_wen" type="logic">
+      <obj_property name="ElementShortName">mem_wen</obj_property>
+      <obj_property name="ObjectShortName">mem_wen</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/wb_addr_src" type="array">
+      <obj_property name="ElementShortName">wb_addr_src[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wb_addr_src[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/wb_data_src" type="logic">
+      <obj_property name="ElementShortName">wb_data_src</obj_property>
+      <obj_property name="ObjectShortName">wb_data_src</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/CONTROLLER/wb_wen" type="logic">
+      <obj_property name="ElementShortName">wb_wen</obj_property>
+      <obj_property name="ObjectShortName">wb_wen</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/opa" type="array">
+      <obj_property name="ElementShortName">opa[31:0]</obj_property>
+      <obj_property name="ObjectShortName">opa[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_mips/uut/MIPS_CORE/DATAPATH/opb" type="array">
+      <obj_property name="ElementShortName">opb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">opb[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>
